@@ -1,1 +1,1 @@
-En este repositorio contiene materiales de Introducción a la Economía (XE0156 y EC1100).
+Cambié el acceso principal, entonces se debe acceder a: https://erick-sb.github.io/index
