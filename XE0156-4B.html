@@ -245,9 +245,9 @@
 									</div>
 
 									<h3>¿Cuánto cobra Costa Rica en impuestos?</h3>
-									<p>Una forma de comparar entre países es la <strong>carga tributaria</strong>: el total de impuestos, incluidas las contribuciones a la seguridad social, como porcentaje del PIB. En <span data-dato="anio_carga">2024</span>, la de Costa Rica fue de <strong><span data-dato="carga_cr">24.8%</span></strong>, frente a un promedio de <span data-dato="carga_ocde">34.1%</span> en los países de la OCDE y de <span data-dato="carga_alc">21.3%</span> en América Latina y el Caribe.</p>
+									<p>Una forma de comparar entre países es la <strong>carga tributaria</strong>: el total de impuestos, incluidas las contribuciones a la seguridad social, como porcentaje del PIB. En <span data-dato="anio_carga">2024</span>, la de Costa Rica fue de <strong><span data-dato="carga_cr">24.8%</span></strong>, frente a un promedio de <span data-dato="carga_ocde">34.1%</span> en los países de la OCDE y de <span data-dato="carga_alc">21.3%</span> en América Latina y el Caribe. Dentro de la OCDE, la carga va desde <span data-dato="carga_min">18.3% en México</span> hasta <span data-dato="carga_max">45.2% en Dinamarca</span>. El gráfico muestra una selección de países:</p>
 									<div style="flex: 1; margin: 10px;">
-										<canvas id="cargaChart" style="width: 100%; height: 760px;"></canvas>
+										<canvas id="cargaChart" style="width: 100%; height: 360px;"></canvas>
 									</div>
 									<p>Costa Rica cobra menos que la mayoría de los países de la OCDE, pero algo más que el promedio latinoamericano. Igual de importante que cuánto se cobra es cómo se cobra: en Costa Rica, los impuestos sobre la renta representan apenas el <span data-dato="renta_cr">17%</span> de la recaudación total, frente al <span data-dato="renta_alc">28%</span> en América Latina y el <span data-dato="renta_ocde">36%</span> en la OCDE. Como el impuesto sobre la renta es el más progresivo, eso limita la capacidad del sistema tributario para reducir la desigualdad.</p>
 
@@ -321,8 +321,8 @@
 									fuente_carga: 'OCDE (2025). Revenue Statistics 2025. Datos preliminares de 2024.', renta_pct_total_cr: 17, renta_pct_total_alc: 28, renta_pct_total_ocde: 36,
 									fuente_educacion: 'Presupuestos Nacionales y proyecto de Presupuesto 2027, según crhoy.com (septiembre de 2026).' },
 								renta: [[0, 918000, 0], [918000, 1347000, 10], [1347000, 2364000, 15], [2364000, 4727000, 20], [4727000, null, 25]],
-								carga: [['Australia',29.9],['Austria',43.4],['Bélgica',42.6],['Canadá',34.9],['Chile',20.5],['Colombia',19.9],['Costa Rica',24.8],['Chequia',34.0],['Dinamarca',45.2],['Estonia',35.2],['Finlandia',42.2],['Francia',43.5],['Alemania',38.0],['Grecia',39.8],['Hungría',34.4],['Islandia',36.9],['Irlanda',21.7],['Israel',30.9],['Italia',42.8],['Japón',33.7],['Corea',25.3],['Letonia',34.9],['Lituania',33.1],['Luxemburgo',41.5],['México',18.3],['Países Bajos',38.5],['Nueva Zelanda',32.9],['Noruega',40.2],['Polonia',36.6],['Portugal',35.1],['Eslovaquia',35.6],['Eslovenia',38.3],['España',36.7],['Suecia',41.4],['Suiza',27.2],['Turquía',24.0],['Reino Unido',34.4],['Estados Unidos',25.6],['Promedio OCDE',34.1],['Promedio América Latina y el Caribe',21.3]],
-								educacion: [[2019,7.0,'Presupuesto aprobado'],[2020,7.3,'Presupuesto aprobado'],[2021,6.3,'Presupuesto aprobado'],[2022,5.7,'Presupuesto aprobado'],[2023,5.3,'Presupuesto aprobado'],[2024,5.2,'Presupuesto aprobado'],[2025,4.9,'Presupuesto aprobado'],[2026,5.6,'Presupuesto aprobado'],[2027,4.9,'Proyecto']]
+								carga: [['Australia',29.9,'No'],['Austria',43.4,'No'],['Bélgica',42.6,'No'],['Canadá',34.9,'Sí'],['Chile',20.5,'Sí'],['Colombia',19.9,'Sí'],['Costa Rica',24.8,'Sí'],['Chequia',34.0,'No'],['Dinamarca',45.2,'Sí'],['Estonia',35.2,'No'],['Finlandia',42.2,'No'],['Francia',43.5,'Sí'],['Alemania',38.0,'Sí'],['Grecia',39.8,'No'],['Hungría',34.4,'No'],['Islandia',36.9,'No'],['Irlanda',21.7,'No'],['Israel',30.9,'No'],['Italia',42.8,'No'],['Japón',33.7,'No'],['Corea',25.3,'Sí'],['Letonia',34.9,'No'],['Lituania',33.1,'No'],['Luxemburgo',41.5,'No'],['México',18.3,'Sí'],['Países Bajos',38.5,'No'],['Nueva Zelanda',32.9,'No'],['Noruega',40.2,'No'],['Polonia',36.6,'No'],['Portugal',35.1,'No'],['Eslovaquia',35.6,'No'],['Eslovenia',38.3,'No'],['España',36.7,'Sí'],['Suecia',41.4,'No'],['Suiza',27.2,'No'],['Turquía',24.0,'No'],['Reino Unido',34.4,'Sí'],['Estados Unidos',25.6,'Sí'],['Promedio OCDE',34.1,'Sí'],['Promedio América Latina y el Caribe',21.3,'Sí']],
+								educacion: [[2019,7.0,'Presupuesto aprobado'],[2020,7.3,'Presupuesto aprobado'],[2021,6.3,'Presupuesto aprobado'],[2022,5.7,'Presupuesto aprobado'],[2023,5.3,'Presupuesto aprobado'],[2024,5.2,'Presupuesto aprobado'],[2025,4.9,'Presupuesto aprobado'],[2026,5.1,'Presupuesto aprobado'],[2027,4.9,'Proyecto']]
 							};
 
 							function num(v) { if (v === null || v === undefined || v === '') return null; var n = (typeof v === 'number') ? v : parseFloat(String(v).replace(',', '.')); return isNaN(n) ? null : n; }
@@ -345,7 +345,7 @@
 								return {
 									general: g,
 									renta: filas(wb, 'Renta').map(function (f) { return [num(f[0]), num(f[1]), num(f[2])]; }),
-									carga: filas(wb, 'Carga').map(function (f) { return [String(f[0]).trim(), num(f[1])]; }),
+									carga: filas(wb, 'Carga').map(function (f) { return [String(f[0]).trim(), num(f[1]), (f[3] === undefined ? 'Sí' : String(f[3]).trim())]; }),
 									educacion: filas(wb, 'Educacion').map(function (f) { return [num(f[0]), num(f[1]), String(f[2] || '').trim()]; })
 								};
 							}
@@ -368,13 +368,16 @@
 								var cr = D.carga.filter(function (f) { return f[0] === 'Costa Rica'; })[0];
 								var ocde = D.carga.filter(function (f) { return /OCDE/.test(f[0]); })[0];
 								var alc = D.carga.filter(function (f) { return /Am[eé]rica Latina/.test(f[0]); })[0];
+								var paises = D.carga.filter(function (f) { return f[1] !== null && !/^Promedio/.test(f[0]); });
+								var mn = paises.reduce(function (a, b) { return b[1] < a[1] ? b : a; }, paises[0]), mx = paises.reduce(function (a, b) { return b[1] > a[1] ? b : a; }, paises[0]);
+								var rango = { min: mn[1].toFixed(1) + '% en ' + mn[0], max: mx[1].toFixed(1) + '% en ' + mx[0] };
 								var ed = D.educacion.slice().sort(function (a, b) { return a[0] - b[0]; });
 								var ult = ed[ed.length - 1], pri = ed[0];
 								var valores = {
 									anio_renta: g.anio_renta, decreto_renta: g.decreto_renta, fecha_decreto: g.fecha_decreto,
 									iva_general: pct(g.iva_general, 0), iva_canasta: pct(g.iva_canasta, 0), anio_carga: g.anio_carga,
 									fuente_carga: g.fuente_carga, fuente_educacion: g.fuente_educacion,
-									carga_cr: cr ? pct(cr[1]) : '–', carga_ocde: ocde ? pct(ocde[1]) : '–', carga_alc: alc ? pct(alc[1]) : '–',
+									carga_cr: cr ? pct(cr[1]) : '–', carga_min: rango.min, carga_max: rango.max, carga_ocde: ocde ? pct(ocde[1]) : '–', carga_alc: alc ? pct(alc[1]) : '–',
 									renta_cr: pct(g.renta_pct_total_cr, 0), renta_alc: pct(g.renta_pct_total_alc, 0), renta_ocde: pct(g.renta_pct_total_ocde, 0),
 									edu_ult_anio: ult[0], edu_ult: pct(ult[1]), edu_ult_tipo: (ult[2] || '').toLowerCase(), edu_primero: pct(pri[1]), edu_primer_anio: pri[0]
 								};
@@ -450,33 +453,40 @@
 
 							// ---------- Carga tributaria ----------
 							function graficoCarga(carga, anio) {
-								var d = carga.filter(function (f) { return f[1] !== null; }).sort(function (a, b) { return b[1] - a[1]; });
+								var d = carga.filter(function (f) { return f[1] !== null && /^s[ií]/i.test(f[2] || 'Sí'); }).sort(function (a, b) { return b[1] - a[1]; });
+								var etiqueta = function (n) {
+									if (/^Promedio OCDE/.test(n)) return ['Promedio', 'OCDE'];
+									if (/^Promedio Am[eé]rica Latina/.test(n)) return ['Promedio', 'Am. Latina'];
+									if (n.indexOf(' ') > 0 && n.length > 9) return n.split(' ');
+									return n;
+								};
 								var colores = d.map(function (f) {
 									if (f[0] === 'Costa Rica') return 'rgba(139, 0, 0, 0.75)';
 									if (/^Promedio/.test(f[0])) return 'rgba(31, 52, 92, 0.75)';
-									return 'rgba(0, 67, 80, 0.30)';
+									return 'rgba(0, 67, 80, 0.35)';
 								});
 								new Chart(document.getElementById('cargaChart').getContext('2d'), {
 									type: 'bar',
-									data: { labels: d.map(function (f) { return f[0]; }), datasets: [{ data: d.map(function (f) { return f[1]; }), backgroundColor: colores, borderWidth: 0, barPercentage: 0.8 }] },
+									data: { labels: d.map(function (f) { return etiqueta(f[0]); }), datasets: [{ data: d.map(function (f) { return f[1]; }), backgroundColor: colores, borderWidth: 0, barPercentage: 0.75 }] },
 									options: {
-										indexAxis: 'y', maintainAspectRatio: false,
+										maintainAspectRatio: false,
 										plugins: {
 											title: { display: true, text: 'Carga tributaria como % del PIB, ' + anio, font: { size: 16, weight: 'bold' } },
+											subtitle: { display: true, text: 'Incluye contribuciones a la seguridad social', font: { size: 11 }, padding: { bottom: 8 } },
 											legend: { display: false },
-											tooltip: { callbacks: { label: function (it) { return it.raw.toFixed(1) + '% del PIB'; } } }
+											tooltip: { callbacks: { title: function (it) { return d[it[0].dataIndex][0]; }, label: function (it) { return it.raw.toFixed(1) + '% del PIB'; } } }
 										},
 										scales: {
-											x: { min: 0, ticks: { callback: function (v) { return v + '%'; } }, title: { display: true, text: '% del PIB (incluye seguridad social)' } },
-											y: { ticks: { autoSkip: false, font: function (c) { var l = d[c.index] ? d[c.index][0] : ''; return { size: 11, weight: (l === 'Costa Rica' || /^Promedio/.test(l)) ? 'bold' : 'normal' }; } } }
+											y: { min: 0, max: 50, ticks: { callback: function (v) { return v + '%'; } } },
+											x: { ticks: { autoSkip: false, maxRotation: 0, font: function (c) { var l = d[c.index] ? d[c.index][0] : ''; return { size: 11, weight: (l === 'Costa Rica' || /^Promedio/.test(l)) ? 'bold' : 'normal' }; } } }
 										}
 									},
 									plugins: [{
 										id: 'valores',
 										afterDatasetsDraw: function (chart) {
 											var ctx = chart.ctx, meta = chart.getDatasetMeta(0);
-											ctx.save(); ctx.font = '10px Arial'; ctx.fillStyle = '#23394a'; ctx.textBaseline = 'middle';
-											meta.data.forEach(function (bar, i) { ctx.fillText(d[i][1].toFixed(1), bar.x + 4, bar.y); });
+											ctx.save(); ctx.font = 'bold 11px Arial'; ctx.fillStyle = '#23394a'; ctx.textAlign = 'center';
+											meta.data.forEach(function (bar, i) { ctx.fillText(d[i][1].toFixed(1), bar.x, bar.y - 6); });
 											ctx.restore();
 										}
 									}]
