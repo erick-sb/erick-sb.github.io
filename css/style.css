@@ -1659,3 +1659,10 @@ input[type="text"] {
   #colorlib-work .pictograma { flex-direction: column; align-items: stretch; }
   #colorlib-work .picto-ricos, #colorlib-work .picto-vs { flex: none; }
 }
+
+/* ===== Tabla sobria ===== */
+#colorlib-work .tabla-sobria { border-collapse: collapse; margin: 10px 0 15px 0; font-size: 14px; }
+#colorlib-work .tabla-sobria th, #colorlib-work .tabla-sobria td { padding: 6px 16px; border-bottom: 1px solid rgba(0, 0, 0, 0.12); text-align: right; color: #23394a; }
+#colorlib-work .tabla-sobria th { font-weight: bold; border-bottom: 2px solid rgba(0, 67, 80, 0.4); }
+#colorlib-work .tabla-sobria th:first-child, #colorlib-work .tabla-sobria td:first-child { text-align: left; }
+#colorlib-work .calc-presets button span { font-size: inherit; color: inherit; margin: 0; }

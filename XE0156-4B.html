@@ -1,0 +1,567 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>XE0156-4B</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/style.css?v=9">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+
+	</head>
+	<body>
+
+	<nav id="colorlib-main-nav" role="navigation">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+		<div class="js-fullheight colorlib-table">
+			<div class="colorlib-table-cell js-fullheight">
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li><a href="index.html">Página principal</a></li>
+							<li><a href="XE0156-1A.html">1A-El problema económico y el intercambio</a></li>
+							<li><a href="XE0156-1B.html">1B-La oferta, la demanda y el equilibrio del mercado</a></li>
+							<li><a href="XE0156-2A.html">2A-La competencia perfecta, los impuestos sobre bienes y el salario mínimo</a></li>
+							<li><a href="XE0156-2B.html">2B-El poder de mercado: monopolio, oligopolio y competencia monopolística</a></li>
+							<li><a href="XE0156-3A.html">3A-Las externalidades: costos y beneficios que no se reflejan en los precios</a></li>
+							<li><a href="XE0156-3B.html">3B-Los bienes públicos y los recursos comunes</a></li>
+							<li><a href="XE0156-4A.html">4A-La pobreza y la desigualdad</a></li>
+							<li><a href="XE0156-4B.html">4B-El Estado de bienestar</a></li>
+							<li><a href="XE0156-5A.html">5A-La Macroeconomía y la medición agregada: producción, precios y [des]empleo</a></li>
+							<li><a href="XE0156-5B.html">5B-El crecimiento económico y sus fuentes, el ciclo económico y el desarrollo humano</a></li>
+							<li><a href="XE0156-6A.html">6A-El ahorro, la inversión, el sistema financiero y el modelo de oferta y demanda agregadas</a></li>
+							<li><a href="XE0156-6B.html">6B-El dinero, la política monetaria y las tasas de interés</a></li>
+							<li><a href="XE0156-6C.html">6C-La política fiscal y la deuda</a></li>
+							<li><a href="XE0156-7A.html">7A-El comercio internacional y las medidas de protección</a></li>
+							<li><a href="XE0156-7B.html">7B-Los flujos de capital y los tipos de cambio</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+
+	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="index.html"><span>EESB</span></a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="colorlib-work">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">XE0156</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<h2>La política social y el Estado de bienestar</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">Estado de bienestar</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+							<div class="col-md-12">
+								<div class="desc">
+									<div class="data-warning" id="avisoDatos" style="display: none;"></div>
+
+									<h2>Eficiencia y equidad</h2>
+									<p>En los temas 2 y 3 vimos que, si no hay poder de mercado ni otras fallas, los mercados pueden asignar los recursos de forma eficiente, y que cuando sí hay fallas, la intervención del Estado puede mejorar esa eficiencia. Pero en la 4A también vimos que un mercado eficiente puede convivir con mucha pobreza y desigualdad. La eficiencia no dice nada sobre cómo se reparten los recursos.</p>
+									<p>Por eso hay, al menos, dos razones para justificar el gasto público y la intervención del Estado:</p>
+									<p>1. <strong>Eficiencia:</strong> producir bienes y servicios que la sociedad necesita, pero que el mercado no produciría en la cantidad adecuada por las externalidades, el poder de mercado o porque son bienes públicos.</p>
+									<p>2. <strong>Equidad:</strong> la sociedad considera que hay bienes y servicios que todas las personas deberían poder disfrutar, aunque no tengan capacidad de pago. Y equidad no es lo mismo que igualdad: no se trata de que todos reciban lo mismo, sino de que todos tengan oportunidades y un piso mínimo de bienestar.</p>
+									<p>Se habla de un <strong>Estado de bienestar</strong> cuando una parte importante de los recursos y acciones del Estado se dirige a promover una mayor equidad, mejores oportunidades y mayor seguridad social. Sus políticas pueden ser <strong>universales</strong>, con un enfoque de derechos (para todas las personas), o <strong>selectivas</strong>, dirigidas a los grupos más vulnerables. En la mayoría de los países se combinan ambos enfoques.</p>
+
+									<h3>Tres formas de redistribuir</h3>
+									<h4>Redistribución horizontal</h4>
+									<p>Protege a toda la población de riesgos que pueden afectar a cualquiera: enfermarse, quedar inválido, envejecer o morir. No busca favorecer a los más pobres, sino a quienes enfrenten esos eventos, y por eso conviene compartir el riesgo con un seguro social. El seguro de salud y el de invalidez, vejez y muerte de la CCSS son el ejemplo clásico.</p>
+									<h4>Redistribución vertical</h4>
+									<p>Traslada recursos de los sectores con más ingresos hacia los de menos ingresos, con una visión de solidaridad. La educación pública es universal, pero cumple un papel de redistribución vertical, igual que los programas de vivienda de interés social o los que financia el Fondo de Desarrollo Social y Asignaciones Familiares (Fodesaf).</p>
+									<h4>Redistribución perversa</h4>
+									<p>Es la que favorece a los que más tienen a costa de los más pobres. Puede ocurrir con regímenes de pensiones muy privilegiados financiados con recursos públicos, o con protecciones a ciertos sectores que terminan pagando todos los consumidores, como vimos con el arroz en la 2A y la 2B.</p>
+
+									<h2>¿Cómo se financia el Estado?</h2>
+									<p>Para intervenir, el Estado tiene que gastar, y para gastar necesita ingresos: contribuciones obligatorias, como las de la seguridad social, o impuestos. ¿Con qué criterio se decide quién paga? Hay dos principios de equidad tributaria.</p>
+									<h4>El principio del beneficio</h4>
+									<p>Quienes se benefician del gasto público deberían pagar por él. Funciona bien cuando se puede identificar a los beneficiarios, como en un peaje: lo paga quien usa la carretera. Pero puede ser poco equitativo, porque quienes más necesitan ciertos servicios suelen ser quienes menos pueden pagarlos.</p>
+									<h4>El principio de la capacidad de pago</h4>
+									<p>Los impuestos deben pagarse según la capacidad de cada contribuyente: que los ricos paguen como ricos y los pobres como pobres. Su objetivo es redistribuir de quienes tienen más hacia quienes tienen menos.</p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>María usa todos los días la ruta 27, donde paga ₡1 100 en peajes, para trasladarse de San Ramón a San José, mientras que Olga usa esta ruta una o dos veces al año. María le dice a Olga que no es justo que ella tenga que pagar ₡11 000 por semana solo por ir a trabajar. Olga le explica que el peaje es un tipo de impuesto que se basa en el principio de __________, y que por lo tanto son los usuarios de la ruta 27 quienes deben pagarlo. Seleccione la opción que completa el enunciado:</p>
+											<p>A) bienes públicos.<br>
+											B) externalidad.<br>
+											C) capacidad de pago.<br>
+											D) beneficio.</p>
+										</div>
+									</div>
+
+									<h3>¿Eficiencia o equidad? Depende del plazo</h3>
+									<p>El gasto público y los impuestos pueden mejorar la eficiencia si corrigen fallas de mercado, pero también pueden empeorarla si distorsionan precios sin justificación, como vimos en la 2A. Del mismo modo, pueden mejorar la equidad si trasladan recursos hacia los más vulnerables, pero también puede ocurrir lo contrario. Por eso la discusión depende de elementos técnicos, ideológicos y políticos.</p>
+									<p>Y también depende de si se mira el corto o el largo plazo. Hay políticas que mejoran la equidad y pueden reducir la eficiencia en el corto plazo, pero que la aumentan en el largo plazo. Por ejemplo, la política de salarios gradualmente crecientes que vimos en la 2A, que estimula la modernización y la productividad, o la inversión pública en salud y educación, que mejora la equidad hoy y hace a la economía más productiva mañana.</p>
+
+									<h2>Los impuestos: base, tasa y progresividad</h2>
+									<p>Todo impuesto tiene dos elementos. La <strong>base imponible</strong> es el valor sobre el que se cobra: el ingreso, el valor de una propiedad o el monto de una compra. La <strong>tasa</strong> o tipo impositivo dice cuánto hay que pagar con respecto a esa base, normalmente como un porcentaje. La tasa puede ser <strong>plana</strong> (el mismo porcentaje sin importar el tamaño de la base) o puede <strong>variar con la base</strong>, por ejemplo, con tasas más altas para ingresos más altos.</p>
+									<p>En Costa Rica, el impuesto al valor agregado (IVA) tiene como base el precio de los bienes y servicios y una tasa general del <span data-dato="iva_general">13%</span>, con una tasa reducida del <span data-dato="iva_canasta">1%</span> para la canasta básica tributaria. El impuesto sobre la renta al salario, en cambio, tiene tasas que suben conforme sube el ingreso.</p>
+
+									<h3>Progresivos, regresivos y proporcionales</h3>
+									<p>Lo que importa para la equidad no es cuánto paga cada persona en colones, sino qué <strong>porcentaje de su ingreso</strong> paga:</p>
+									<p>1. <strong>Impuesto progresivo:</strong> el porcentaje del ingreso que se paga aumenta conforme aumenta el ingreso. Quien gana más no solo paga más, sino que paga una proporción mayor. Mejora la equidad.</p>
+									<p>2. <strong>Impuesto regresivo:</strong> el porcentaje del ingreso que se paga disminuye conforme aumenta el ingreso. Los pobres terminan pagando una proporción mayor de su ingreso. Reduce la equidad. Un impuesto igual para todos sobre un bien que todos consumen, como un monto fijo por cada litro de leche, es regresivo: pesa mucho más en el presupuesto de un hogar pobre.</p>
+									<p>3. <strong>Impuesto proporcional:</strong> todos pagan el mismo porcentaje de su ingreso. No cambia la distribución.</p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>¿Cómo clasificaría cada uno de estos impuestos: progresivo, regresivo o proporcional? Piense en qué porcentaje de su ingreso pagaría una persona rica y una persona pobre.</p>
+											<p>1. Un impuesto de ₡10 000 por cada marchamo.<br>
+											2. Un impuesto del 15% sobre la renta personal de todas las personas.<br>
+											3. Una sobretasa al impuesto sobre la renta del 5% a partir de un ingreso de ₡1,5 millones, del 10% a partir de ₡2 millones y del 15% a partir de ₡3 millones.<br>
+											4. Un impuesto del 15% sobre las ventas de todos los bienes.<br>
+											5. Un impuesto del 5% sobre bienes de consumo básico, del 10% sobre bienes generales y del 20% sobre bienes de lujo.<br>
+											6. Un impuesto a las escuelas y colegios privados.<br>
+											7. Un impuesto de $100 a los pasajes aéreos.</p>
+										</div>
+									</div>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>La siguiente tabla muestra lo que se recauda con dos impuestos, A y B, para distintos valores de la base imponible:</p>
+											<table class="tabla-sobria">
+												<thead><tr><th>Base imponible</th><th>Impuesto A</th><th>Impuesto B</th></tr></thead>
+												<tbody>
+													<tr><td>₡100 000</td><td>₡5 000</td><td>₡10 000</td></tr>
+													<tr><td>₡200 000</td><td>₡15 000</td><td>₡15 000</td></tr>
+													<tr><td>₡400 000</td><td>₡40 000</td><td>₡20 000</td></tr>
+												</tbody>
+											</table>
+											<p>De acuerdo con la tabla, se cumple que:</p>
+											<p>A) El impuesto A es progresivo y el impuesto B es proporcional.<br>
+											B) Ambos impuestos son proporcionales.<br>
+											C) Ambos impuestos son progresivos.<br>
+											D) El impuesto A es progresivo y el impuesto B es regresivo.</p>
+										</div>
+									</div>
+
+									<h3>El impuesto sobre la renta al salario</h3>
+									<p>El impuesto al salario en Costa Rica es el mejor ejemplo de un impuesto progresivo. Funciona por tramos: el salario se divide en partes, y a cada parte se le aplica la tasa de su tramo. Para <span data-dato="anio_renta">2026</span>, según el decreto <span data-dato="decreto_renta">45333-H</span>, los tramos mensuales son:</p>
+									<div id="listaTramos">
+										<p>Hasta ₡918 000: exento.<br>Sobre el exceso de ₡918 000 y hasta ₡1 347 000: 10%.<br>Sobre el exceso de ₡1 347 000 y hasta ₡2 364 000: 15%.<br>Sobre el exceso de ₡2 364 000 y hasta ₡4 727 000: 20%.<br>Sobre el exceso de ₡4 727 000: 25%.</p>
+									</div>
+									<p>Un error común es pensar que quien pasa a un tramo más alto paga esa tasa sobre todo su salario. No es así: la tasa más alta se aplica solo a la parte del salario que está dentro de ese tramo. Por eso, a nadie le conviene ganar menos para "bajar de tramo". Pruébelo con la calculadora:</p>
+
+									<div class="calc">
+										<p style="margin-bottom: 10px;"><strong>Calculadora del impuesto sobre la renta al salario (<span data-dato="anio_renta">2026</span>)</strong></p>
+										<p style="font-size: 14px;">Escriba un salario bruto mensual o elija un ejemplo.</p>
+										<div class="calc-presets" id="presetsRenta"></div>
+										<div style="max-width: 320px; margin-bottom: 12px;" class="calc-inputs-single">
+											<label for="salario" style="display: block; font-size: 13px; color: #23394a; font-weight: bold; margin-bottom: 4px;">Salario bruto mensual (colones)</label>
+											<input type="number" id="salario" min="0" step="10000" value="1500000" style="width: 100%; padding: 6px 8px; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 4px; font-size: 14px; background: #fff;">
+										</div>
+										<div class="calc-results">
+											<div>Impuesto mensual: <strong id="rentaImpuesto">–</strong></div>
+											<div>% del salario que paga: <strong id="rentaTasaEf">–</strong></div>
+											<div>Tasa del último tramo: <strong id="rentaTasaMg">–</strong></div>
+											<div>Salario después del impuesto: <strong id="rentaNeto">–</strong></div>
+										</div>
+										<div id="desgloseRenta" style="font-size: 13px; color: #23394a; margin-top: 12px;"></div>
+										<div style="flex: 1; margin: 15px 0 5px 0;">
+											<canvas id="rentaChart" style="width: 100%; height: 320px;"></canvas>
+										</div>
+										<p style="font-size: 13px; margin-top: 10px;">Nota: la calculadora analiza solo el impuesto sobre la renta. No incluye las cargas sociales de la CCSS (que se rebajan aparte del salario) ni los créditos fiscales por hijos o cónyuge, que reducen un poco el impuesto.</p>
+									</div>
+
+									<p>El gráfico muestra la diferencia entre dos tasas. La <strong>tasa del último tramo</strong> (o tasa marginal) es la que se paga por cada colón adicional, y sube en escalones. El <strong>porcentaje del salario que se paga</strong> (o tasa efectiva) es el impuesto total dividido entre el salario, y sube poco a poco: siempre está por debajo de la tasa marginal, porque los primeros colones del salario pagan tasas más bajas o nada. Que esa curva suba es justamente lo que hace progresivo al impuesto.</p>
+
+									<h2>No basta con mirar los impuestos</h2>
+									<p>Saber si un impuesto es progresivo o regresivo es solo la mitad de la historia. También hay que preguntarse si el gasto que se financia con esos impuestos es progresivo o regresivo: ¿quiénes reciben la mayor parte del gasto público? Hace falta un balance que combine quién paga más y quién recibe más.</p>
+									<p>En educación y salud públicas, la política fiscal suele ser progresiva, porque la población de menores ingresos es la que recibe el mayor beneficio como porcentaje de su ingreso. Pero no siempre es así. Piense en estos casos: ¿qué pasa si con los impuestos se financia el agua para las canchas de golf de los más ricos? ¿O transferencias para quienes perdieron su fuente de ingresos? ¿O un sistema de pensiones? ¿O la policía?</p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>Suponga que todas las empresas del país deben pagar un 20% de sus ingresos como impuesto sobre las utilidades, sin importar su nivel de ganancias. Ese dinero se usa para financiar un programa de becas estudiantiles para hogares de bajos ingresos. Podemos decir que:</p>
+											<p>A) ambas políticas se basan en el principio del beneficio.<br>
+											B) ambas políticas son progresivas.<br>
+											C) el impuesto es regresivo y el gasto es progresivo.<br>
+											D) el impuesto es proporcional y el gasto es progresivo.</p>
+										</div>
+									</div>
+
+									<h3>¿Cuánto cobra Costa Rica en impuestos?</h3>
+									<p>Una forma de comparar entre países es la <strong>carga tributaria</strong>: el total de impuestos, incluidas las contribuciones a la seguridad social, como porcentaje del PIB. En <span data-dato="anio_carga">2024</span>, la de Costa Rica fue de <strong><span data-dato="carga_cr">24.8%</span></strong>, frente a un promedio de <span data-dato="carga_ocde">34.1%</span> en los países de la OCDE y de <span data-dato="carga_alc">21.3%</span> en América Latina y el Caribe.</p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="cargaChart" style="width: 100%; height: 760px;"></canvas>
+									</div>
+									<p>Costa Rica cobra menos que la mayoría de los países de la OCDE, pero algo más que el promedio latinoamericano. Igual de importante que cuánto se cobra es cómo se cobra: en Costa Rica, los impuestos sobre la renta representan apenas el <span data-dato="renta_cr">17%</span> de la recaudación total, frente al <span data-dato="renta_alc">28%</span> en América Latina y el <span data-dato="renta_ocde">36%</span> en la OCDE. Como el impuesto sobre la renta es el más progresivo, eso limita la capacidad del sistema tributario para reducir la desigualdad.</p>
+
+									<h3>La inversión en educación y el 8% del PIB</h3>
+									<p>La inversión en educación es uno de los instrumentos más poderosos para la redistribución vertical y para romper la herencia de la pobreza que vimos en la 4A. La Constitución Política establece que el gasto público en educación debe ser de al menos el 8% del PIB. Sin embargo, esa meta nunca se ha cumplido y, en los últimos años, la inversión se ha alejado cada vez más de ella.</p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="educacionChart" style="width: 100%; height: 320px;"></canvas>
+									</div>
+									<p>En <span data-dato="edu_ult_anio">2027</span> la inversión sería del <strong><span data-dato="edu_ult">4.9%</span></strong> del PIB (<span data-dato="edu_ult_tipo">proyecto</span>), frente al <span data-dato="edu_primero">7.0%</span> de <span data-dato="edu_primer_anio">2019</span>. La Sala Constitucional ya ha declarado inconstitucionales presupuestos nacionales por no asignar el 8%. Detrás de esta discusión está una tensión típica de este tema: la regla fiscal busca la sostenibilidad de las finanzas públicas, mientras que el mandato constitucional busca la equidad y las oportunidades.</p>
+
+									<div class="principles-section">
+										<div class="principles-tag">Principio No. 10: La intervención social del Estado</div>
+										<div class="principles-content">
+											<p>Los mercados no necesariamente generan equidad, por lo que la acción social del Estado puede mejorarla.</p>
+										</div>
+									</div>
+									<p> </p>
+									<div class="principles-section">
+										<div class="principles-tag">Principio No. 11: La política tributaria</div>
+										<div class="principles-content">
+											<p>El financiamiento del gasto público requiere cargas tributarias que deben definir su impacto en términos de eficiencia y equidad.</p>
+										</div>
+									</div>
+									<p> </p>
+									<div class="principles-section">
+										<div class="principles-tag">Principio No. 12: El principio democrático liberal</div>
+										<div class="principles-content">
+											<p>La interacción de una economía de mercado con una intervención estatal puede producir un mejor balance entre eficiencia, equidad y sostenibilidad ambiental.</p>
+										</div>
+									</div>
+									<p> </p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>Costa Rica tiene una carga tributaria menor que el promedio de la OCDE, una recaudación que depende poco del impuesto sobre la renta y una inversión en educación por debajo del 8% constitucional. Si usted tuviera que proponer cómo financiar más inversión en educación, ¿qué impuestos subiría o crearía? ¿Serían progresivos o regresivos? ¿Qué efectos tendrían sobre la eficiencia y la equidad?</p>
+										</div>
+									</div>
+
+						<div class="text-center" style="margin-top: 40px;">
+							<a href="docs/4B-Estado de bienestar.pdf" target="_blank" class="btn btn-primary btn-lg">
+								<i class="icon-file-pdf"></i> Ver presentación antigua (PDF)
+							</a>
+						</div>
+
+						<div class="references-section" style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
+							<div class="row">
+								<div class="col-md-8">
+									<h3>Bibliografía</h3>
+									<ul class="references-list" style="list-style-type: none; padding-left: 0;">
+										<li style="margin-bottom: 10px;">
+											<span style="font-weight: bold;">Montiel, N. (2023).</span>
+											<span>¿Qué tipo de Estado tenemos en Costa Rica? Documento elaborado para la Cátedra.</span>
+										</li>
+									</ul>
+									<p style="font-size: 13px;">Datos: tramos de renta según el decreto <span data-dato="decreto_renta">45333-H</span> (La Gaceta, <span data-dato="fecha_decreto">5 de diciembre de 2025</span>); carga tributaria: <span data-dato="fuente_carga">OCDE (2025). Revenue Statistics 2025. Datos preliminares de 2024.</span>; inversión en educación: <span data-dato="fuente_educacion">Presupuestos Nacionales y proyecto de Presupuesto 2027, según crhoy.com (septiembre de 2026).</span> Los datos de esta página se actualizan desde el archivo <a href="datos/4B-datos.xlsx">4B-datos.xlsx</a>.</p>
+								</div>
+
+								<div class="col-md-4 text-right" style="align-self: flex-end;">
+									<a href="XE0156-5A.html" class="btn btn-outline-secondary btn-lg" style="margin-top: 20px;">
+										Siguiente tema →
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<script>
+						(function () {
+							var RESPALDO = {
+								general: { anio_renta: 2026, decreto_renta: '45333-H', fecha_decreto: '5 de diciembre de 2025', iva_general: 13, iva_canasta: 1, anio_carga: 2024,
+									fuente_carga: 'OCDE (2025). Revenue Statistics 2025. Datos preliminares de 2024.', renta_pct_total_cr: 17, renta_pct_total_alc: 28, renta_pct_total_ocde: 36,
+									fuente_educacion: 'Presupuestos Nacionales y proyecto de Presupuesto 2027, según crhoy.com (septiembre de 2026).' },
+								renta: [[0, 918000, 0], [918000, 1347000, 10], [1347000, 2364000, 15], [2364000, 4727000, 20], [4727000, null, 25]],
+								carga: [['Australia',29.9],['Austria',43.4],['Bélgica',42.6],['Canadá',34.9],['Chile',20.5],['Colombia',19.9],['Costa Rica',24.8],['Chequia',34.0],['Dinamarca',45.2],['Estonia',35.2],['Finlandia',42.2],['Francia',43.5],['Alemania',38.0],['Grecia',39.8],['Hungría',34.4],['Islandia',36.9],['Irlanda',21.7],['Israel',30.9],['Italia',42.8],['Japón',33.7],['Corea',25.3],['Letonia',34.9],['Lituania',33.1],['Luxemburgo',41.5],['México',18.3],['Países Bajos',38.5],['Nueva Zelanda',32.9],['Noruega',40.2],['Polonia',36.6],['Portugal',35.1],['Eslovaquia',35.6],['Eslovenia',38.3],['España',36.7],['Suecia',41.4],['Suiza',27.2],['Turquía',24.0],['Reino Unido',34.4],['Estados Unidos',25.6],['Promedio OCDE',34.1],['Promedio América Latina y el Caribe',21.3]],
+								educacion: [[2019,7.0,'Presupuesto aprobado'],[2020,7.3,'Presupuesto aprobado'],[2021,6.3,'Presupuesto aprobado'],[2022,5.7,'Presupuesto aprobado'],[2023,5.3,'Presupuesto aprobado'],[2024,5.2,'Presupuesto aprobado'],[2025,4.9,'Presupuesto aprobado'],[2026,5.6,'Presupuesto aprobado'],[2027,4.9,'Proyecto']]
+							};
+
+							function num(v) { if (v === null || v === undefined || v === '') return null; var n = (typeof v === 'number') ? v : parseFloat(String(v).replace(',', '.')); return isNaN(n) ? null : n; }
+							function pct(v, d) { var n = num(v); return n === null ? '–' : n.toFixed(d === undefined ? 1 : d) + '%'; }
+							function colones(v) { var n = num(v); return n === null ? '–' : '₡' + Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
+
+							function filas(wb, nombre) {
+								var ws = wb.Sheets[nombre]; if (!ws) return [];
+								var todas = XLSX.utils.sheet_to_json(ws, { header: 1, blankrows: true }), out = [];
+								for (var i = 1; i < todas.length; i++) {
+									var f = todas[i];
+									if (!f || f[0] === undefined || f[0] === null || String(f[0]).trim() === '') break;
+									out.push(f);
+								}
+								return out;
+							}
+							function desdeExcel(wb) {
+								var g = {};
+								filas(wb, 'General').forEach(function (f) { g[String(f[0]).trim()] = (f[1] === undefined ? '' : f[1]); });
+								return {
+									general: g,
+									renta: filas(wb, 'Renta').map(function (f) { return [num(f[0]), num(f[1]), num(f[2])]; }),
+									carga: filas(wb, 'Carga').map(function (f) { return [String(f[0]).trim(), num(f[1])]; }),
+									educacion: filas(wb, 'Educacion').map(function (f) { return [num(f[0]), num(f[1]), String(f[2] || '').trim()]; })
+								};
+							}
+
+							// ---------- Impuesto por tramos ----------
+							function impuesto(sal, tramos) {
+								var total = 0, partes = [];
+								tramos.forEach(function (t) {
+									var desde = t[0], hasta = (t[1] === null ? Infinity : t[1]), tasa = t[2];
+									if (sal > desde) {
+										var base = Math.min(sal, hasta) - desde, monto = base * tasa / 100;
+										total += monto; partes.push({ desde: desde, hasta: hasta, tasa: tasa, base: base, monto: monto });
+									}
+								});
+								return { total: total, partes: partes };
+							}
+
+							function aplicar(D) {
+								var g = D.general, tr = D.renta.slice().sort(function (a, b) { return a[0] - b[0]; });
+								var cr = D.carga.filter(function (f) { return f[0] === 'Costa Rica'; })[0];
+								var ocde = D.carga.filter(function (f) { return /OCDE/.test(f[0]); })[0];
+								var alc = D.carga.filter(function (f) { return /Am[eé]rica Latina/.test(f[0]); })[0];
+								var ed = D.educacion.slice().sort(function (a, b) { return a[0] - b[0]; });
+								var ult = ed[ed.length - 1], pri = ed[0];
+								var valores = {
+									anio_renta: g.anio_renta, decreto_renta: g.decreto_renta, fecha_decreto: g.fecha_decreto,
+									iva_general: pct(g.iva_general, 0), iva_canasta: pct(g.iva_canasta, 0), anio_carga: g.anio_carga,
+									fuente_carga: g.fuente_carga, fuente_educacion: g.fuente_educacion,
+									carga_cr: cr ? pct(cr[1]) : '–', carga_ocde: ocde ? pct(ocde[1]) : '–', carga_alc: alc ? pct(alc[1]) : '–',
+									renta_cr: pct(g.renta_pct_total_cr, 0), renta_alc: pct(g.renta_pct_total_alc, 0), renta_ocde: pct(g.renta_pct_total_ocde, 0),
+									edu_ult_anio: ult[0], edu_ult: pct(ult[1]), edu_ult_tipo: (ult[2] || '').toLowerCase(), edu_primero: pct(pri[1]), edu_primer_anio: pri[0]
+								};
+								document.querySelectorAll('[data-dato]').forEach(function (el) {
+									var k = el.getAttribute('data-dato');
+									if (valores[k] !== undefined && valores[k] !== null && valores[k] !== '') el.textContent = valores[k];
+								});
+								// Lista de tramos
+								var lineas = tr.map(function (t, i) {
+									if (t[2] === 0) return 'Hasta ' + colones(t[1]) + ': exento.';
+									if (t[1] === null) return 'Sobre el exceso de ' + colones(t[0]) + ': ' + t[2] + '%.';
+									return 'Sobre el exceso de ' + colones(t[0]) + ' y hasta ' + colones(t[1]) + ': ' + t[2] + '%.';
+								});
+								document.getElementById('listaTramos').innerHTML = '<p>' + lineas.join('<br>') + '</p>';
+								calculadora(tr);
+								graficoCarga(D.carga, g.anio_carga);
+								graficoEducacion(ed);
+							}
+
+							// ---------- Calculadora ----------
+							function calculadora(tr) {
+								var input = document.getElementById('salario');
+								var ejemplos = [500000, 1200000, 2000000, 4000000, 9000000];
+								var cont = document.getElementById('presetsRenta');
+								cont.innerHTML = ejemplos.map(function (v) { return '<button type="button" data-salario="' + v + '">' + colones(v) + '</button>'; }).join('');
+								cont.querySelectorAll('button').forEach(function (b) { b.addEventListener('click', function () { input.value = b.getAttribute('data-salario'); calcular(); }); });
+
+								var maxX = 10000000, pasos = 200, efectiva = [], marginal = [];
+								for (var i = 0; i <= pasos; i++) {
+									var s = maxX * i / pasos, r = impuesto(s, tr);
+									efectiva.push({ x: s / 1e6, y: s > 0 ? r.total / s * 100 : 0 });
+									var tm = 0; tr.forEach(function (t) { if (s > t[0]) tm = t[2]; });
+									marginal.push({ x: s / 1e6, y: tm });
+								}
+								var chart = new Chart(document.getElementById('rentaChart').getContext('2d'), {
+									type: 'line',
+									data: { datasets: [
+										{ label: 'Tasa del último tramo (marginal)', data: marginal, borderColor: '#999', borderDash: [6, 4], pointRadius: 0, stepped: true, fill: false, borderWidth: 2 },
+										{ label: '% del salario que se paga (tasa efectiva)', data: efectiva, borderColor: '#004350', pointRadius: 0, tension: 0, fill: false, borderWidth: 2.5 },
+										{ label: 'Su salario', data: [], borderColor: '#8B0000', backgroundColor: '#8B0000', pointRadius: 6, showLine: false }
+									] },
+									options: {
+										maintainAspectRatio: false, animation: { duration: 200 },
+										plugins: {
+											title: { display: true, text: 'El impuesto sobre la renta es progresivo', font: { size: 16, weight: 'bold' } },
+											legend: { display: true, position: 'bottom', labels: { usePointStyle: true, pointStyle: 'line', pointStyleWidth: 26, font: { size: 12 }, filter: function (it) { return it.datasetIndex < 2; } } },
+											tooltip: { callbacks: { title: function (it) { return colones(it[0].raw.x * 1e6); }, label: function (it) { return it.dataset.label + ': ' + it.raw.y.toFixed(1) + '%'; } } }
+										},
+										scales: {
+											x: { type: 'linear', min: 0, max: 10, ticks: { stepSize: 1, callback: function (v) { return '₡' + v + ' M'; } }, title: { display: true, text: 'Salario bruto mensual (millones de colones)' } },
+											y: { min: 0, max: 30, ticks: { callback: function (v) { return v + '%'; } }, title: { display: true, text: 'Tasa' } }
+										}
+									}
+								});
+
+								function calcular() {
+									var s = parseFloat(input.value); if (isNaN(s) || s < 0) s = 0;
+									var r = impuesto(s, tr), tm = 0; tr.forEach(function (t) { if (s > t[0]) tm = t[2]; });
+									document.getElementById('rentaImpuesto').textContent = colones(r.total);
+									document.getElementById('rentaTasaEf').textContent = s > 0 ? (r.total / s * 100).toFixed(1) + '%' : '–';
+									document.getElementById('rentaTasaMg').textContent = tm + '%';
+									document.getElementById('rentaNeto').textContent = colones(s - r.total);
+									var det = r.partes.filter(function (p) { return p.base > 0; }).map(function (p) {
+										return (p.tasa === 0 ? 'Primeros ' + colones(p.base) + ': exentos' : colones(p.base) + ' al ' + p.tasa + '% = ' + colones(p.monto));
+									});
+									document.getElementById('desgloseRenta').innerHTML = det.length ? '<em>Cómo se calcula:</em> ' + det.join(' · ') : '';
+									chart.data.datasets[2].data = s > 0 ? [{ x: Math.min(s, maxX) / 1e6, y: r.total / s * 100 }] : [];
+									chart.update();
+								}
+								input.addEventListener('input', calcular);
+								calcular();
+							}
+
+							// ---------- Carga tributaria ----------
+							function graficoCarga(carga, anio) {
+								var d = carga.filter(function (f) { return f[1] !== null; }).sort(function (a, b) { return b[1] - a[1]; });
+								var colores = d.map(function (f) {
+									if (f[0] === 'Costa Rica') return 'rgba(139, 0, 0, 0.75)';
+									if (/^Promedio/.test(f[0])) return 'rgba(31, 52, 92, 0.75)';
+									return 'rgba(0, 67, 80, 0.30)';
+								});
+								new Chart(document.getElementById('cargaChart').getContext('2d'), {
+									type: 'bar',
+									data: { labels: d.map(function (f) { return f[0]; }), datasets: [{ data: d.map(function (f) { return f[1]; }), backgroundColor: colores, borderWidth: 0, barPercentage: 0.8 }] },
+									options: {
+										indexAxis: 'y', maintainAspectRatio: false,
+										plugins: {
+											title: { display: true, text: 'Carga tributaria como % del PIB, ' + anio, font: { size: 16, weight: 'bold' } },
+											legend: { display: false },
+											tooltip: { callbacks: { label: function (it) { return it.raw.toFixed(1) + '% del PIB'; } } }
+										},
+										scales: {
+											x: { min: 0, ticks: { callback: function (v) { return v + '%'; } }, title: { display: true, text: '% del PIB (incluye seguridad social)' } },
+											y: { ticks: { autoSkip: false, font: function (c) { var l = d[c.index] ? d[c.index][0] : ''; return { size: 11, weight: (l === 'Costa Rica' || /^Promedio/.test(l)) ? 'bold' : 'normal' }; } } }
+										}
+									},
+									plugins: [{
+										id: 'valores',
+										afterDatasetsDraw: function (chart) {
+											var ctx = chart.ctx, meta = chart.getDatasetMeta(0);
+											ctx.save(); ctx.font = '10px Arial'; ctx.fillStyle = '#23394a'; ctx.textBaseline = 'middle';
+											meta.data.forEach(function (bar, i) { ctx.fillText(d[i][1].toFixed(1), bar.x + 4, bar.y); });
+											ctx.restore();
+										}
+									}]
+								});
+							}
+
+							// ---------- Educación ----------
+							function graficoEducacion(ed) {
+								new Chart(document.getElementById('educacionChart').getContext('2d'), {
+									type: 'bar',
+									data: {
+										labels: ed.map(function (f) { return f[0] + (/proyecto/i.test(f[2]) ? '*' : ''); }),
+										datasets: [
+											{ type: 'line', label: 'Meta constitucional (8%)', data: ed.map(function () { return 8; }), borderColor: '#8B0000', borderDash: [6, 4], pointRadius: 0, fill: false, borderWidth: 2 },
+											{ type: 'bar', label: 'Inversión en educación', data: ed.map(function (f) { return f[1]; }), backgroundColor: ed.map(function (f) { return /proyecto/i.test(f[2]) ? 'rgba(0, 67, 80, 0.25)' : 'rgba(0, 67, 80, 0.6)'; }), borderColor: '#004350', borderWidth: 1 }
+										]
+									},
+									options: {
+										maintainAspectRatio: false,
+										plugins: {
+											title: { display: true, text: 'Inversión en educación como % del PIB', font: { size: 16, weight: 'bold' } },
+											subtitle: { display: true, text: '* Proyecto de presupuesto (aún no aprobado)', font: { size: 11 }, padding: { bottom: 6 } },
+											legend: { display: true, position: 'bottom', labels: { boxWidth: 12, boxHeight: 2, font: { size: 12 } } },
+											tooltip: { callbacks: { label: function (it) { return it.dataset.label + ': ' + it.raw.toFixed(1) + '% del PIB'; } } }
+										},
+										scales: { y: { min: 0, max: 9, ticks: { callback: function (v) { return v + '%'; } }, title: { display: true, text: '% del PIB' } } }
+									},
+									plugins: [{
+										id: 'valoresEdu',
+										afterDatasetsDraw: function (chart) {
+											var ctx = chart.ctx, meta = chart.getDatasetMeta(1);
+											ctx.save(); ctx.font = 'bold 11px Arial'; ctx.fillStyle = '#23394a'; ctx.textAlign = 'center';
+											meta.data.forEach(function (bar, i) { ctx.fillText(ed[i][1].toFixed(1) + '%', bar.x, bar.y - 6); });
+											ctx.restore();
+										}
+									}]
+								});
+							}
+
+							function respaldo(motivo) {
+								var aviso = document.getElementById('avisoDatos');
+								aviso.textContent = 'No se pudo leer el archivo de datos actualizado; se muestran los datos de respaldo.';
+								aviso.style.display = 'block';
+								if (window.console) console.warn('4B: usando datos de respaldo', motivo);
+								aplicar(RESPALDO);
+							}
+							if (typeof XLSX === 'undefined' || !window.fetch) { respaldo('sin XLSX/fetch'); return; }
+							fetch('datos/4B-datos.xlsx?t=' + Date.now(), { cache: 'no-store' })
+								.then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.arrayBuffer(); })
+								.then(function (buf) {
+									var D = desdeExcel(XLSX.read(buf, { type: 'array' }));
+									if (!D.renta.length || !D.carga.length || !D.educacion.length) throw new Error('Excel incompleto');
+									aplicar(D);
+								})
+								.catch(respaldo);
+						})();
+						</script>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
