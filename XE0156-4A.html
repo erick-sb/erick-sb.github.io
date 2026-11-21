@@ -1,0 +1,587 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>XE0156-4A</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/style.css?v=7">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+
+	</head>
+	<body>
+
+	<nav id="colorlib-main-nav" role="navigation">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+		<div class="js-fullheight colorlib-table">
+			<div class="colorlib-table-cell js-fullheight">
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li><a href="index.html">Página principal</a></li>
+							<li><a href="XE0156-1A.html">1A-El problema económico y el intercambio</a></li>
+							<li><a href="XE0156-1B.html">1B-La oferta, la demanda y el equilibrio del mercado</a></li>
+							<li><a href="XE0156-2A.html">2A-La competencia perfecta, los impuestos sobre bienes y el salario mínimo</a></li>
+							<li><a href="XE0156-2B.html">2B-El poder de mercado: monopolio, oligopolio y competencia monopolística</a></li>
+							<li><a href="XE0156-3A.html">3A-Las externalidades: costos y beneficios que no se reflejan en los precios</a></li>
+							<li><a href="XE0156-3B.html">3B-Los bienes públicos y los recursos comunes</a></li>
+							<li><a href="XE0156-4A.html">4A-La pobreza y la desigualdad</a></li>
+							<li><a href="XE0156-4B.html">4B-El Estado de bienestar</a></li>
+							<li><a href="XE0156-5A.html">5A-La Macroeconomía y la medición agregada: producción, precios y [des]empleo</a></li>
+							<li><a href="XE0156-5B.html">5B-El crecimiento económico y sus fuentes, el ciclo económico y el desarrollo humano</a></li>
+							<li><a href="XE0156-6A.html">6A-El ahorro, la inversión, el sistema financiero y el modelo de oferta y demanda agregadas</a></li>
+							<li><a href="XE0156-6B.html">6B-El dinero, la política monetaria y las tasas de interés</a></li>
+							<li><a href="XE0156-6C.html">6C-La política fiscal y la deuda</a></li>
+							<li><a href="XE0156-7A.html">7A-El comercio internacional y las medidas de protección</a></li>
+							<li><a href="XE0156-7B.html">7B-Los flujos de capital y los tipos de cambio</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+
+	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="index.html"><span>EESB</span></a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="colorlib-work">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">XE0156</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<h2>La pobreza y la desigualdad</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">Pobreza y desigualdad</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+							<div class="col-md-12">
+								<div class="desc">
+									<div class="data-badge">Datos de la Encuesta Nacional de Hogares (ENAHO) <span data-dato="anio">2026</span>, publicada por el INEC el <span data-dato="fecha_publicacion">27 de octubre de 2026</span>.</div>
+									<div class="data-warning" id="avisoDatos" style="display: none;"></div>
+
+									<h2>¿Qué es ser pobre?</h2>
+									<p>Parece una pregunta sencilla, pero no lo es. ¿Es pobre quien no tiene suficiente dinero para comer? ¿O también quien tiene ingresos, pero vive en una casa en mal estado, no terminó la escuela o no tiene seguro de salud? Hay distintas formas de entender la pobreza, y cada una lleva a una forma distinta de medirla.</p>
+									<p>En Costa Rica, el Instituto Nacional de Estadística y Censos (INEC) mide la pobreza cada año con la Encuesta Nacional de Hogares (ENAHO), usando dos metodologías complementarias: la pobreza por <strong>insuficiencia de ingresos</strong>, según una línea de pobreza, y la <strong>pobreza multidimensional</strong>.</p>
+
+									<h3>Pobreza absoluta y pobreza relativa</h3>
+									<p>Se habla de <strong>pobreza absoluta</strong> cuando una parte de la población no tiene los ingresos suficientes para satisfacer sus necesidades básicas. Se define un umbral, la línea de pobreza, a partir del costo de un conjunto de bienes considerados indispensables, y quienes están por debajo se consideran pobres. Ese umbral puede ser internacional, como la línea del Banco Mundial de <span data-dato="mundo_linea">US$3.00</span> por persona al día, o nacional, construido a partir de una canasta básica. Es la medición que se usa en la mayor parte del mundo, sobre todo en los países de ingresos medios y bajos.</p>
+									<p>La <strong>pobreza relativa</strong>, en cambio, compara el nivel de vida de los hogares de menores ingresos con el del resto de la sociedad. Por ejemplo, se considera pobre a quien recibe menos del 50% o el 60% del ingreso mediano del país. Esta medida se usa más en los países desarrollados, donde casi nadie está por debajo de una línea absoluta, pero sí hay personas muy rezagadas con respecto a los demás.</p>
+
+									<h2>La pobreza por ingresos</h2>
+									<h3>De la canasta a la línea de pobreza</h3>
+									<p>El punto de partida es la <strong>Canasta Básica Alimentaria (CBA)</strong>: un conjunto de alimentos de consumo frecuente, en cantidades suficientes para cubrir las necesidades calóricas promedio de una persona. El INEC calcula su costo por persona en las zonas urbanas y rurales, y ese monto es la <strong>línea de pobreza extrema</strong>. Los hogares cuyo ingreso por persona no alcanza ni siquiera para comprar la CBA viven en pobreza extrema.</p>
+									<p>Mucha gente cree que la canasta debería incluir lo que las personas deberían comer para estar sanas. Pero no es una recomendación nutricional: refleja lo que los hogares efectivamente comen, en cantidades suficientes.</p>
+									<p>Además de comer, los hogares tienen que pagar vivienda, transporte, ropa, educación y salud. Ese costo no alimentario se estima como una proporción del costo de la CBA. La suma de ambos da el valor de la <strong>canasta básica</strong>, y ese es el ingreso mínimo por persona para no vivir en pobreza: la <strong>línea de pobreza</strong>. Los hogares cuyo ingreso por persona está por debajo de esa línea se clasifican como pobres.</p>
+									<p>Ojo: no hay que confundirla con la <strong>canasta básica tributaria</strong>, que es una lista de bienes de primera necesidad que pagan una tarifa reducida del impuesto al valor agregado (IVA). Esa lista se selecciona con otro criterio y tiene otro propósito: evitar que el impuesto recaiga sobre las familias más pobres.</p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Las líneas de pobreza en Costa Rica</div>
+										<div class="exercise-content">
+											<p>En <span data-dato="mes_lineas">junio de 2026</span>, el INEC estableció estos montos mensuales por persona:</p>
+											<p>Zona urbana: línea de pobreza de <strong><span data-dato="lp_urb">₡124 964</span></strong> y línea de pobreza extrema (costo de la CBA) de <strong><span data-dato="le_urb">₡58 431</span></strong>.<br>
+											Zona rural: línea de pobreza de <strong><span data-dato="lp_rur">₡97 181</span></strong> y línea de pobreza extrema de <strong><span data-dato="le_rur">₡49 480</span></strong>.</p>
+											<p>Para un hogar urbano de cuatro personas, eso significa que necesita al menos <span data-dato="lp_urb_x4">₡499 856</span> al mes para no estar en pobreza, y <span data-dato="le_urb_x4">₡233 724</span> para no estar en pobreza extrema. Compare esos montos con el costo de un alquiler, del transporte o del supermercado: ¿le parecen suficientes?</p>
+										</div>
+									</div>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>La pobreza por nivel de ingresos implica que:</p>
+											<p>A) El ingreso no alcanza para comprar la Canasta Básica Alimentaria y las necesidades no alimentarias definidas por el INEC.<br>
+											B) Se tiene un ingreso igual o mayor al costo de la Canasta Básica Alimentaria y no alimentaria.<br>
+											C) Se tiene un ingreso igual o menor al costo de la Canasta Básica Alimentaria.<br>
+											D) El ingreso es menor al 50% del ingreso promedio de la población.</p>
+										</div>
+									</div>
+
+									<h3>¿Cuánta pobreza hay en Costa Rica?</h3>
+									<p>Según la ENAHO <span data-dato="anio">2026</span>, el <strong><span data-dato="pobreza_total">15.4%</span></strong> de los hogares del país está en condición de pobreza y el <strong><span data-dato="pobreza_extrema">3.8%</span></strong> en pobreza extrema. Un año antes, en <span data-dato="anio_prev">2025</span>, esos porcentajes eran <span data-dato="pobreza_total_prev">15.2%</span> y <span data-dato="pobreza_extrema_prev">3.8%</span>. <span data-dato="comentario_pobreza">La variación con respecto a 2025 no es estadísticamente significativa, según el INEC.</span></p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="seriePobrezaChart" style="width: 100%; height: 350px;"></canvas>
+									</div>
+									<p>Durante la década de 2010 la pobreza se mantuvo prácticamente estancada alrededor del 20% de los hogares. La pandemia la disparó: en <span data-dato="pobreza_max_anio">2020</span> llegó al <span data-dato="pobreza_max">26.2%</span>, el nivel más alto de la serie, sobre todo por el aumento de la pobreza urbana. En los años siguientes se recuperó, hasta llegar a los niveles más bajos desde que inició la ENAHO en 2010.</p>
+									<p>Hay que leer estas cifras con cuidado. La pobreza por ingresos depende de dos cosas: cuánto ganan los hogares y cuánto cuesta la canasta. Si la inflación es muy baja, o incluso negativa, la línea de pobreza casi no sube o hasta baja, y la pobreza puede caer aunque los ingresos no hayan mejorado mucho. Además, un hogar que gana apenas unos colones más que la línea deja de contarse como pobre, aunque su situación sea prácticamente la misma.</p>
+
+									<h3>Crecimiento económico y pobreza</h3>
+									<p>El crecimiento económico suele ser una fuerza poderosa para reducir la pobreza. Cuando aumenta la producción, y sobre todo la productividad, tiende a aumentar el empleo y a mejorar los salarios reales. Eso reduce tanto la pobreza causada por el desempleo como la causada por ingresos bajos. El caso más claro de las últimas décadas es el de China y la India, donde cientos de millones de personas salieron de la pobreza extrema.</p>
+									<p>Aun así, el reto mundial sigue siendo enorme. Según el Banco Mundial, <span data-dato="mundo_millones">811 millones</span> de personas, alrededor del <span data-dato="mundo_pct">10%</span> de la población mundial, viven en pobreza extrema, con menos de <span data-dato="mundo_linea">US$3.00</span> al día.</p>
+
+									<h2>La pobreza multidimensional</h2>
+									<p>El ingreso no lo dice todo. Un hogar puede tener ingresos por encima de la línea de pobreza y, aun así, vivir en una casa sin agua potable, con hijos que no asisten a la escuela o sin acceso al seguro social. Por eso, en 2010 la Iniciativa sobre Pobreza y Desarrollo Humano de la Universidad de Oxford (OPHI) y el Programa de las Naciones Unidas para el Desarrollo (PNUD) propusieron el <strong>Índice de Pobreza Multidimensional (IPM)</strong>, que mide directamente las carencias de los hogares en varias dimensiones.</p>
+									<p>El INEC calcula su propio IPM, que considera cinco dimensiones: educación, vivienda y uso de internet, salud, trabajo y protección social. Un hogar se considera pobre multidimensional cuando acumula suficientes carencias. En <span data-dato="anio">2026</span>, el <strong><span data-dato="ipm">8.9%</span></strong> de los hogares estaba en esa condición, frente al <span data-dato="ipm_prev">9.9%</span> del año anterior. Como se ve en el gráfico, el IPM ha bajado de forma mucho más sostenida que la pobreza por ingresos, lo que refleja, en buena parte, la expansión de la inversión social en educación, salud y servicios básicos.</p>
+
+									<h3>Dos miradas que no siempre coinciden</h3>
+									<p>Lo interesante es que las dos mediciones no identifican exactamente a los mismos hogares. En <span data-dato="anio">2026</span>:</p>
+									<p>1. Un <span data-dato="cruce_ambos">3.6%</span> de los hogares es pobre por ambos criterios: tiene ingresos insuficientes y carencias en varias dimensiones.</p>
+									<p>2. Un <span data-dato="cruce_solo_lp">11.8%</span> es pobre por sus ingresos, pero no desde la óptica multidimensional.</p>
+									<p>3. Un <span data-dato="cruce_solo_ipm">5.3%</span> es pobre multidimensional, aunque su ingreso está por encima de la línea de pobreza.</p>
+									<p>4. En total, un <span data-dato="cruce_alguno">20.7%</span> de los hogares es pobre por al menos uno de los dos criterios, y el <span data-dato="cruce_ninguno">79.3%</span> no lo es por ninguno.</p>
+									<p>Por eso ambas mediciones se complementan: una capta la falta de recursos para comprar lo básico y la otra, carencias que el dinero del mes no refleja.</p>
+
+									<h2>La desigualdad</h2>
+									<p>Pobreza y desigualdad están relacionadas, pero no son lo mismo. La pobreza tiene que ver con la carencia de ingresos o de satisfacción de necesidades básicas. La desigualdad tiene que ver con las diferencias de ingresos entre distintos grupos de la sociedad. Un país puede reducir su pobreza y, al mismo tiempo, volverse más desigual, si los ingresos de los más ricos crecen mucho más rápido que los del resto.</p>
+									<h3>¿De dónde viene la desigualdad?</h3>
+									<h4>La riqueza</h4>
+									<p>Quienes son dueños de capital (tierras, empresas, acciones, propiedades) reciben ingresos por esa propiedad. Quienes no tienen esa riqueza dependen casi solo de su trabajo. Por eso, la forma en que el ingreso nacional se reparte entre las ganancias del capital y los salarios es una fuente importante de desigualdad.</p>
+									<h4>El capital humano</h4>
+									<p>En el mercado laboral, las personas con más educación y experiencia suelen ser más productivas y recibir salarios más altos. Las diferencias en educación se traducen, entonces, en diferencias de ingreso.</p>
+									<h4>La tecnología</h4>
+									<p>Muchas tecnologías nuevas requieren trabajo calificado y sustituyen trabajo no calificado. Eso eleva más los salarios de los más calificados, porque aumenta su productividad, mientras los menos calificados quedan rezagados. Se pueden formar dos círculos: uno vicioso, en el que salarios bajos desincentivan el uso de tecnología y la productividad sigue baja, y uno virtuoso, en el que salarios altos estimulan la tecnología y la productividad crece. Si la demanda de trabajo calificado crece más rápido que su oferta, sus salarios suben; si la oferta de trabajo no calificado crece más rápido que su demanda, aparecen el desempleo y los salarios bajos. En todo esto influye la globalización: el comercio, el auge de los servicios y la migración.</p>
+									<h4>Los mercados segmentados</h4>
+									<p>También hay diferencias de ingreso que no se explican por la productividad: brechas por género, por etnia o por región, y "super salarios" de altos ejecutivos y estrellas que no tienen relación con su productividad, sino con la capacidad de capturar rentas de empresas con mucho poder de mercado, como vimos en la 2B.</p>
+
+									<h3>La curva de Lorenz y el coeficiente de Gini</h3>
+									<p>Para medir la desigualdad se ordena a los hogares del más pobre al más rico y se agrupan, por ejemplo, en cinco grupos del mismo tamaño llamados <strong>quintiles</strong>. Luego se calcula qué parte del ingreso total recibe cada grupo.</p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="quintilesChart" style="width: 100%; height: 300px;"></canvas>
+									</div>
+									<p>En Costa Rica, el 20% de los hogares con más ingresos recibe el <strong><span data-dato="q5">47.6%</span></strong> del ingreso total, mientras que el 20% con menos ingresos recibe apenas el <strong><span data-dato="q1">4.5%</span></strong>. En promedio, un hogar del quintil más rico recibe <span data-dato="ratio_v_i">10.7</span> veces lo que recibe un hogar del quintil más pobre.</p>
+									<p>La <strong>curva de Lorenz</strong>, propuesta por Max Otto Lorenz, resume esa información: en el eje horizontal se pone el porcentaje acumulado de hogares y en el vertical el porcentaje acumulado del ingreso que reciben. Si todos recibieran lo mismo, la curva sería la diagonal de 45 grados, la línea de igualdad perfecta. Entre más se aleja la curva de esa diagonal, más desigual es la distribución.</p>
+									<p>A partir de esa curva, Corrado Gini propuso el <strong>coeficiente de Gini</strong>: el área entre la diagonal y la curva de Lorenz (A), dividida entre el área total bajo la diagonal (A + B). Vale 0 cuando la distribución es perfectamente igualitaria y 1 cuando un solo hogar recibe todo el ingreso.</p>
+
+									<div class="calc">
+										<p style="margin-bottom: 10px;"><strong>Calculadora de la curva de Lorenz y el coeficiente de Gini</strong></p>
+										<p style="font-size: 14px;">Escriba el ingreso promedio mensual por hogar de cada quintil (en colones) o use uno de los ejemplos. La curva y el Gini se actualizan solos.</p>
+										<div class="calc-presets">
+											<button type="button" data-preset="enaho">Costa Rica (ENAHO <span data-dato="anio">2026</span>)</button>
+											<button type="button" data-preset="igualdad">Igualdad perfecta</button>
+											<button type="button" data-preset="practica">Ejercicio de práctica</button>
+											<button type="button" data-preset="practica2">Ejercicio de práctica, después del cambio</button>
+										</div>
+										<div class="calc-inputs">
+											<div><label for="q1">Quintil I</label><input type="number" id="q1" min="0" step="1000"></div>
+											<div><label for="q2">Quintil II</label><input type="number" id="q2" min="0" step="1000"></div>
+											<div><label for="q3">Quintil III</label><input type="number" id="q3" min="0" step="1000"></div>
+											<div><label for="q4">Quintil IV</label><input type="number" id="q4" min="0" step="1000"></div>
+											<div><label for="q5">Quintil V</label><input type="number" id="q5" min="0" step="1000"></div>
+										</div>
+										<div style="flex: 1; margin: 10px 0;">
+											<canvas id="lorenzChart" style="width: 100%; height: 340px;"></canvas>
+										</div>
+										<div class="calc-results">
+											<div>Coeficiente de Gini (con 5 grupos): <strong id="giniCalc">–</strong></div>
+											<div>Quintil V / quintil I: <strong id="ratioCalc">–</strong> veces</div>
+											<div>Parte del ingreso del quintil I: <strong id="shareQ1">–</strong></div>
+											<div>Parte del ingreso del quintil V: <strong id="shareQ5">–</strong></div>
+										</div>
+										<p style="font-size: 13px; margin-top: 15px;">Nota: con solo cinco grupos, la calculadora no ve la desigualdad que hay dentro de cada quintil, por eso da un Gini menor que el oficial. El INEC lo calcula con todos los hogares de la encuesta. Si quiere ver el cálculo paso a paso en Excel, descargue el <a href="docs/Curva de Lorenz y coeficiente de Gini.xlsx">ejemplo de Lorenz y Gini con 10 hogares</a>.</p>
+									</div>
+
+									<p>Con todos los hogares de la encuesta, el INEC estimó un coeficiente de Gini de <strong><span data-dato="gini">0.483</span></strong> en <span data-dato="anio">2026</span>, frente a <span data-dato="gini_prev">0.488</span> en <span data-dato="anio_prev">2025</span>. <span data-dato="comentario_gini">Es el valor más bajo desde que inició la serie de la ENAHO en 2010.</span></p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="serieGiniChart" style="width: 100%; height: 300px;"></canvas>
+									</div>
+									<p>Durante la década de 2010, Costa Rica mantuvo una desigualdad alta y estancada, que llegó a su punto más alto en 2021. Desde entonces ha bajado. Aun así, sigue siendo un país muy desigual, tanto dentro de América Latina como en comparación con el resto del mundo.</p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>En una economía, el ingreso promedio del primer quintil es de 100 000 y el del quinto quintil es de 5 000 000. ¿Qué se puede afirmar?</p>
+											<p>A) Algunos hogares del primer quintil son pobres en términos absolutos y no hay desigualdad en esta economía.<br>
+											B) Hay desigualdad en la distribución del ingreso y no necesariamente los hogares del primer quintil son pobres en términos absolutos.<br>
+											C) Todos los hogares del primer quintil son pobres en términos absolutos.<br>
+											D) No hay desigualdad en la distribución del ingreso y tampoco hay pobreza en términos absolutos.</p>
+										</div>
+									</div>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio (use la calculadora)</div>
+										<div class="exercise-content">
+											<p>Estos son los ingresos promedio mensuales por hogar según quintil en una economía: I: 61 403; II: 133 838; III: 221 085; IV: 381 797; V: 1 083 290. Asuma que el 40% de los hogares está en pobreza según la línea de pobreza.</p>
+											<p>Analice qué pasa con el Gini y con la pobreza si el ingreso de los quintiles IV y V aumenta en 100 000 cada uno y el de los quintiles II y III disminuye en 7 000. Los botones "Ejercicio de práctica" de la calculadora tienen los datos de antes y de después. ¿Cuáles de las siguientes afirmaciones son verdaderas?</p>
+											<p>I. El valor del coeficiente de Gini aumentó.<br>
+											II. El valor del coeficiente de Gini disminuyó.<br>
+											III. La incidencia de la pobreza pudo haber aumentado o no haber cambiado.<br>
+											IV. La incidencia de la pobreza por línea de pobreza aumentó.</p>
+										</div>
+									</div>
+
+									<h3>Crecimiento y desigualdad</h3>
+									<p>El efecto del crecimiento sobre la pobreza absoluta es bastante claro, pero su relación con la desigualdad no lo es tanto. Simon Kuznets planteó que, en una primera etapa, el crecimiento podía aumentar la desigualdad, porque eleva la productividad y los ingresos de los sectores más dinámicos mientras otros se quedan atrás. Luego, conforme los sectores rezagados se modernizan, la desigualdad tendería a disminuir. Sin embargo, la evidencia muestra que esto no ocurre necesariamente: el crecimiento por sí solo no garantiza una distribución más equitativa.</p>
+
+									<h3>La desigualdad se hereda</h3>
+									<p>La pobreza y la desigualdad tienden a perpetuarse. Las familias pobres no solo carecen de capital para heredar, sino que suelen tener peores condiciones de vida, de salud y niveles educativos más bajos. Eso reduce las probabilidades de que sus hijos accedan a las mismas oportunidades de educación y de movilidad social que los hijos de los sectores medios o más ricos. De hecho, uno de los mejores predictores del nivel socioeconómico que alcanzará una persona es el nivel socioeconómico y educativo de sus padres. Como decía el economista Paul Samuelson: todos pueden llegar a la cima, pero ayuda mucho nacer alto.</p>
+
+									<h3>La concentración de la riqueza en el mundo</h3>
+									<p>A escala mundial, la concentración de la riqueza es aún más extrema que la del ingreso. Según el informe más reciente de Oxfam: <span data-dato="oxfam_dato">Los 12 milmillonarios más ricos del mundo poseen más riqueza que la mitad más pobre de la humanidad, unos 4.000 millones de personas.</span> ¿Qué tan ricos son los más ricos? Puede darse una idea con esta <a href="https://eattherichtextformat.github.io/1-pixel-wealth/" target="_blank">visualización a escala de la riqueza</a>.</p>
+									<p>El economista Branko Milanovic resume lo que ha pasado con la distribución mundial del ingreso en las últimas décadas en cuatro tendencias:</p>
+									<p>1. Empeoró la situación de los más pobres entre los pobres, sobre todo en África subsahariana.</p>
+									<p>2. Mejoró mucho la situación de los pobres no extremos, sobre todo en China y la India.</p>
+									<p>3. Se estancaron o empeoraron las clases medias y medias altas de los países más avanzados.</p>
+									<p>4. Aumentó mucho la participación de los más ricos: el famoso 1% que estudió Thomas Piketty.</p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>Entre 2025 y 2026 el ingreso promedio de los hogares costarricenses bajó, pero el porcentaje de hogares en pobreza prácticamente no cambió, porque el costo de la canasta básica también bajó. ¿Significa eso que el bienestar de los hogares pobres se mantuvo igual? ¿Qué limitaciones tiene medir la pobreza solo con una línea de ingreso? ¿Qué agrega la medición multidimensional?</p>
+										</div>
+									</div>
+
+						<div class="text-center" style="margin-top: 40px;">
+							<a href="docs/4A-Pobreza y desigualdad.pdf" target="_blank" class="btn btn-primary btn-lg">
+								<i class="icon-file-pdf"></i> Ver presentación antigua (PDF)
+							</a>
+						</div>
+
+						<div class="references-section" style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
+							<div class="row">
+								<div class="col-md-8">
+									<h3>Bibliografía</h3>
+									<ul class="references-list" style="list-style-type: none; padding-left: 0;">
+										<li style="margin-bottom: 10px;">
+											<span style="font-weight: bold;">Sequeira-Benavides, E. (2023).</span>
+											<span>Medición de la pobreza en Costa Rica. Documento elaborado para la Cátedra.</span>
+										</li>
+										<li style="margin-bottom: 10px;">
+											<span style="font-weight: bold;">INEC (<span data-dato="anio">2026</span>).</span>
+											<span><a data-dato-href="url_informe" href="https://inec.cr/sites/default/files/2026-10/reenaho2026.pdf" target="_blank">Encuesta Nacional de Hogares <span data-dato="anio">2026</span>. Resultados generales sobre ingresos, pobreza y desigualdad.</a></span>
+										</li>
+										<li style="margin-bottom: 10px;">
+											<span style="font-weight: bold;">Programa Estado de la Nación (2022).</span>
+											<span>Capítulo 2: Equidad e integración social (extracto).</span>
+										</li>
+									</ul>
+									<p style="font-size: 13px;">Datos mundiales: <span data-dato="mundo_fuente">Banco Mundial (2026). Informe sobre pobreza, prosperidad y planeta.</span> <span data-dato="oxfam_fuente">Oxfam (2026). Contra el imperio de los más ricos.</span> Los datos de esta página se actualizan cada año desde el archivo <a href="datos/4A-datos.xlsx">4A-datos.xlsx</a>.</p>
+								</div>
+
+								<div class="col-md-4 text-right" style="align-self: flex-end;">
+									<a href="XE0156-4B.html" class="btn btn-outline-secondary btn-lg" style="margin-top: 20px;">
+										Siguiente tema →
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<script>
+						(function () {
+							// Datos de respaldo: solo se usan si no se puede leer datos/4A-datos.xlsx
+							var RESPALDO = {
+								general: {
+									anio_enaho: 2026, fecha_publicacion: '27 de octubre de 2026', mes_lineas: 'junio de 2026',
+									comentario_pobreza: 'La variación con respecto a 2025 no es estadísticamente significativa, según el INEC.',
+									comentario_gini: 'Es el valor más bajo desde que inició la serie de la ENAHO en 2010.',
+									url_informe: 'https://inec.cr/sites/default/files/2026-10/reenaho2026.pdf',
+									mundo_pobreza_extrema_millones: 811, mundo_pobreza_extrema_pct: 10, mundo_linea_internacional: 3,
+									mundo_fuente: 'Banco Mundial (2026). Informe sobre pobreza, prosperidad y planeta.',
+									oxfam_dato: 'Los 12 milmillonarios más ricos del mundo poseen más riqueza que la mitad más pobre de la humanidad, unos 4.000 millones de personas.',
+									oxfam_fuente: 'Oxfam (2026). Contra el imperio de los más ricos.'
+								},
+								series: [
+									[2010,21.2,5.8,25.9,0.507],[2011,21.7,6.4,24.1,0.515],[2012,20.6,6.3,21.7,0.515],[2013,20.7,6.4,20.8,0.522],
+									[2014,22.4,6.7,21.7,0.516],[2015,21.7,7.2,21.8,0.516],[2016,20.5,6.3,20.5,0.521],[2017,20.0,5.7,18.8,0.514],
+									[2018,21.1,6.3,19.1,0.514],[2019,21.0,5.8,16.6,0.514],[2020,26.2,7.0,16.1,0.519],[2021,23.0,6.3,16.4,0.524],
+									[2022,23.0,6.4,14.3,0.504],[2023,21.8,6.3,11.9,0.502],[2024,18.0,4.8,10.1,0.492],[2025,15.2,3.8,9.9,0.488],
+									[2026,15.4,3.8,8.9,0.483]
+								],
+								quintiles: [['I',259217,85054,4.5],['II',543488,182215,9.3],['III',895102,305620,15.4],['IV',1350176,505231,23.1],['V',2772721,1258770,47.6]],
+								lineas: [['Urbana',124964,58431],['Rural',97181,49480]],
+								cruce: [['ambos',3.6,69575],['solo LP',11.8,229138],['solo IPM',5.3,102007],['ninguno',79.3,1533822]]
+							};
+
+							// ---------- Formatos ----------
+							function num(v) { var n = (typeof v === 'number') ? v : parseFloat(String(v).replace(',', '.')); return isNaN(n) ? null : n; }
+							function pct(v) { var n = num(v); return n === null ? '–' : n.toFixed(1) + '%'; }
+							function colones(v) { var n = num(v); return n === null ? '–' : '₡' + Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
+							function dec(v, d) { var n = num(v); return n === null ? '–' : n.toFixed(d); }
+
+							// ---------- Lectura del Excel ----------
+							function filas(wb, nombre) {
+								var ws = wb.Sheets[nombre];
+								if (!ws) return [];
+								var todas = XLSX.utils.sheet_to_json(ws, { header: 1, blankrows: true });
+								var out = [];
+								for (var i = 1; i < todas.length; i++) {
+									var f = todas[i];
+									if (!f || f[0] === undefined || f[0] === null || String(f[0]).trim() === '') break;
+									out.push(f);
+								}
+								return out;
+							}
+							function desdeExcel(wb) {
+								var g = {};
+								filas(wb, 'General').forEach(function (f) { g[String(f[0]).trim()] = (f[1] === undefined ? '' : f[1]); });
+								return {
+									general: g,
+									series: filas(wb, 'Series').map(function (f) { return [num(f[0]), num(f[1]), num(f[2]), num(f[3]), num(f[4])]; }),
+									quintiles: filas(wb, 'Quintiles').map(function (f) { return [f[0], num(f[1]), num(f[2]), num(f[3])]; }),
+									lineas: filas(wb, 'Lineas').map(function (f) { return [f[0], num(f[1]), num(f[2])]; }),
+									cruce: filas(wb, 'Cruce').map(function (f) { return [f[0], num(f[1]), num(f[2])]; })
+								};
+							}
+
+							// ---------- Llenar la página ----------
+							function aplicar(D) {
+								var g = D.general, s = D.series.slice().sort(function (a, b) { return a[0] - b[0]; });
+								var ult = s[s.length - 1], prev = s.length > 1 ? s[s.length - 2] : ult;
+								var max = s.reduce(function (m, f) { return (f[1] > m[1]) ? f : m; }, s[0]);
+								var q = D.quintiles, l = D.lineas, c = D.cruce;
+								var lpU = l[0] ? l[0][1] : null, leU = l[0] ? l[0][2] : null;
+								var valores = {
+									anio: ult[0], anio_prev: prev[0],
+									fecha_publicacion: g.fecha_publicacion, mes_lineas: g.mes_lineas,
+									comentario_pobreza: g.comentario_pobreza || '', comentario_gini: g.comentario_gini || '',
+									pobreza_total: pct(ult[1]), pobreza_extrema: pct(ult[2]), ipm: pct(ult[3]), gini: dec(ult[4], 3),
+									pobreza_total_prev: pct(prev[1]), pobreza_extrema_prev: pct(prev[2]), ipm_prev: pct(prev[3]), gini_prev: dec(prev[4], 3),
+									pobreza_max: pct(max[1]), pobreza_max_anio: max[0],
+									lp_urb: colones(lpU), le_urb: colones(leU),
+									lp_rur: colones(l[1] ? l[1][1] : null), le_rur: colones(l[1] ? l[1][2] : null),
+									lp_urb_x4: colones(lpU * 4), le_urb_x4: colones(leU * 4),
+									q1: pct(q[0] ? q[0][3] : null), q5: pct(q[4] ? q[4][3] : null),
+									ratio_v_i: (q[0] && q[4] && q[0][1]) ? (q[4][1] / q[0][1]).toFixed(1) : '–',
+									cruce_ambos: pct(c[0] ? c[0][1] : null), cruce_solo_lp: pct(c[1] ? c[1][1] : null),
+									cruce_solo_ipm: pct(c[2] ? c[2][1] : null), cruce_ninguno: pct(c[3] ? c[3][1] : null),
+									cruce_alguno: pct((c[0] && c[1] && c[2]) ? c[0][1] + c[1][1] + c[2][1] : null),
+									mundo_millones: (num(g.mundo_pobreza_extrema_millones) || '–') + ' millones',
+									mundo_pct: (num(g.mundo_pobreza_extrema_pct) || '–') + '%',
+									mundo_linea: 'US$' + dec(g.mundo_linea_internacional, 2),
+									mundo_fuente: g.mundo_fuente || '', oxfam_dato: g.oxfam_dato || '', oxfam_fuente: g.oxfam_fuente || ''
+								};
+								document.querySelectorAll('[data-dato]').forEach(function (el) {
+									var k = el.getAttribute('data-dato');
+									if (valores[k] !== undefined && valores[k] !== null) el.textContent = valores[k];
+								});
+								document.querySelectorAll('[data-dato-href]').forEach(function (el) {
+									var u = g[el.getAttribute('data-dato-href')];
+									if (u) el.setAttribute('href', u);
+								});
+								graficos(s, q);
+								calculadora(q);
+							}
+
+							// ---------- Gráficos ----------
+							var ejeComun = { x: { type: 'linear', ticks: { stepSize: 2, callback: function (v) { return v; } } } };
+							function graficos(s, q) {
+								var anios = s.map(function (f) { return f[0]; });
+								var serie = function (k) { return s.map(function (f) { return { x: f[0], y: f[k] }; }); };
+								new Chart(document.getElementById('seriePobrezaChart').getContext('2d'), {
+									type: 'line',
+									data: { datasets: [
+										{ label: 'Pobreza total', data: serie(1), borderColor: '#004350', backgroundColor: '#004350', pointRadius: 3, tension: 0, fill: false },
+										{ label: 'Pobreza extrema', data: serie(2), borderColor: '#8B0000', backgroundColor: '#8B0000', pointRadius: 3, tension: 0, fill: false },
+										{ label: 'Pobreza multidimensional (IPM)', data: serie(3), borderColor: '#7A8B1F', backgroundColor: '#7A8B1F', borderDash: [6, 4], pointRadius: 3, tension: 0, fill: false }
+									] },
+									options: {
+										maintainAspectRatio: false,
+										plugins: {
+											title: { display: true, text: 'Costa Rica: hogares en pobreza, ' + anios[0] + '-' + anios[anios.length - 1], font: { size: 16, weight: 'bold' } },
+											legend: { display: true, position: 'bottom' },
+											tooltip: { callbacks: { title: function (it) { return it[0].raw.x; }, label: function (it) { return it.dataset.label + ': ' + it.raw.y.toFixed(1) + '%'; } } }
+										},
+										scales: {
+											x: { type: 'linear', min: anios[0], max: anios[anios.length - 1], ticks: { stepSize: 1, callback: function (v) { return v; } }, title: { display: true, text: 'Año' } },
+											y: { beginAtZero: true, title: { display: true, text: '% de hogares' } }
+										}
+									}
+								});
+								new Chart(document.getElementById('serieGiniChart').getContext('2d'), {
+									type: 'line',
+									data: { datasets: [{ label: 'Coeficiente de Gini', data: serie(4), borderColor: '#004350', backgroundColor: '#004350', pointRadius: 3, tension: 0, fill: false }] },
+									options: {
+										maintainAspectRatio: false,
+										plugins: {
+											title: { display: true, text: 'Costa Rica: coeficiente de Gini, ' + anios[0] + '-' + anios[anios.length - 1], font: { size: 16, weight: 'bold' } },
+											legend: { display: false },
+											tooltip: { callbacks: { title: function (it) { return it[0].raw.x; }, label: function (it) { return 'Gini: ' + it.raw.y.toFixed(3); } } }
+										},
+										scales: {
+											x: { type: 'linear', min: anios[0], max: anios[anios.length - 1], ticks: { stepSize: 1, callback: function (v) { return v; } }, title: { display: true, text: 'Año' } },
+											y: { min: 0.45, max: 0.55, title: { display: true, text: 'Gini' } }
+										}
+									}
+								});
+								new Chart(document.getElementById('quintilesChart').getContext('2d'), {
+									type: 'bar',
+									data: {
+										labels: q.map(function (f) { return 'Quintil ' + f[0]; }),
+										datasets: [{ data: q.map(function (f) { return f[3]; }), backgroundColor: 'rgba(0, 67, 80, 0.55)', borderColor: '#004350', borderWidth: 1 }]
+									},
+									options: {
+										maintainAspectRatio: false,
+										plugins: {
+											title: { display: true, text: 'Parte del ingreso total que recibe cada quintil (%)', font: { size: 16, weight: 'bold' } },
+											legend: { display: false },
+											tooltip: { callbacks: { label: function (it) { return it.raw.toFixed(1) + '% del ingreso'; } } }
+										},
+										scales: { y: { beginAtZero: true, title: { display: true, text: '% del ingreso total' } } }
+									},
+									plugins: [{
+										id: 'etiquetas',
+										afterDatasetsDraw: function (chart) {
+											var ctx = chart.ctx, meta = chart.getDatasetMeta(0);
+											ctx.save(); ctx.fillStyle = '#23394a'; ctx.font = 'bold 12px Arial'; ctx.textAlign = 'center';
+											meta.data.forEach(function (bar, i) { ctx.fillText(chart.data.datasets[0].data[i].toFixed(1) + '%', bar.x, bar.y - 6); });
+											ctx.restore();
+										}
+									}]
+								});
+							}
+
+							// ---------- Calculadora de Lorenz y Gini ----------
+							var lorenz = null;
+							function calculadora(q) {
+								var presets = {
+									enaho: q.map(function (f) { return Math.round(f[1]); }),
+									igualdad: [500000, 500000, 500000, 500000, 500000],
+									practica: [61403, 133838, 221085, 381797, 1083290],
+									practica2: [61403, 126838, 214085, 481797, 1183290]
+								};
+								var inputs = [1, 2, 3, 4, 5].map(function (i) { return document.getElementById('q' + i); });
+								function poner(v) { inputs.forEach(function (inp, i) { inp.value = v[i]; }); calcular(); }
+								document.querySelectorAll('[data-preset]').forEach(function (b) {
+									b.addEventListener('click', function () { poner(presets[b.getAttribute('data-preset')]); });
+								});
+								inputs.forEach(function (inp) { inp.addEventListener('input', calcular); });
+
+								lorenz = new Chart(document.getElementById('lorenzChart').getContext('2d'), {
+									type: 'line',
+									data: { datasets: [
+										{ label: 'Igualdad perfecta', data: [{ x: 0, y: 0 }, { x: 100, y: 100 }], borderColor: '#999', borderDash: [6, 4], pointRadius: 0, fill: false },
+										{ label: 'Curva de Lorenz', data: [], borderColor: '#004350', backgroundColor: 'rgba(0, 67, 80, 0.12)', pointRadius: 4, pointBackgroundColor: '#004350', tension: 0, fill: '-1' }
+									] },
+									options: {
+										maintainAspectRatio: false,
+										animation: { duration: 300 },
+										plugins: {
+											title: { display: true, text: 'Curva de Lorenz', font: { size: 16, weight: 'bold' } },
+											legend: { display: true, position: 'bottom' },
+											tooltip: { callbacks: { label: function (it) { return it.raw.x + '% de los hogares recibe el ' + it.raw.y.toFixed(1) + '% del ingreso'; } } }
+										},
+										scales: {
+											x: { type: 'linear', min: 0, max: 100, ticks: { stepSize: 20 }, title: { display: true, text: '% acumulado de hogares (del más pobre al más rico)' } },
+											y: { min: 0, max: 100, ticks: { stepSize: 20 }, title: { display: true, text: '% acumulado del ingreso' } }
+										}
+									}
+								});
+
+								function calcular() {
+									var y = inputs.map(function (inp) { var v = parseFloat(inp.value); return isNaN(v) || v < 0 ? 0 : v; });
+									var orden = y.slice().sort(function (a, b) { return a - b; });
+									var total = orden.reduce(function (a, b) { return a + b; }, 0);
+									var n = orden.length;
+									if (total <= 0) { document.getElementById('giniCalc').textContent = '–'; return; }
+									var acum = 0, puntos = [{ x: 0, y: 0 }];
+									orden.forEach(function (v, i) { acum += v; puntos.push({ x: (i + 1) * 100 / n, y: acum * 100 / total }); });
+									var media = total / n, suma = 0;
+									orden.forEach(function (v, i) { suma += v * (n - i); });
+									var gini = 1 + 1 / n - 2 / (n * n * media) * suma;
+									lorenz.data.datasets[1].data = puntos;
+									lorenz.update();
+									document.getElementById('giniCalc').textContent = Math.max(0, gini).toFixed(3);
+									document.getElementById('ratioCalc').textContent = orden[0] > 0 ? (orden[n - 1] / orden[0]).toFixed(1) : '–';
+									document.getElementById('shareQ1').textContent = (orden[0] * 100 / total).toFixed(1) + '%';
+									document.getElementById('shareQ5').textContent = (orden[n - 1] * 100 / total).toFixed(1) + '%';
+								}
+								poner(presets.enaho);
+							}
+
+							// ---------- Arranque ----------
+							function respaldo(motivo) {
+								var aviso = document.getElementById('avisoDatos');
+								aviso.textContent = 'No se pudo leer el archivo de datos actualizado; se muestran los datos de respaldo de la ENAHO 2026.';
+								aviso.style.display = 'block';
+								if (window.console) console.warn('4A: usando datos de respaldo', motivo);
+								aplicar(RESPALDO);
+							}
+							if (typeof XLSX === 'undefined' || !window.fetch) { respaldo('sin XLSX/fetch'); return; }
+							fetch('datos/4A-datos.xlsx?t=' + Date.now(), { cache: 'no-store' })
+								.then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.arrayBuffer(); })
+								.then(function (buf) {
+									var D = desdeExcel(XLSX.read(buf, { type: 'array' }));
+									if (!D.series.length || !D.quintiles.length) throw new Error('Excel incompleto');
+									aplicar(D);
+								})
+								.catch(respaldo);
+						})();
+						</script>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
