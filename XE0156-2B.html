@@ -140,6 +140,7 @@
 											<p>Cuando hay poder de mercado, el mercado no genera un resultado eficiente: se ofrecen cantidades menores a precios más altos.</p>
 										</div>
 									</div>
+									<p> </p>
 
 									<h3>¿De dónde sale el poder monopólico?</h3>
 									<h4>1. Control de un recurso o insumo insustituible</h4>
@@ -191,31 +192,33 @@
 									<p>La forma más fuerte de colusión es el <strong>cártel</strong>: un acuerdo explícito con reglas para limitar la producción y repartirse el mercado. Una forma más débil es simplemente ponerse de acuerdo en no entrar en una guerra de precios. El problema es que estos acuerdos son muy inestables.</p>
 
 									<h3>El dilema del oligopolio</h3>
-									<p>Suponga que dos empresas acuerdan limitar su producción para mantener el precio alto. Cada una tiene que decidir si cumple el acuerdo o si hace trampa y vende más. Las ganancias de cada una (en millones) dependen de lo que haga la otra:</p>
-									<div style="margin: 20px 0;">
-										<table border="1" style="width: 90%; margin: auto; text-align: center;">
-											<thead>
-												<tr>
-													<th style="text-align: center;"></th>
-													<th style="text-align: center; padding: 8px;">La empresa B cumple</th>
-													<th style="text-align: center; padding: 8px;">La empresa B hace trampa</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<th style="text-align: center; padding: 8px;">La empresa A cumple</th>
-													<td style="padding: 8px;">A gana 10<br>B gana 10</td>
-													<td style="padding: 8px;">A gana 2<br>B gana 15</td>
-												</tr>
-												<tr>
-													<th style="text-align: center; padding: 8px;">La empresa A hace trampa</th>
-													<td style="padding: 8px;">A gana 15<br>B gana 2</td>
-													<td style="padding: 8px;">A gana 5<br>B gana 5</td>
-												</tr>
-											</tbody>
+									<p>Suponga que dos empresas acuerdan limitar su producción para mantener el precio alto. Cada una tiene que decidir si cumple el acuerdo o si no lo cumple y vende más. Lo que gana cada una depende de lo que haga la otra:</p>
+									<div class="payoff-wrap">
+										<table class="payoff-matrix">
+											<tr>
+												<td colspan="2"></td>
+												<td colspan="2" class="player-b">Empresa B</td>
+											</tr>
+											<tr>
+												<td colspan="2"></td>
+												<th class="choice-b">Cumple</th>
+												<th class="choice-b">No cumple</th>
+											</tr>
+											<tr>
+												<td rowspan="2" class="player-a">Empresa A</td>
+												<th class="choice-a">Cumple</th>
+												<td class="cell"><span class="pa">10</span><span class="sep">|</span><span class="pb">10</span></td>
+												<td class="cell"><span class="pa">2</span><span class="sep">|</span><span class="pb">15</span></td>
+											</tr>
+											<tr>
+												<th class="choice-a">No cumple</th>
+												<td class="cell"><span class="pa">15</span><span class="sep">|</span><span class="pb">2</span></td>
+												<td class="cell"><span class="pa">5</span><span class="sep">|</span><span class="pb">5</span></td>
+											</tr>
 										</table>
 									</div>
-									<p>Sin acuerdo, ambas compiten y ganan 5. Si las dos cumplen, limitan la cantidad, sube el precio y ganan 10 cada una. Pero si una cumple y la otra hace trampa y aprovecha el precio alto para vender más, la tramposa gana 15 y la que cumplió queda peor que si nunca hubiera existido el acuerdo. La tentación está en no cumplir, esperando que la otra sí cumpla. Y como ambas piensan lo mismo, el acuerdo tiende a romperse: se irrespetan las cuotas y empiezan las guerras de precios.</p>
+									<p class="payoff-legend">En cada casilla: <span class="pa">ganancia de A</span> | <span class="pb">ganancia de B</span> (en millones)</p>
+									<p>Sin acuerdo, ambas compiten y ganan 5. Si las dos cumplen, limitan la cantidad, sube el precio y ganan 10 cada una. Pero si una cumple y la otra no, y aprovecha el precio alto para vender más, la que incumple gana 15 y la que cumplió queda peor que si nunca hubiera existido el acuerdo. La tentación está en no cumplir, esperando que la otra sí cumpla. Y como ambas piensan lo mismo, el acuerdo tiende a romperse: se irrespetan las cuotas y empiezan las guerras de precios.</p>
 
 									<div class="exercise-section">
 										<div class="exercise-tag">Ejemplo: el cártel del oro negro</div>
@@ -283,33 +286,22 @@
 
 									<h2>Los tipos de mercado</h2>
 									<p>Con dos criterios, cuántos productores hay y si los productos son homogéneos o diferenciados, se pueden ordenar las estructuras de mercado que hemos visto:</p>
-									<div style="margin: 20px 0;">
-										<table border="1" style="width: 90%; margin: auto; text-align: center;">
-											<thead>
-												<tr>
-													<th style="text-align: center; padding: 8px;">Número de productores</th>
-													<th style="text-align: center; padding: 8px;">Productos homogéneos</th>
-													<th style="text-align: center; padding: 8px;">Productos diferenciados</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<th style="text-align: center; padding: 8px;">Uno</th>
-													<td style="padding: 8px;">Monopolio</td>
-													<td style="padding: 8px;">No aplica</td>
-												</tr>
-												<tr>
-													<th style="text-align: center; padding: 8px;">Pocos</th>
-													<td style="padding: 8px;">Oligopolio</td>
-													<td style="padding: 8px;">Oligopolio o competencia monopolística</td>
-												</tr>
-												<tr>
-													<th style="text-align: center; padding: 8px;">Muchos</th>
-													<td style="padding: 8px;">Competencia perfecta</td>
-													<td style="padding: 8px;">Competencia monopolística</td>
-												</tr>
-											</tbody>
-										</table>
+									<div class="market-grid-wrap">
+										<div class="market-grid">
+											<div class="axis-top">Tipo de producto</div>
+											<div class="col-label" style="grid-column: 3;">Homogéneos</div>
+											<div class="col-label" style="grid-column: 4;">Diferenciados</div>
+											<div class="axis-left">Número de productores</div>
+											<div class="row-label" style="grid-row: 3;">Uno</div>
+											<div class="row-label" style="grid-row: 4;">Pocos</div>
+											<div class="row-label" style="grid-row: 5;">Muchos</div>
+											<div class="mkt mkt-monopolio" style="grid-column: 3; grid-row: 3;">Monopolio</div>
+											<div class="mkt mkt-na" style="grid-column: 4; grid-row: 3;">No aplica</div>
+											<div class="mkt mkt-oligopolio" style="grid-column: 3; grid-row: 4;">Oligopolio</div>
+											<div class="mkt mkt-mixto" style="grid-column: 4; grid-row: 4;">Oligopolio o competencia monopolística</div>
+											<div class="mkt mkt-perfecta" style="grid-column: 3; grid-row: 5;">Competencia perfecta</div>
+											<div class="mkt mkt-monopolistica" style="grid-column: 4; grid-row: 5;">Competencia monopolística</div>
+										</div>
 									</div>
 
 									<div class="exercise-section">

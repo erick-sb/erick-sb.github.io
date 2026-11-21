@@ -1435,3 +1435,131 @@ input[type="text"] {
   margin-top: 40px; /* Espacio entre la etiqueta y el contenido */
   color: #333; /* Color del texto en el contenido */
 }
+/* ===== Matriz de pagos (teoría de juegos) ===== */
+#colorlib-work .payoff-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  overflow-x: auto;
+}
+#colorlib-work .payoff-matrix {
+  border-collapse: separate;
+  border-spacing: 6px;
+  text-align: center;
+}
+#colorlib-work .payoff-matrix td,
+#colorlib-work .payoff-matrix th {
+  padding: 10px 16px;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+#colorlib-work .payoff-matrix .player-b {
+  color: #A50021;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+#colorlib-work .payoff-matrix .player-a {
+  color: #004350;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 1px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 0 6px;
+}
+#colorlib-work .payoff-matrix .choice-b {
+  background-color: #A50021;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  min-width: 140px;
+}
+#colorlib-work .payoff-matrix .choice-a {
+  background-color: #004350;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+}
+#colorlib-work .payoff-matrix .cell {
+  background-color: rgba(243, 248, 248, 0.9);
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  font-size: 22px;
+  min-width: 140px;
+  height: 80px;
+}
+#colorlib-work .payoff-matrix .cell .pa { color: #004350; font-weight: bold; }
+#colorlib-work .payoff-matrix .cell .pb { color: #A50021; font-weight: bold; }
+#colorlib-work .payoff-matrix .cell .sep { color: #999; margin: 0 6px; }
+#colorlib-work .payoff-legend {
+  text-align: center;
+  font-size: 14px;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+#colorlib-work .payoff-legend .pa { color: #004350; font-weight: bold; font-size: inherit; }
+#colorlib-work .payoff-legend .pb { color: #A50021; font-weight: bold; font-size: inherit; }
+
+/* ===== Cuadro de tipos de mercado ===== */
+#colorlib-work .market-grid-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  overflow-x: auto;
+}
+#colorlib-work .market-grid {
+  display: grid;
+  grid-template-columns: 40px 80px 190px 190px;
+  grid-template-rows: auto auto 90px 90px 90px;
+  font-size: 15px;
+}
+#colorlib-work .market-grid .axis-top {
+  grid-column: 3 / 5;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #999;
+  padding-bottom: 4px;
+  margin: 0 20px 6px 20px;
+}
+#colorlib-work .market-grid .axis-left {
+  grid-column: 1;
+  grid-row: 3 / 6;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  border-left: 2px solid #999;
+  margin: 15px 0;
+  padding-left: 4px;
+}
+#colorlib-work .market-grid .col-label,
+#colorlib-work .market-grid .row-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+#colorlib-work .market-grid .col-label { grid-row: 2; padding-bottom: 6px; }
+#colorlib-work .market-grid .row-label { grid-column: 2; }
+#colorlib-work .market-grid .mkt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  padding: 8px;
+  border: 1px solid #fff;
+  line-height: 1.3;
+}
+#colorlib-work .market-grid .mkt-monopolio { background-color: #004350; }
+#colorlib-work .market-grid .mkt-oligopolio { background-color: #A50021; }
+#colorlib-work .market-grid .mkt-perfecta { background-color: #0B7A9E; }
+#colorlib-work .market-grid .mkt-monopolistica { background-color: #7A8B1F; }
+#colorlib-work .market-grid .mkt-mixto { background-color: #DDDDDD; color: #333; font-weight: normal; }
+#colorlib-work .market-grid .mkt-na { background-color: #fff; color: #999; font-weight: normal; border: 1px solid #ddd; }
