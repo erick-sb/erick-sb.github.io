@@ -1572,3 +1572,4 @@ input[type="text"] {
   #colorlib-work .payoff-matrix .cell { font-size: 18px; height: 60px; }
   #colorlib-work .market-grid { grid-template-columns: 30px 60px 1fr 1fr; font-size: 13px; }
 }
+#colorlib-work .market-grid .row-label { text-align: center; line-height: 1.3; }
