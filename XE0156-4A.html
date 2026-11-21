@@ -38,7 +38,7 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
-	<link rel="stylesheet" href="css/style.css?v=7">
+	<link rel="stylesheet" href="css/style.css?v=8">
 
 
 	<!-- Modernizr JS -->
@@ -202,12 +202,12 @@
 
 									<div class="calc">
 										<p style="margin-bottom: 10px;"><strong>Calculadora de la curva de Lorenz y el coeficiente de Gini</strong></p>
-										<p style="font-size: 14px;">Escriba el ingreso promedio mensual por hogar de cada quintil (en colones) o use uno de los ejemplos. La curva y el Gini se actualizan solos.</p>
+										<p style="font-size: 14px;">Escriba el ingreso promedio mensual por hogar de cada quintil (en colones) o use uno de los ejemplos. La curva y el Gini se actualizan solos. Los dos últimos botones cargan los datos del ejercicio que está justo después de la calculadora.</p>
 										<div class="calc-presets">
 											<button type="button" data-preset="enaho">Costa Rica (ENAHO <span data-dato="anio">2026</span>)</button>
 											<button type="button" data-preset="igualdad">Igualdad perfecta</button>
-											<button type="button" data-preset="practica">Ejercicio de práctica</button>
-											<button type="button" data-preset="practica2">Ejercicio de práctica, después del cambio</button>
+											<button type="button" data-preset="practica">Ejercicio con la calculadora: situación inicial</button>
+											<button type="button" data-preset="practica2">Ejercicio con la calculadora: con los cambios</button>
 										</div>
 										<div class="calc-inputs">
 											<div><label for="q1">Quintil I</label><input type="number" id="q1" min="0" step="1000"></div>
@@ -246,10 +246,10 @@
 									</div>
 
 									<div class="exercise-section">
-										<div class="exercise-tag">Ejercicio (use la calculadora)</div>
+										<div class="exercise-tag">Ejercicio con la calculadora</div>
 										<div class="exercise-content">
 											<p>Estos son los ingresos promedio mensuales por hogar según quintil en una economía: I: 61 403; II: 133 838; III: 221 085; IV: 381 797; V: 1 083 290. Asuma que el 40% de los hogares está en pobreza según la línea de pobreza.</p>
-											<p>Analice qué pasa con el Gini y con la pobreza si el ingreso de los quintiles IV y V aumenta en 100 000 cada uno y el de los quintiles II y III disminuye en 7 000. Los botones "Ejercicio de práctica" de la calculadora tienen los datos de antes y de después. ¿Cuáles de las siguientes afirmaciones son verdaderas?</p>
+											<p>Analice qué pasa con el Gini y con la pobreza si el ingreso de los quintiles IV y V aumenta en 100 000 cada uno y el de los quintiles II y III disminuye en 7 000. En la calculadora, el botón "situación inicial" carga los datos de arriba y el botón "con los cambios" carga los datos después de esos aumentos y disminuciones. ¿Cuáles de las siguientes afirmaciones son verdaderas?</p>
 											<p>I. El valor del coeficiente de Gini aumentó.<br>
 											II. El valor del coeficiente de Gini disminuyó.<br>
 											III. La incidencia de la pobreza pudo haber aumentado o no haber cambiado.<br>
@@ -264,7 +264,23 @@
 									<p>La pobreza y la desigualdad tienden a perpetuarse. Las familias pobres no solo carecen de capital para heredar, sino que suelen tener peores condiciones de vida, de salud y niveles educativos más bajos. Eso reduce las probabilidades de que sus hijos accedan a las mismas oportunidades de educación y de movilidad social que los hijos de los sectores medios o más ricos. De hecho, uno de los mejores predictores del nivel socioeconómico que alcanzará una persona es el nivel socioeconómico y educativo de sus padres. Como decía el economista Paul Samuelson: todos pueden llegar a la cima, pero ayuda mucho nacer alto.</p>
 
 									<h3>La concentración de la riqueza en el mundo</h3>
-									<p>A escala mundial, la concentración de la riqueza es aún más extrema que la del ingreso. Según el informe más reciente de Oxfam: <span data-dato="oxfam_dato">Los 12 milmillonarios más ricos del mundo poseen más riqueza que la mitad más pobre de la humanidad, unos 4.000 millones de personas.</span> ¿Qué tan ricos son los más ricos? Puede darse una idea con esta <a href="https://eattherichtextformat.github.io/1-pixel-wealth/" target="_blank">visualización a escala de la riqueza</a>.</p>
+									<p>A escala mundial, la concentración de la riqueza es aún más extrema que la del ingreso. Según el informe más reciente de Oxfam, los <span data-dato="ox_n">12</span> milmillonarios más ricos del mundo tienen más riqueza que toda la mitad más pobre de la humanidad: unos <span data-dato="ox_mitad">4 100</span> millones de personas. Esos milmillonarios cabrían en un solo bus.</p>
+									<div class="pictograma">
+										<div class="picto-grupo picto-ricos">
+											<div class="picto-iconos" id="pictoRicos"></div>
+											<p class="picto-texto"><strong><span data-dato="ox_n">12</span> personas</strong><br>Los milmillonarios más ricos del mundo<br><em>cada figura = 1 persona</em></p>
+										</div>
+										<div class="picto-vs">tienen más riqueza que</div>
+										<div class="picto-grupo picto-pobres">
+											<div class="picto-iconos" id="pictoPobres"></div>
+											<p class="picto-texto"><strong><span data-dato="ox_mitad">4 100</span> millones de personas</strong><br>La mitad más pobre de la humanidad<br><em>cada figura = 10 millones de personas</em></p>
+										</div>
+									</div>
+									<p>Otra forma de verlo es comparar qué parte de la población y qué parte de la riqueza mundial tiene cada grupo:</p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="riquezaChart" style="width: 100%; height: 230px;"></canvas>
+									</div>
+									<p>El 1% más rico de la población concentra el <span data-dato="ox_1pct">43.8%</span> de la riqueza mundial, mientras que la mitad más pobre apenas tiene el <span data-dato="ox_50pct">0.52%</span>: en el gráfico, su parte de la riqueza casi no se alcanza a ver. En promedio, una persona del 1% más rico tiene <span data-dato="ox_veces">8 251</span> veces más riqueza que una persona de la mitad más pobre. ¿Qué tan ricos son los más ricos? Puede darse una idea con esta <a href="https://eattherichtextformat.github.io/1-pixel-wealth/" target="_blank">visualización a escala de la riqueza</a>.</p>
 									<p>El economista Branko Milanovic resume lo que ha pasado con la distribución mundial del ingreso en las últimas décadas en cuatro tendencias:</p>
 									<p>1. Empeoró la situación de los más pobres entre los pobres, sobre todo en África subsahariana.</p>
 									<p>2. Mejoró mucho la situación de los pobres no extremos, sobre todo en China y la India.</p>
@@ -325,7 +341,8 @@
 									mundo_pobreza_extrema_millones: 811, mundo_pobreza_extrema_pct: 10, mundo_linea_internacional: 3,
 									mundo_fuente: 'Banco Mundial (2026). Informe sobre pobreza, prosperidad y planeta.',
 									oxfam_dato: 'Los 12 milmillonarios más ricos del mundo poseen más riqueza que la mitad más pobre de la humanidad, unos 4.000 millones de personas.',
-									oxfam_fuente: 'Oxfam (2026). Contra el imperio de los más ricos.'
+									oxfam_fuente: 'Oxfam (2026). Contra el imperio de los más ricos.',
+									oxfam_milmillonarios_n: 12, oxfam_mitad_millones: 4100, oxfam_riqueza_1pct: 43.8, oxfam_riqueza_50pct: 0.52, oxfam_veces: 8251
 								},
 								series: [
 									[2010,21.2,5.8,25.9,0.507],[2011,21.7,6.4,24.1,0.515],[2012,20.6,6.3,21.7,0.515],[2013,20.7,6.4,20.8,0.522],
@@ -343,6 +360,7 @@
 							function num(v) { var n = (typeof v === 'number') ? v : parseFloat(String(v).replace(',', '.')); return isNaN(n) ? null : n; }
 							function pct(v) { var n = num(v); return n === null ? '–' : n.toFixed(1) + '%'; }
 							function colones(v) { var n = num(v); return n === null ? '–' : '₡' + Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
+							function miles(v) { var n = num(v); return n === null ? '–' : Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
 							function dec(v, d) { var n = num(v); return n === null ? '–' : n.toFixed(d); }
 
 							// ---------- Lectura del Excel ----------
@@ -395,7 +413,10 @@
 									mundo_millones: (num(g.mundo_pobreza_extrema_millones) || '–') + ' millones',
 									mundo_pct: (num(g.mundo_pobreza_extrema_pct) || '–') + '%',
 									mundo_linea: 'US$' + dec(g.mundo_linea_internacional, 2),
-									mundo_fuente: g.mundo_fuente || '', oxfam_dato: g.oxfam_dato || '', oxfam_fuente: g.oxfam_fuente || ''
+									mundo_fuente: g.mundo_fuente || '', oxfam_dato: g.oxfam_dato || '', oxfam_fuente: g.oxfam_fuente || '',
+									ox_n: dec(g.oxfam_milmillonarios_n, 0), ox_mitad: miles(g.oxfam_mitad_millones),
+									ox_1pct: pct(g.oxfam_riqueza_1pct), ox_50pct: (num(g.oxfam_riqueza_50pct) === null ? '–' : num(g.oxfam_riqueza_50pct).toFixed(2) + '%'),
+									ox_veces: miles(g.oxfam_veces)
 								};
 								document.querySelectorAll('[data-dato]').forEach(function (el) {
 									var k = el.getAttribute('data-dato');
@@ -407,6 +428,7 @@
 								});
 								graficos(s, q);
 								calculadora(q);
+								oxfam(g);
 							}
 
 							// ---------- Gráficos ----------
@@ -425,7 +447,7 @@
 										maintainAspectRatio: false,
 										plugins: {
 											title: { display: true, text: 'Costa Rica: hogares en pobreza, ' + anios[0] + '-' + anios[anios.length - 1], font: { size: 16, weight: 'bold' } },
-											legend: { display: true, position: 'bottom' },
+											legend: { display: true, position: 'bottom', labels: { usePointStyle: true, pointStyle: 'line', pointStyleWidth: 26, boxHeight: 2, font: { size: 12 } } },
 											tooltip: { callbacks: { title: function (it) { return it[0].raw.x; }, label: function (it) { return it.dataset.label + ': ' + it.raw.y.toFixed(1) + '%'; } } }
 										},
 										scales: {
@@ -477,6 +499,66 @@
 								});
 							}
 
+							// ---------- Visuales de Oxfam ----------
+							function figura(clase) {
+								return '<svg class="' + clase + '" viewBox="0 0 20 40" aria-hidden="true"><circle cx="10" cy="6" r="5.5"/><rect x="2.5" y="13.5" width="15" height="25" rx="6"/></svg>';
+							}
+							function oxfam(g) {
+								var n = Math.max(0, Math.round(num(g.oxfam_milmillonarios_n) || 0));
+								var mitad = num(g.oxfam_mitad_millones) || 0;
+								var html = '';
+								for (var i = 0; i < Math.min(n, 60); i++) html += figura('fig-rico');
+								document.getElementById('pictoRicos').innerHTML = html;
+								html = '';
+								var m = Math.min(600, Math.round(mitad / 10));
+								for (var k = 0; k < m; k++) html += figura('fig-pobre');
+								document.getElementById('pictoPobres').innerHTML = html;
+
+								var r1 = num(g.oxfam_riqueza_1pct) || 0, r50 = num(g.oxfam_riqueza_50pct) || 0;
+								var r49 = Math.max(0, 100 - r1 - r50);
+								var etiquetas = ['El 1% más rico', 'El 49% siguiente', 'La mitad más pobre'];
+								var colores = ['rgba(0, 67, 80, 0.85)', 'rgba(64, 160, 170, 0.45)', 'rgba(108, 117, 125, 0.55)'];
+								var pob = [1, 49, 50], riq = [r1, r49, r50];
+								new Chart(document.getElementById('riquezaChart').getContext('2d'), {
+									type: 'bar',
+									data: {
+										labels: ['Población', 'Riqueza'],
+										datasets: etiquetas.map(function (et, i) {
+											return { label: et, data: [pob[i], riq[i]], backgroundColor: colores[i], borderColor: '#fff', borderWidth: 1, barPercentage: 0.7 };
+										})
+									},
+									options: {
+										indexAxis: 'y',
+										maintainAspectRatio: false,
+										plugins: {
+											title: { display: true, text: '¿Cómo se reparte la riqueza mundial?', font: { size: 16, weight: 'bold' } },
+											legend: { display: true, position: 'bottom', labels: { boxWidth: 12, boxHeight: 12, font: { size: 12 } } },
+											tooltip: { callbacks: { label: function (it) { return it.dataset.label + ': ' + (it.raw < 1 ? it.raw.toFixed(2) : it.raw.toFixed(1)) + '%'; } } }
+										},
+										scales: {
+											x: { stacked: true, min: 0, max: 100, ticks: { callback: function (v) { return v + '%'; } } },
+											y: { stacked: true }
+										}
+									},
+									plugins: [{
+										id: 'valores',
+										afterDatasetsDraw: function (chart) {
+											var ctx = chart.ctx;
+											ctx.save(); ctx.font = 'bold 12px Arial'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+											chart.data.datasets.forEach(function (ds, d) {
+												chart.getDatasetMeta(d).data.forEach(function (bar, b) {
+													var v = ds.data[b];
+													if (bar.width < 34) return;
+													ctx.fillStyle = d === 0 ? '#fff' : '#23394a';
+													ctx.fillText((v < 1 ? v.toFixed(2) : (v % 1 === 0 ? v : v.toFixed(1))) + '%', bar.x - bar.width / 2, bar.y);
+												});
+											});
+											ctx.restore();
+										}
+									}]
+								});
+							}
+
 							// ---------- Calculadora de Lorenz y Gini ----------
 							var lorenz = null;
 							function calculadora(q) {
@@ -504,7 +586,7 @@
 										animation: { duration: 300 },
 										plugins: {
 											title: { display: true, text: 'Curva de Lorenz', font: { size: 16, weight: 'bold' } },
-											legend: { display: true, position: 'bottom' },
+											legend: { display: true, position: 'bottom', labels: { usePointStyle: true, pointStyle: 'line', pointStyleWidth: 26, boxHeight: 2, font: { size: 12 } } },
 											tooltip: { callbacks: { label: function (it) { return it.raw.x + '% de los hogares recibe el ' + it.raw.y.toFixed(1) + '% del ingreso'; } } }
 										},
 										scales: {

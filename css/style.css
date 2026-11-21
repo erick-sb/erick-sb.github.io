@@ -1624,12 +1624,38 @@ input[type="text"] {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  font-size: 15px;
+  font-size: 14px;
   color: #23394a;
   margin-top: 10px;
 }
-#colorlib-work .calc-results strong { font-size: 20px; color: #004350; }
+#colorlib-work .calc-results div { margin: 0; }
+#colorlib-work .calc-results strong { font-size: 15px; color: #004350; }
 @media (max-width: 600px) {
   #colorlib-work .calc-inputs { grid-template-columns: repeat(2, 1fr); }
 }
 #colorlib-work [data-dato] { font-size: inherit; color: inherit; margin: 0; font-family: inherit; font-weight: inherit; }
+
+/* ===== Pictograma (4A, Oxfam) ===== */
+#colorlib-work .pictograma {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 25px 0;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  background-color: rgba(243, 248, 248, 0.5);
+}
+#colorlib-work .picto-ricos { flex: 0 0 210px; }
+#colorlib-work .picto-pobres { flex: 1; }
+#colorlib-work .picto-iconos { line-height: 0; margin-bottom: 10px; }
+#colorlib-work .picto-iconos svg { display: inline-block; }
+#colorlib-work .fig-rico { width: 22px; height: 44px; margin: 2px; fill: #004350; }
+#colorlib-work .fig-pobre { width: 9px; height: 18px; margin: 1px; fill: rgba(108, 117, 125, 0.45); }
+#colorlib-work .picto-texto { font-size: 13px; line-height: 1.5; color: #23394a; margin: 0; }
+#colorlib-work .picto-texto em { color: #777; font-size: 12px; }
+#colorlib-work .picto-vs { font-size: 13px; color: #777; text-align: center; flex: 0 0 90px; font-style: italic; }
+@media (max-width: 700px) {
+  #colorlib-work .pictograma { flex-direction: column; align-items: stretch; }
+  #colorlib-work .picto-ricos, #colorlib-work .picto-vs { flex: none; }
+}
