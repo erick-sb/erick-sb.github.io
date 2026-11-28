@@ -1666,3 +1666,4 @@ input[type="text"] {
 #colorlib-work .tabla-sobria th { font-weight: bold; border-bottom: 2px solid rgba(0, 67, 80, 0.4); }
 #colorlib-work .tabla-sobria th:first-child, #colorlib-work .tabla-sobria td:first-child { text-align: left; }
 #colorlib-work .calc-presets button span { font-size: inherit; color: inherit; margin: 0; }
+#colorlib-work .calc-select { width: 100%; padding: 6px 8px; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 4px; font-size: 14px; background: #fff; height: 34px; }

@@ -1,0 +1,502 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>XE0156-5A</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/style.css?v=10">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+
+	</head>
+	<body>
+
+	<nav id="colorlib-main-nav" role="navigation">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+		<div class="js-fullheight colorlib-table">
+			<div class="colorlib-table-cell js-fullheight">
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li><a href="index.html">Página principal</a></li>
+							<li><a href="XE0156-1A.html">1A-El problema económico y el intercambio</a></li>
+							<li><a href="XE0156-1B.html">1B-La oferta, la demanda y el equilibrio del mercado</a></li>
+							<li><a href="XE0156-2A.html">2A-La competencia perfecta, los impuestos sobre bienes y el salario mínimo</a></li>
+							<li><a href="XE0156-2B.html">2B-El poder de mercado: monopolio, oligopolio y competencia monopolística</a></li>
+							<li><a href="XE0156-3A.html">3A-Las externalidades: costos y beneficios que no se reflejan en los precios</a></li>
+							<li><a href="XE0156-3B.html">3B-Los bienes públicos y los recursos comunes</a></li>
+							<li><a href="XE0156-4A.html">4A-La pobreza y la desigualdad</a></li>
+							<li><a href="XE0156-4B.html">4B-El Estado de bienestar</a></li>
+							<li><a href="XE0156-5A.html">5A-La Macroeconomía y la medición agregada: producción, precios y [des]empleo</a></li>
+							<li><a href="XE0156-5B.html">5B-El crecimiento económico y sus fuentes, el ciclo económico y el desarrollo humano</a></li>
+							<li><a href="XE0156-6A.html">6A-El ahorro, la inversión, el sistema financiero y el modelo de oferta y demanda agregadas</a></li>
+							<li><a href="XE0156-6B.html">6B-El dinero, la política monetaria y las tasas de interés</a></li>
+							<li><a href="XE0156-6C.html">6C-La política fiscal y la deuda</a></li>
+							<li><a href="XE0156-7A.html">7A-El comercio internacional y las medidas de protección</a></li>
+							<li><a href="XE0156-7B.html">7B-Los flujos de capital y los tipos de cambio</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+
+	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="index.html"><span>EESB</span></a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="colorlib-work">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">XE0156</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<h2>Producción, precios y empleo</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">Producción, precios y empleo</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+							<div class="col-md-12">
+								<div class="desc">
+									<div class="data-warning" id="avisoDatos" style="display: none;"></div>
+
+									<h2>De la micro a la macro</h2>
+									<p>Hasta ahora hemos estudiado cómo toman decisiones los consumidores y las empresas, cómo se forman los precios relativos de los distintos bienes y qué pasa cuando el mercado falla. Eso es la <strong>microeconomía</strong>. A partir de aquí vamos a mirar la economía en su conjunto: cómo se determina la producción total, por qué existe el desempleo, por qué suben los precios en general y cómo funcionan los ciclos económicos. Eso es la <strong>macroeconomía</strong>.</p>
+									<p>Lo interesante es que lo que tiene sentido para cada persona no siempre tiene sentido para todos juntos. Es la <strong>paradoja del ahorro</strong>: cuando una familia prevé tiempos difíciles, lo sensato es ahorrar; cuando una empresa los prevé, lo sensato es recortar gastos. Pero si todas las familias consumen menos y todas las empresas despiden personal y frenan sus inversiones, caen las ventas de las empresas y los ingresos de las familias, lo que obliga a recortes aún mayores. Lo que era prudente para cada uno termina agravando la crisis para todos.</p>
+
+									<h3>¿Necesita regulación la macroeconomía?</h3>
+									<p>En la microeconomía vimos que la intervención del Estado se justifica cuando hay fallas de mercado o problemas de equidad. En la macroeconomía el debate es otro. Algunos economistas, en la línea de Friedrich Hayek, sostienen que la economía tiende a autorregularse y que la intervención del Estado termina siendo una medicina peor que la enfermedad. Otros, en la línea de John Maynard Keynes, argumentan que las decisiones individuales no bastan y que, sin una política a nivel agregado, la economía no alcanza su nivel de empleo y de crecimiento posibles. Los primeros advierten que la intervención puede disparar la inflación; los segundos, que no intervenir puede dejar a mucha gente sin trabajo.</p>
+									<p>La <strong>política macroeconómica</strong> busca corregir esos resultados no deseados con dos instrumentos principales: la <strong>política monetaria</strong>, que regula la cantidad de dinero y afecta las tasas de interés, la inversión y la inflación, y la <strong>política fiscal</strong>, que usa los impuestos y el gasto del gobierno para estimular o enfriar la economía. Las veremos en el tema 6.</p>
+
+									<h2>¿Cómo medimos lo que produce un país?</h2>
+									<p>Una economía produce camisas, arroz, carros, cervezas, celulares, cortes de pelo y consultas médicas. ¿Cómo se suman cosas tan distintas? Hace falta una medida común, y en economía esa medida es el <strong>valor</strong>: la cantidad de cada bien multiplicada por su precio. En la década de 1930, Simon Kuznets desarrolló las <strong>cuentas nacionales</strong>, que registran los flujos de dinero entre hogares, empresas, gobierno y el resto del mundo.</p>
+									<p>La idea de fondo es el <strong>flujo circular</strong>: los hogares compran bienes y servicios a las empresas, y las empresas usan ese dinero para pagar salarios, alquileres, intereses y utilidades a los hogares. Por eso lo que se gasta en la economía es igual a lo que se produce, y también es igual a lo que se recibe como ingreso.</p>
+
+									<h3>El Producto Interno Bruto (PIB)</h3>
+									<p>El PIB es el <strong>valor de mercado de todos los bienes y servicios finales producidos en un país durante un periodo</strong>, normalmente un año. La palabra clave es "finales": si sumáramos el valor del carro, de las llantas, de los asientos y del motor, estaríamos contando las llantas dos veces, porque su valor ya está incluido en el precio del carro. Por eso los bienes intermedios no se suman por separado.</p>
+									<p>El PIB se puede calcular de tres formas, que dan el mismo resultado:</p>
+									<p>1. <strong>Por el valor agregado:</strong> se suma lo que cada empresa agrega en su etapa de producción, es decir, el valor de lo que vende menos lo que compró a otras empresas.</p>
+									<p>2. <strong>Por el gasto:</strong> se suma todo lo que se gasta en bienes y servicios finales producidos en el país: <strong>PIB = C + I + G + (X − M)</strong>, donde C es el consumo de los hogares, I la inversión, G el gasto del gobierno, X las exportaciones y M las importaciones. Se restan las importaciones porque son parte del consumo y la inversión, pero se produjeron en otro país; y se suman las exportaciones porque se producen aquí, aunque se consuman afuera.</p>
+									<p>3. <strong>Por el ingreso:</strong> se suman todas las remuneraciones de los factores de producción: salarios, utilidades, alquileres e intereses.</p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejemplo: la economía de los limones</div>
+										<div class="exercise-content">
+											<p>Los agricultores producen y venden 50 kg de limones a ₡750 el kilo y 100 kg de trigo a ₡700 el kilo. Las refinadoras compran todo el trigo y producen 100 kg de harina, que venden a ₡1 000 el kilo. Las familias compran 10 kg de limones para su casa. Los restaurantes compran 20 kg de limones y venden 200 limonadas a ₡500. Las pastelerías compran toda la harina y los otros 20 kg de limones: con 50 kg de harina y los limones hacen 300 pastelillos que venden a ₡500, y con los otros 50 kg de harina hacen 100 bolsas de galletas que venden a ₡600.</p>
+											<table class="tabla-sobria">
+												<thead><tr><th>Por el valor agregado</th><th>Colones</th></tr></thead>
+												<tbody>
+													<tr><td>Limones: 50 × 750</td><td>37 500</td></tr>
+													<tr><td>Trigo: 100 × 700</td><td>70 000</td></tr>
+													<tr><td>Harina: 100 × 1 000 − 100 × 700</td><td>30 000</td></tr>
+													<tr><td>Limonadas: 200 × 500 − 20 × 750</td><td>85 000</td></tr>
+													<tr><td>Pastelillos: 300 × 500 − (20 × 750 + 50 × 1 000)</td><td>85 000</td></tr>
+													<tr><td>Galletas: 100 × 600 − 50 × 1 000</td><td>10 000</td></tr>
+													<tr><th>PIB</th><th>317 500</th></tr>
+												</tbody>
+											</table>
+											<p><strong>Por el gasto</strong>, solo se cuentan las compras finales: limones de las familias (7 500) + limonadas (100 000) + pastelillos (150 000) + galletas (60 000) = <strong>317 500</strong>.</p>
+											<p><strong>Por el ingreso</strong>, se suman los ingresos de cada productor: agricultores (107 500) + refinadoras (30 000) + restaurantes (85 000) + pastelerías (95 000) = <strong>317 500</strong>.</p>
+										</div>
+									</div>
+
+									<h3>Lo que el PIB no mide</h3>
+									<p>El PIB no incluye lo que se compra y vende de segunda mano, porque ya se contó cuando se produjo. Tampoco incluye lo que no pasa por el mercado: el trabajo doméstico, el cuidado de hijos y adultos mayores, lo que se produce para el propio consumo o para regalar. Si usted cose su propia ropa, no aporta al PIB; si la compra, sí, aunque el bienestar sea parecido. Y como el PIB es la suma de los ingresos de todos, todo el PIB tiene dueño: cuando se dice "tomemos un punto del PIB para financiar algo", en realidad hay que quitárselo a alguien para dárselo a otro, y eso siempre genera conflicto.</p>
+									<p>Para comparar el nivel de vida entre países se usa el <strong>PIB per cápita</strong>: el PIB dividido entre la población, que da una idea de lo que se produce, o se gana, en promedio por habitante.</p>
+									<p>Un dato reciente muestra que el PIB también es una medición que se revisa. En noviembre de 2025, el Banco Central publicó una revisión exhaustiva de las cuentas nacionales con base en las nuevas normas internacionales: el año de referencia pasó de 2017 a 2022 y, con la nueva medición, el PIB de 2022 resultó ser un 2,5% más grande de lo que se había calculado.</p>
+
+									<h3>Una economía, dos velocidades</h3>
+									<p>El PIB es un promedio, y los promedios pueden esconder mucho. En Costa Rica conviven dos economías: el <strong>régimen especial</strong>, donde están las zonas francas, muy dinámico y concentrado en exportaciones como los dispositivos médicos, y el <strong>régimen definitivo</strong>, donde están las empresas que producen para el mercado interno y pagan impuesto sobre la renta. En <span data-dato="anio_regimen">2025</span>, mientras el PIB total creció <span data-dato="crec_total">4.6%</span>, el régimen definitivo creció apenas <span data-dato="crec_definitivo">3.0%</span> y el especial, <span data-dato="crec_especial">12.7%</span>.</p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="regimenChart" style="width: 100%; height: 260px;"></canvas>
+									</div>
+									<p>Por eso un PIB que crece con fuerza no significa necesariamente que a todas las personas o empresas les esté yendo bien: buena parte de ese crecimiento ocurre en un sector que genera relativamente pocos empleos directos frente a su producción.</p>
+
+									<h3>¿Y si los precios cambian? PIB nominal y real</h3>
+									<p>El PIB puede crecer porque se produce más, o simplemente porque los precios subieron. No es lo mismo. El <strong>PIB nominal</strong> usa los precios de cada año; el <strong>PIB real</strong> usa los precios de un año base, de modo que solo refleja cambios en las cantidades producidas. Por eso el PIB real es la mejor medida para saber si la producción realmente creció. Y la relación entre ambos da el <strong>deflactor del PIB</strong>: PIB nominal / PIB real × 100, que indica cuánto subieron los precios con respecto al año base.</p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>Una economía solo produce hot dogs y hamburguesas:</p>
+											<table class="tabla-sobria">
+												<thead><tr><th>Año</th><th>Hot dogs</th><th>Precio</th><th>Hamburguesas</th><th>Precio</th></tr></thead>
+												<tbody>
+													<tr><td>2024 (base)</td><td>100</td><td>₡1 000</td><td>50</td><td>₡2 000</td></tr>
+													<tr><td>2025</td><td>120</td><td>₡1 100</td><td>60</td><td>₡2 200</td></tr>
+												</tbody>
+											</table>
+											<p>Calcule el PIB nominal de cada año, el PIB real de 2025 a precios de 2024 y el deflactor del PIB de 2025. ¿Cuánto creció la producción y cuánto subieron los precios?</p>
+										</div>
+									</div>
+
+									<h2>Los precios y la inflación</h2>
+									<p>Para medir el cambio en el nivel general de precios se calcula cuánto cuesta comprar siempre la misma canasta de bienes. Se elige un año base, se le asigna un índice de 100, y para cualquier otro año se calcula: <strong>índice = (costo de la canasta en el año / costo en el año base) × 100</strong>.</p>
+									<p>En Costa Rica, el INEC calcula el <strong>Índice de Precios al Consumidor (IPC)</strong> con una canasta que representa lo que consume un hogar promedio. La <strong>inflación</strong> es el cambio porcentual de ese índice de un periodo a otro: <strong>inflación = (índice del año 2 − índice del año 1) / índice del año 1 × 100</strong>. Cuando es negativa hablamos de deflación: los precios, en promedio, bajaron.</p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="inflacionChart" style="width: 100%; height: 330px;"></canvas>
+									</div>
+									<p>Durante los años noventa y la primera década de este siglo, la inflación en Costa Rica rondaba el 10% anual o más. Desde 2009 bajó de forma sostenida y, desde 2018, el Banco Central tiene una meta de <span data-dato="meta">3%</span>, con un margen de ±<span data-dato="tolerancia">1</span> punto (la franja del gráfico). En los últimos años, la inflación ha estado incluso por debajo de esa meta: la de <span data-dato="inf_ult_anio">2025</span> cerró en <strong><span data-dato="inf_ult">-1.23%</span></strong>. Según el INEC, los precios de las gasolinas, los vehículos nuevos y el arroz fueron los que más empujaron esa caída.</p>
+
+									<h3>¿Quién gana y quién pierde con la inflación?</h3>
+									<p>La inflación reduce el valor del dinero. Pierden quienes tienen dinero guardado o ingresos fijos, porque con el mismo monto pueden comprar menos. No pierden, y hasta pueden ganar, quienes tienen ingresos que se ajustan con los precios. También pierden quienes prestaron dinero a una tasa fija, porque les devuelven colones que valen menos, y ganan quienes pidieron prestado, por la misma razón. Con la deflación pasa lo contrario: quien tiene una deuda a tasa fija la siente cada vez más pesada.</p>
+
+									<h3>El poder adquisitivo</h3>
+									<p>El salario sirve para comprar bienes y servicios a los precios que tengan. Si el salario sube 5% pero los precios suben 5%, la persona no puede comprar más que antes. Por eso se distingue entre el <strong>salario nominal</strong>, el monto en colones, y el <strong>salario real</strong>: <strong>salario real = salario nominal / nivel de precios</strong>, que mide lo que realmente se puede comprar con ese salario.</p>
+
+									<div class="calc">
+										<p style="margin-bottom: 10px;"><strong>Calculadora de poder adquisitivo</strong></p>
+										<p style="font-size: 14px;">¿Cuántos colones de un año equivalen, en poder de compra, a cierto monto de otro año? La calculadora usa el IPC de diciembre de cada año.</p>
+										<div class="calc-inputs" style="grid-template-columns: repeat(3, 1fr); max-width: 640px;">
+											<div><label for="ipcMonto">Monto (colones)</label><input type="number" id="ipcMonto" min="0" step="1000" value="10000"></div>
+											<div><label for="ipcDesde">De diciembre de</label><select id="ipcDesde" class="calc-select"></select></div>
+											<div><label for="ipcHasta">A diciembre de</label><select id="ipcHasta" class="calc-select"></select></div>
+										</div>
+										<div class="calc-results">
+											<div>Equivale a: <strong id="ipcResultado">–</strong></div>
+											<div>Cambio acumulado de los precios: <strong id="ipcCambio">–</strong></div>
+										</div>
+										<p style="font-size: 13px; margin-top: 12px;" id="ipcFrase"></p>
+									</div>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>Use la calculadora: ¿cuánto se necesitaba en diciembre de 2025 para comprar lo mismo que con ₡100 000 en diciembre de 2005? Si el salario mínimo de una persona pasó de ₡150 000 a ₡300 000 en ese periodo, ¿mejoró su poder adquisitivo? ¿Qué le pasa al poder adquisitivo de una persona con un salario fijo en un año de deflación como 2025?</p>
+										</div>
+									</div>
+
+									<h2>El empleo y el desempleo</h2>
+									<p>La <strong>fuerza de trabajo</strong> está formada por las personas en edad de trabajar (15 años o más en Costa Rica) que trabajan o que quieren trabajar. Incluye a los <strong>ocupados</strong>, que trabajan de forma remunerada a tiempo completo o parcial, y a los <strong>desempleados</strong>, que no tienen trabajo pero lo están buscando activamente. Quien no trabaja ni busca trabajo, como un estudiante a tiempo completo o una persona jubilada, está <strong>fuera de la fuerza de trabajo</strong>.</p>
+									<p>Con esas categorías se calculan tres tasas:</p>
+									<p>1. <strong>Tasa de desempleo</strong> = desempleados / fuerza de trabajo × 100. Indica cuántas de las personas que quieren trabajar no lo logran.</p>
+									<p>2. <strong>Tasa neta de participación</strong> = fuerza de trabajo / población en edad de trabajar × 100. Indica qué parte de la población está en el mercado laboral.</p>
+									<p>3. <strong>Tasa de ocupación</strong> = ocupados / población en edad de trabajar × 100. Indica qué parte de la población tiene trabajo.</p>
+									<p>Además, hay situaciones que la tasa de desempleo no capta. El <strong>subempleo</strong> se refiere a quienes trabajan menos horas de las que quisieran porque no consiguen un trabajo de tiempo completo. Los <strong>trabajadores desanimados</strong> son quienes querrían trabajar pero dejaron de buscar porque creen que no van a conseguir nada: como no buscan, no se cuentan como desempleados. Y la <strong>informalidad</strong> incluye los trabajos sin seguro social ni garantías laborales.</p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">El mercado laboral en cifras</div>
+										<div class="exercise-content">
+											<p>Según la Encuesta Continua de Empleo del INEC para el <span data-dato="trimestre_ece">III trimestre (julio-setiembre)</span> de <span data-dato="anio_ece">2026</span>, había <span data-dato="ocupados">2 210 329</span> personas ocupadas y <span data-dato="desempleados">154 736</span> desempleadas. La tasa de desempleo fue de <strong><span data-dato="td">6.5%</span></strong> (frente a <span data-dato="td_prev">5.7%</span> un año antes), la tasa neta de participación de <span data-dato="tpl">54.9%</span>, la de ocupación de <span data-dato="to">51.3%</span>, el subempleo de <span data-dato="sub">3.3%</span> de los ocupados y la informalidad de <span data-dato="inf_lab">36.7%</span>. El desempleo de las mujeres (<span data-dato="td_m">7.4%</span>) sigue siendo mayor que el de los hombres (<span data-dato="td_h">6.0%</span>), y su participación laboral (<span data-dato="tpl_m">42.2%</span>) es mucho menor (<span data-dato="tpl_h">67.6%</span> en los hombres).</p>
+											<p>Con estos números, verifique usted mismo la tasa de desempleo: desempleados / (ocupados + desempleados) × 100.</p>
+										</div>
+									</div>
+
+									<h3>El rompecabezas del empleo: menos desempleo, menos participación</h3>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="empleoChart" style="width: 100%; height: 330px;"></canvas>
+									</div>
+									<p>A primera vista, la evolución reciente parece una muy buena noticia: la tasa de desempleo bajó del <span data-dato="td_max">22.0%</span> en el peor momento de la pandemia (<span data-dato="td_max_anio">2020</span>) a niveles cercanos al 6%. Pero al mismo tiempo la tasa de participación cayó de más del 61% a cerca del 55%. Es decir, una parte importante de la baja del desempleo no se explica porque más personas consiguieran trabajo, sino porque muchas dejaron de buscarlo y salieron de la fuerza de trabajo. Por eso nunca hay que mirar la tasa de desempleo sola: hay que mirarla junto con la participación y la ocupación.</p>
+
+									<h3>El desempleo no se reparte igual</h3>
+									<p>Los promedios también engañan en el mercado laboral. Según la ENAHO <span data-dato="anio_dp">2026</span>, la tasa de desempleo entre las personas de hogares no pobres es de <span data-dato="dp_nopobres">4.5%</span>, mientras que entre las de hogares en pobreza por ingreso llega a <span data-dato="dp_lp">23.4%</span>. El desempleo es, a la vez, causa y consecuencia de la pobreza que vimos en la 4A.</p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="desempleoPobrezaChart" style="width: 100%; height: 280px;"></canvas>
+									</div>
+
+									<h3>Los ciclos económicos</h3>
+									<p>Por lo general, cuando la economía crece más rápido, el desempleo baja, y cuando se frena, el desempleo sube. En 2020 la producción cayó con fuerza y el desempleo se disparó; desde entonces la economía ha crecido y el desempleo ha bajado. Pero la relación no es automática: como vimos con las dos velocidades de la economía, el crecimiento puede concentrarse en sectores que generan pocos empleos.</p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="ciclosChart" style="width: 100%; height: 300px;"></canvas>
+									</div>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>Clasifique a cada persona como ocupada, desempleada o fuera de la fuerza de trabajo: (1) Ana, estudiante universitaria a tiempo completo que no busca trabajo; (2) Luis, que trabaja 10 horas por semana como repartidor pero quisiera trabajar tiempo completo; (3) Carmen, que perdió su empleo hace un año y dejó de buscar porque no encuentra nada; (4) Jorge, que envió currículums toda esta semana. ¿Qué pasa con la tasa de desempleo si Carmen vuelve a buscar trabajo sin encontrarlo?</p>
+										</div>
+									</div>
+
+						<div class="text-center" style="margin-top: 40px;">
+							<a href="docs/5A-Producción precios y empleo.pdf" target="_blank" class="btn btn-primary btn-lg">
+								<i class="icon-file-pdf"></i> Ver presentación antigua (PDF)
+							</a>
+						</div>
+
+						<div class="references-section" style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
+							<div class="row">
+								<div class="col-md-8">
+									<h3>Bibliografía</h3>
+									<ul class="references-list" style="list-style-type: none; padding-left: 0;">
+										<li style="margin-bottom: 10px;">
+											<span style="font-weight: bold;">INEC (2012).</span>
+											<span>Encuesta Continua de Empleo. Métodos y procedimientos.</span>
+										</li>
+										<li style="margin-bottom: 10px;">
+											<span style="font-weight: bold;">INEC (<span data-dato="anio_ece">2026</span>).</span>
+											<span>Encuesta Continua de Empleo, <span data-dato="trimestre_ece">III trimestre (julio-setiembre)</span> <span data-dato="anio_ece">2026</span>. Resultados generales.</span>
+										</li>
+									</ul>
+									<p style="font-size: 13px;">Datos: crecimiento del PIB: <span data-dato="fuente_crecimiento">CEPAL (2026). Evolución macroeconómica de Costa Rica en 2025 y perspectivas para 2026.</span> Inflación: INEC, IPC. Desempleo por condición de pobreza: INEC, ENAHO. Los datos de esta página se actualizan desde el archivo <a href="datos/5A-datos.xlsx">5A-datos.xlsx</a>.</p>
+								</div>
+
+								<div class="col-md-4 text-right" style="align-self: flex-end;">
+									<a href="XE0156-5B.html" class="btn btn-outline-secondary btn-lg" style="margin-top: 20px;">
+										Siguiente tema →
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<script>
+						(function () {
+							var RESPALDO = {
+								general: { anio_ece: 2026, trimestre_ece: 'III trimestre (julio-setiembre)', fecha_ece: 'noviembre de 2026', anio_crecimiento_regimen: 2025,
+									crec_total: 4.6, crec_definitivo: 3.0, crec_especial: 12.7, meta_inflacion: 3, tolerancia_meta: 1,
+									fuente_crecimiento: 'CEPAL (2026). Evolución macroeconómica de Costa Rica en 2025 y perspectivas para 2026.' },
+								empleo: [[2016,9.7,57.7],[2017,9.4,59.4],[2018,10.2,61.1],[2019,11.4,61.8],[2020,22.0,59.1],[2021,15.3,61.0],[2022,12.0,60.5],[2023,8.1,54.3],[2024,6.6,57.3],[2025,5.7,54.9],[2026,6.5,54.9]],
+								detalle: [[54.9,54.9],[51.7,51.3],[5.7,6.5],[2.8,3.3],[38.3,36.7],[2206569,2210329],[134460,154736],[1923220,1945426],[5.0,6.0],[6.9,7.4],[67.2,67.6],[42.5,42.2]],
+								inflacion: [[1995,22.57],[1996,13.89],[1997,11.20],[1998,12.36],[1999,10.11],[2000,10.25],[2001,10.96],[2002,9.68],[2003,9.87],[2004,13.13],[2005,14.07],[2006,9.43],[2007,10.81],[2008,13.90],[2009,4.05],[2010,5.82],[2011,4.74],[2012,4.55],[2013,3.68],[2014,5.13],[2015,-0.81],[2016,0.77],[2017,2.57],[2018,2.03],[2019,1.52],[2020,0.89],[2021,3.30],[2022,7.88],[2023,-1.77],[2024,0.84],[2025,-1.23]],
+								crecimiento: [[2021,8.2,13.7],[2022,5.5,11.7],[2023,4.8,7.3],[2024,4.1,6.9],[2025,4.6,6.3]],
+								pobreza: [['Total país',6.4],['No pobres',4.5],['Pobres por ingreso (LP)',23.4],['Pobres multidimensionales (IPM)',9.7],['Pobres por ingreso y multidimensionales',14.1]],
+								anio_dp: 2026
+							};
+
+							function num(v) { if (v === null || v === undefined || v === '') return null; var n = (typeof v === 'number') ? v : parseFloat(String(v).replace(',', '.')); return isNaN(n) ? null : n; }
+							function pct(v, d) { var n = num(v); return n === null ? '–' : n.toFixed(d === undefined ? 1 : d) + '%'; }
+							function miles(v) { var n = num(v); return n === null ? '–' : Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
+							function filas(wb, nombre) {
+								var ws = wb.Sheets[nombre]; if (!ws) return [];
+								var todas = XLSX.utils.sheet_to_json(ws, { header: 1, blankrows: true }), out = [];
+								for (var i = 1; i < todas.length; i++) { var f = todas[i]; if (!f || f[0] === undefined || f[0] === null || String(f[0]).trim() === '') break; out.push(f); }
+								return out;
+							}
+							function desdeExcel(wb) {
+								var g = {}; filas(wb, 'General').forEach(function (f) { g[String(f[0]).trim()] = (f[1] === undefined ? '' : f[1]); });
+								var anioDp = wb.Sheets['DesempleoPobreza'] && wb.Sheets['DesempleoPobreza']['B8'] ? wb.Sheets['DesempleoPobreza']['B8'].v : null;
+								return {
+									general: g,
+									empleo: filas(wb, 'Empleo').map(function (f) { return [num(f[0]), num(f[1]), num(f[2])]; }),
+									detalle: filas(wb, 'EmpleoDetalle').map(function (f) { return [num(f[1]), num(f[2])]; }),
+									inflacion: filas(wb, 'Inflacion').map(function (f) { return [num(f[0]), num(f[1])]; }),
+									crecimiento: filas(wb, 'Crecimiento').map(function (f) { return [num(f[0]), num(f[1]), num(f[2])]; }),
+									pobreza: filas(wb, 'DesempleoPobreza').map(function (f) { return [String(f[0]).trim(), num(f[1])]; }),
+									anio_dp: anioDp
+								};
+							}
+
+							function aplicar(D) {
+								var g = D.general, det = D.detalle;
+								var emp = D.empleo.slice().sort(function (a, b) { return a[0] - b[0]; });
+								var inf = D.inflacion.slice().sort(function (a, b) { return a[0] - b[0]; });
+								var tdMax = emp.reduce(function (m, f) { return f[1] > m[1] ? f : m; }, emp[0]);
+								var dpv = function (i) { return D.pobreza[i] ? pct(D.pobreza[i][1]) : '–'; };
+								var v = {
+									anio_regimen: g.anio_crecimiento_regimen, crec_total: pct(g.crec_total), crec_definitivo: pct(g.crec_definitivo), crec_especial: pct(g.crec_especial),
+									meta: pct(g.meta_inflacion, 0), tolerancia: g.tolerancia_meta,
+									inf_ult_anio: inf[inf.length - 1][0], inf_ult: pct(inf[inf.length - 1][1], 2),
+									anio_ece: g.anio_ece, trimestre_ece: g.trimestre_ece, fuente_crecimiento: g.fuente_crecimiento,
+									tpl: pct(det[0] && det[0][1]), to: pct(det[1] && det[1][1]), td: pct(det[2] && det[2][1]), td_prev: pct(det[2] && det[2][0]),
+									sub: pct(det[3] && det[3][1]), inf_lab: pct(det[4] && det[4][1]), ocupados: miles(det[5] && det[5][1]), desempleados: miles(det[6] && det[6][1]),
+									td_h: pct(det[8] && det[8][1]), td_m: pct(det[9] && det[9][1]), tpl_h: pct(det[10] && det[10][1]), tpl_m: pct(det[11] && det[11][1]),
+									td_max: pct(tdMax[1]), td_max_anio: tdMax[0],
+									anio_dp: D.anio_dp, dp_nopobres: dpv(1), dp_lp: dpv(2)
+								};
+								document.querySelectorAll('[data-dato]').forEach(function (el) {
+									var k = el.getAttribute('data-dato'); if (v[k] !== undefined && v[k] !== null && v[k] !== '') el.textContent = v[k];
+								});
+								graficos(D, g, emp, inf);
+								calculadora(inf);
+							}
+
+							var leyendaLinea = { usePointStyle: true, pointStyle: 'line', pointStyleWidth: 26, font: { size: 12 } };
+							function etiquetasBarras(id, fmt) {
+								return { id: id, afterDatasetsDraw: function (chart) {
+									var ctx = chart.ctx; ctx.save(); ctx.font = 'bold 11px Arial'; ctx.fillStyle = '#23394a'; ctx.textAlign = 'center';
+									chart.data.datasets.forEach(function (ds, di) {
+										if (ds.type === 'line') return;
+										chart.getDatasetMeta(di).data.forEach(function (bar, i) { var val = ds.data[i]; ctx.fillText(fmt(val), bar.x, val >= 0 ? bar.y - 6 : bar.y + 14); });
+									});
+									ctx.restore();
+								} };
+							}
+
+							function graficos(D, g, emp, inf) {
+								// Régimen
+								new Chart(document.getElementById('regimenChart').getContext('2d'), {
+									type: 'bar',
+									data: { labels: ['PIB total', 'Régimen definitivo', 'Régimen especial (zonas francas)'], datasets: [{ data: [num(g.crec_total), num(g.crec_definitivo), num(g.crec_especial)], backgroundColor: ['rgba(31, 52, 92, 0.7)', 'rgba(0, 67, 80, 0.45)', 'rgba(0, 67, 80, 0.8)'], borderWidth: 0, barPercentage: 0.55 }] },
+									options: { maintainAspectRatio: false, plugins: { title: { display: true, text: 'Crecimiento real de la producción, ' + g.anio_crecimiento_regimen, font: { size: 16, weight: 'bold' } }, legend: { display: false }, tooltip: { callbacks: { label: function (it) { return it.raw.toFixed(1) + '%'; } } } },
+										scales: { y: { beginAtZero: true, ticks: { callback: function (x) { return x + '%'; } } } } },
+									plugins: [etiquetasBarras('lblReg', function (x) { return x.toFixed(1) + '%'; })]
+								});
+								// Inflación
+								var mt = num(g.meta_inflacion) || 3, tol = num(g.tolerancia_meta) || 1;
+								new Chart(document.getElementById('inflacionChart').getContext('2d'), {
+									type: 'line',
+									data: { datasets: [
+										{ label: 'Rango meta del BCCR', data: inf.filter(function (f) { return f[0] >= 2018; }).map(function (f) { return { x: f[0], y: mt + tol }; }), borderColor: 'rgba(0,0,0,0)', backgroundColor: 'rgba(64, 160, 170, 0.15)', pointRadius: 0, fill: '+1' },
+										{ label: '_piso', data: inf.filter(function (f) { return f[0] >= 2018; }).map(function (f) { return { x: f[0], y: mt - tol }; }), borderColor: 'rgba(0,0,0,0)', pointRadius: 0, fill: false },
+										{ label: 'Inflación (diciembre a diciembre)', data: inf.map(function (f) { return { x: f[0], y: f[1] }; }), borderColor: '#004350', backgroundColor: '#004350', pointRadius: 3, tension: 0, fill: false }
+									] },
+									options: { maintainAspectRatio: false,
+										plugins: { title: { display: true, text: 'Costa Rica: inflación anual, ' + inf[0][0] + '-' + inf[inf.length - 1][0], font: { size: 16, weight: 'bold' } },
+											legend: { position: 'bottom', labels: Object.assign({}, leyendaLinea, { filter: function (it) { return it.text !== '_piso'; } }) },
+											tooltip: { filter: function (it) { return it.datasetIndex === 2; }, callbacks: { title: function (it) { return it[0].raw.x; }, label: function (it) { return 'Inflación: ' + it.raw.y.toFixed(2) + '%'; } } } },
+										scales: { x: { type: 'linear', min: inf[0][0], max: inf[inf.length - 1][0], ticks: { stepSize: 2, callback: function (x) { return x; } } }, y: { ticks: { callback: function (x) { return x + '%'; } } } } }
+								});
+								// Empleo
+								new Chart(document.getElementById('empleoChart').getContext('2d'), {
+									type: 'line',
+									data: { datasets: [
+										{ label: 'Tasa de desempleo (eje izquierdo)', data: emp.map(function (f) { return { x: f[0], y: f[1] }; }), borderColor: '#8B0000', backgroundColor: '#8B0000', pointRadius: 3, tension: 0, yAxisID: 'y' },
+										{ label: 'Tasa neta de participación (eje derecho)', data: emp.map(function (f) { return { x: f[0], y: f[2] }; }), borderColor: '#004350', backgroundColor: '#004350', pointRadius: 3, tension: 0, borderDash: [6, 4], yAxisID: 'y2' }
+									] },
+									options: { maintainAspectRatio: false,
+										plugins: { title: { display: true, text: 'Desempleo y participación laboral, III trimestre de cada año', font: { size: 16, weight: 'bold' } }, legend: { position: 'bottom', labels: leyendaLinea },
+											tooltip: { callbacks: { title: function (it) { return 'III trimestre ' + it[0].raw.x; }, label: function (it) { return it.dataset.label.split(' (')[0] + ': ' + it.raw.y.toFixed(1) + '%'; } } } },
+										scales: { x: { type: 'linear', min: emp[0][0], max: emp[emp.length - 1][0], ticks: { stepSize: 1, callback: function (x) { return x; } } },
+											y: { position: 'left', min: 0, max: 25, ticks: { callback: function (x) { return x + '%'; } }, title: { display: true, text: 'Desempleo' } },
+											y2: { position: 'right', min: 50, max: 65, grid: { drawOnChartArea: false }, ticks: { callback: function (x) { return x + '%'; } }, title: { display: true, text: 'Participación' } } } }
+								});
+								// Desempleo por pobreza
+								var pb = D.pobreza;
+								new Chart(document.getElementById('desempleoPobrezaChart').getContext('2d'), {
+									type: 'bar',
+									data: { labels: pb.map(function (f) { var n = f[0]; return n.length > 18 ? n.replace(' (', '\n(').split('\n') : n; }), datasets: [{ data: pb.map(function (f) { return f[1]; }), backgroundColor: pb.map(function (f, i) { return i === 0 ? 'rgba(31, 52, 92, 0.7)' : (i === 1 ? 'rgba(0, 67, 80, 0.35)' : 'rgba(139, 0, 0, 0.55)'); }), borderWidth: 0, barPercentage: 0.6 }] },
+									options: { maintainAspectRatio: false, plugins: { title: { display: true, text: 'Tasa de desempleo según condición de pobreza, ' + D.anio_dp, font: { size: 16, weight: 'bold' } }, legend: { display: false }, tooltip: { callbacks: { label: function (it) { return it.raw.toFixed(1) + '%'; } } } },
+										scales: { y: { beginAtZero: true, ticks: { callback: function (x) { return x + '%'; } } }, x: { ticks: { maxRotation: 0, autoSkip: false, font: { size: 11 } } } } },
+									plugins: [etiquetasBarras('lblDp', function (x) { return x.toFixed(1) + '%'; })]
+								});
+								// Ciclos
+								var cr = D.crecimiento.slice().sort(function (a, b) { return a[0] - b[0]; });
+								new Chart(document.getElementById('ciclosChart').getContext('2d'), {
+									type: 'bar',
+									data: { labels: cr.map(function (f) { return f[0]; }), datasets: [
+										{ type: 'line', label: 'Tasa de desempleo (diciembre)', data: cr.map(function (f) { return f[2]; }), borderColor: '#8B0000', backgroundColor: '#8B0000', pointRadius: 4, tension: 0 },
+										{ type: 'bar', label: 'Crecimiento real del PIB', data: cr.map(function (f) { return f[1]; }), backgroundColor: 'rgba(0, 67, 80, 0.55)', borderWidth: 0, barPercentage: 0.6 }
+									] },
+									options: { maintainAspectRatio: false, plugins: { title: { display: true, text: 'Crecimiento y desempleo, ' + cr[0][0] + '-' + cr[cr.length - 1][0], font: { size: 16, weight: 'bold' } }, legend: { position: 'bottom', labels: { boxWidth: 12, boxHeight: 2, font: { size: 12 } } }, tooltip: { callbacks: { label: function (it) { return it.dataset.label + ': ' + it.raw.toFixed(1) + '%'; } } } },
+										scales: { y: { beginAtZero: true, ticks: { callback: function (x) { return x + '%'; } } } } },
+									plugins: [etiquetasBarras('lblCic', function (x) { return x.toFixed(1) + '%'; })]
+								});
+							}
+
+							function calculadora(inf) {
+								// Índice encadenado, diciembre del primer año anterior = 100 (se reescala a dic 2020 = 100)
+								var idx = {}, base = inf[0][0] - 1, nivel = 100; idx[base] = nivel;
+								inf.forEach(function (f) { nivel = nivel * (1 + f[1] / 100); idx[f[0]] = nivel; });
+								if (idx[2020]) { var k = 100 / idx[2020]; Object.keys(idx).forEach(function (a) { idx[a] *= k; }); }
+								var anios = Object.keys(idx).map(Number).sort(function (a, b) { return a - b; });
+								var sd = document.getElementById('ipcDesde'), sh = document.getElementById('ipcHasta'), m = document.getElementById('ipcMonto');
+								sd.innerHTML = anios.map(function (a) { return '<option value="' + a + '">' + a + '</option>'; }).join('');
+								sh.innerHTML = sd.innerHTML;
+								sd.value = anios.indexOf(2005) >= 0 ? 2005 : anios[0]; sh.value = anios[anios.length - 1];
+								function calc() {
+									var monto = parseFloat(m.value) || 0, a = +sd.value, b = +sh.value;
+									var r = monto * idx[b] / idx[a], cambio = (idx[b] / idx[a] - 1) * 100;
+									document.getElementById('ipcResultado').textContent = '₡' + miles(r);
+									document.getElementById('ipcCambio').textContent = (cambio >= 0 ? '+' : '') + cambio.toFixed(1) + '%';
+									document.getElementById('ipcFrase').textContent = 'Lo que se compraba con ₡' + miles(monto) + ' en diciembre de ' + a + ' costaba ₡' + miles(r) + ' en diciembre de ' + b + '.';
+								}
+								[sd, sh, m].forEach(function (el) { el.addEventListener('input', calc); el.addEventListener('change', calc); });
+								calc();
+							}
+
+							function respaldo(motivo) {
+								var aviso = document.getElementById('avisoDatos');
+								aviso.textContent = 'No se pudo leer el archivo de datos actualizado; se muestran los datos de respaldo.';
+								aviso.style.display = 'block';
+								if (window.console) console.warn('5A: usando datos de respaldo', motivo);
+								aplicar(RESPALDO);
+							}
+							if (typeof XLSX === 'undefined' || !window.fetch) { respaldo('sin XLSX/fetch'); return; }
+							fetch('datos/5A-datos.xlsx?t=' + Date.now(), { cache: 'no-store' })
+								.then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.arrayBuffer(); })
+								.then(function (buf) {
+									var D = desdeExcel(XLSX.read(buf, { type: 'array' }));
+									if (!D.empleo.length || !D.inflacion.length || !D.detalle.length) throw new Error('Excel incompleto');
+									aplicar(D);
+								})
+								.catch(respaldo);
+						})();
+						</script>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
