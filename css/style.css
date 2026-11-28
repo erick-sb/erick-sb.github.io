@@ -1690,7 +1690,9 @@ input[type="text"] {
 #colorlib-work details.desplegable summary::-webkit-details-marker { display: none; }
 #colorlib-work details.desplegable summary::after { content: "+"; float: right; font-size: 20px; line-height: 1; color: #1f345c; }
 #colorlib-work details.desplegable[open] summary::after { content: "−"; }
-#colorlib-work .desp-tag { display: inline-block; background: #1f345c; color: #fff; font-size: 12px; padding: 3px 8px; border-radius: 3px; margin-right: 8px; vertical-align: middle; }
+#colorlib-work .desp-tag { display: inline-block; background: #000; color: #fff; font-size: 14px; font-weight: bold; padding: 5px 10px; border-radius: 5px; margin-right: 10px; vertical-align: middle; }
+#colorlib-work details.desplegable summary:focus { outline: none; }
+#colorlib-work details.desplegable summary:focus-visible { outline: 2px solid rgba(31, 52, 92, 0.4); outline-offset: 2px; }
 #colorlib-work .desp-contenido { padding: 0 18px 14px; }
 #colorlib-work .quiz { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; max-width: 560px; margin: 10px 0; }
 #colorlib-work .quiz button { text-align: left; padding: 8px 12px; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 4px; background: #fff; font-size: 14px; color: #23394a; cursor: pointer; }
