@@ -38,7 +38,7 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
-	<link rel="stylesheet" href="css/style.css?v=11">
+	<link rel="stylesheet" href="css/style.css?v=12">
 
 
 	<!-- Modernizr JS -->
@@ -155,6 +155,21 @@
 										</div>
 									</div>
 
+									<h3>Cuidado: los porcentajes no se suman, se multiplican</h3>
+									<p>Suponga que a una persona le rebajan el salario un 20% y al año siguiente se lo suben un 20%. ¿Quedó igual? La mayoría de la gente diría que sí, pero no: si ganaba ₡500 000, con la rebaja pasa a ₡400 000, y el aumento del 20% se calcula sobre esos ₡400 000, así que termina con ₡480 000. Perdió un 4%. Lo mismo pasa con un descuento del 20% más un 25% adicional en caja: no es un 45% de descuento, sino un 40%.</p>
+									<p>La razón es que cada porcentaje se aplica sobre una base distinta: la que dejó el cambio anterior. Por eso los cambios porcentuales sucesivos no se suman, sino que se multiplican:</p>
+									<p style="text-align: center;"><strong>cambio total = (1 + r<sub>1</sub>) × (1 + r<sub>2</sub>) × … × (1 + r<sub>n</sub>) − 1</strong></p>
+									<p>En la rebaja y el aumento de salario: (1 − 0,20) × (1 + 0,20) − 1 = 0,96 − 1 = −4%. Y con el descuento: (1 − 0,20) × (1 − 0,25) − 1 = 0,60 − 1 = −40%.</p>
+									<p>Con el crecimiento económico pasa lo mismo, y la diferencia puede ser enorme. Si sumamos las tasas de crecimiento del PIB real de Costa Rica de cada año entre <span data-dato="pc_anio_ini">1991</span> y <span data-dato="crpc_anio_fin">2025</span>, da <span data-dato="pc_suma">149%</span>. Pero el crecimiento acumulado real, multiplicando, fue de <strong><span data-dato="pc_prod">328%</span></strong>: la producción se multiplicó por <span data-dato="pc_veces">4.3</span>. Cada año se crece sobre lo que ya se había crecido; por eso, además, una caída del 50% necesita después un aumento del 100% para volver al punto de partida.</p>
+									<p>Una confusión parecida es la de los <strong>puntos porcentuales</strong>. Si la tasa de desempleo pasa de 5,7% a 6,5%, aumentó 0,8 <em>puntos porcentuales</em>, pero en términos relativos aumentó un 14%, porque 0,8 es el 14% de 5,7. Ambas cosas son ciertas; lo que no se vale es mezclarlas.</p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>Un producto que costaba ₡10 000 sube 10% en enero, sube otro 10% en febrero y baja 20% en marzo. ¿Cuánto cuesta al final? ¿Es lo mismo que si hubiera bajado 20% primero y luego subido dos veces 10%? Si la inflación de un país es de 5% anual durante 10 años, ¿los precios suben 50%, más o menos?</p>
+										</div>
+									</div>
+
 									<h3>El índice de crecimiento</h3>
 									<p>Otra forma de medir el crecimiento es con un índice: se toma un año base, se le asigna el valor 100 y se calcula <strong>índice del año t = PIB del año t / PIB del año base × 100</strong>. Si el PIB real per cápita de Costa Rica en <span data-dato="crpc_anio_ini">1990</span> vale 100, en <span data-dato="crpc_anio_fin">2025</span> vale <strong><span data-dato="indice_cr">259</span></strong>: la producción por habitante se multiplicó por <span data-dato="veces_cr">2.6</span>. En una escala más larga, el PIB real per cápita de Estados Unidos en 2010 era unas 7,6 veces el de 1900.</p>
 
@@ -248,11 +263,15 @@
 									<p>El crecimiento económico es un medio, no un fin. El concepto de <strong>desarrollo humano</strong> del Programa de las Naciones Unidas para el Desarrollo (PNUD) va más allá: es la ampliación de las oportunidades de las personas para tener una vida larga y saludable, adquirir conocimientos y disfrutar de un nivel de vida digno.</p>
 									<p>El <strong>Índice de Desarrollo Humano (IDH)</strong> resume esas tres dimensiones: la salud, medida por la esperanza de vida al nacer; la educación, medida por los años promedio de escolaridad de los adultos de 25 años o más y los años esperados de escolaridad de los niños; y el nivel de vida, medido por el ingreso per cápita. Los tres índices se combinan en uno solo, que va de 0 a 1.</p>
 									<p>Según el <span data-dato="informe_idh">Informe sobre Desarrollo Humano 2025</span>, con datos de <span data-dato="anio_idh">2023</span>, Costa Rica tiene un IDH de <strong><span data-dato="idh_cr">0.833</span></strong> y ocupa la posición <span data-dato="posicion_cr">62</span> de <span data-dato="total_paises">193</span> países, la <span data-dato="posicion_cr_alc">7</span>.ª de América Latina y el Caribe, dentro de la categoría de desarrollo humano muy alto.</p>
-									<table class="tabla-sobria" id="tablaIDH" style="width: 100%;">
-										<thead><tr><th>País</th><th>IDH</th><th>Posición</th><th>Esperanza de vida</th><th>Años esperados de escolaridad</th><th>Años promedio de escolaridad</th><th>Ingreso per cápita (PPP)</th></tr></thead>
-										<tbody></tbody>
-									</table>
-									<p>La comparación muestra algo interesante: Costa Rica tiene una esperanza de vida (<span data-dato="ev_cri">80.8</span> años) mayor que la de Estados Unidos (<span data-dato="ev_usa">79.3</span>) con un ingreso tres veces menor. Pero su gran rezago está en la escolaridad promedio de los adultos, donde apenas alcanza el promedio mundial. Ahí se ve el vínculo entre desarrollo humano y crecimiento: sin capital humano es difícil sostener una economía de alta productividad.</p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="idhChart" style="width: 100%; height: 280px;"></canvas>
+									</div>
+									<div class="idh-paneles">
+										<div><canvas id="idhSalud" style="width: 100%; height: 250px;"></canvas></div>
+										<div><canvas id="idhEduc" style="width: 100%; height: 250px;"></canvas></div>
+										<div><canvas id="idhIngreso" style="width: 100%; height: 250px;"></canvas></div>
+									</div>
+									<p>Al separar las tres dimensiones aparece algo interesante: Costa Rica tiene una esperanza de vida (<span data-dato="ev_cri">80.8</span> años) mayor que la de Estados Unidos (<span data-dato="ev_usa">79.3</span>) con un ingreso tres veces menor. Pero su gran rezago está en la escolaridad promedio de los adultos, donde apenas alcanza el promedio mundial. Ahí se ve el vínculo entre desarrollo humano y crecimiento: sin capital humano es difícil sostener una economía de alta productividad.</p>
 
 									<h3>Razones para el optimismo y para la preocupación</h3>
 									<p>En los últimos 50 años, en parte como reacción a estudios como el del Club de Roma sobre los límites del crecimiento, se desarrollaron políticas que buscaron proteger el medio ambiente y avanzar hacia un desarrollo sostenible: la eliminación del plomo en los combustibles, la prohibición de los clorofluorocarbonos que dañaban la capa de ozono, las políticas de energía limpia y la reforestación para fijar carbono.</p>
@@ -303,7 +322,7 @@
 								paises: [['Estados Unidos',30770,90027,76931],['China',19498,13862,25067],['Suiza',1044,114769,85732],['Suecia',669,63133,63362],['Guatemala',123,6598,12987],['Costa Rica',103,19970,28443]],
 								cr: [[1990,6049,3.55],[1991,6030,2.27],[1992,6420,9.20],[1993,6706,7.10],[1994,6839,4.52],[1995,6954,4.15],[1996,6885,1.35],[1997,7100,5.48],[1998,7440,7.09],[1999,7589,4.15],[2000,7727,3.80],[2001,7854,3.49],[2002,7990,3.42],[2003,8207,4.32],[2004,8446,4.42],[2005,8655,3.98],[2006,9160,7.33],[2007,9780,8.22],[2008,10105,4.74],[2009,9884,-0.87],[2010,10285,5.36],[2011,10612,4.40],[2012,11002,4.88],[2013,11151,2.49],[2014,11423,3.54],[2015,11715,3.65],[2016,12084,4.20],[2017,12469,4.16],[2018,12709,2.85],[2019,12944,2.71],[2020,12322,-4.14],[2021,13267,8.22],[2022,13932,5.46],[2023,14532,4.79],[2024,15053,4.08],[2025,15669,4.56]],
 								ranking: [['Zimbabue',1677.3,1503.1],['México',9582.0,10256.7],['Arabia Saudita',22247.9,25066.0],['Japón',31779.4,38619.3],['Suiza',74933.3,93327.6],['Argentina',10631.7,13287.1],['Suecia',41561.8,55014.4],['América Latina y el Caribe',6742.0,9017.5],['Estados Unidos',48616.3,67945.6],['Guatemala',3165.9,4687.9],['Mundo',7879.6,12130.7],['El Salvador',2964.9,4734.9],['Chile',8465.4,14904.6],['Tailandia',3514.7,6782.8],['Costa Rica',7726.5,15669.0],['Corea del Sur',17763.1,37469.7],['India',756.7,2523.4],['China',2237.3,13793.2]],
-								idh: [['Suiza',0.970,2,84.0,16.7,13.9,81949],['Suecia',0.959,5,83.3,19.0,12.7,66102],['Estados Unidos',0.938,17,79.3,15.9,13.9,73650],['Chile',0.878,45,81.2,16.9,11.3,28047],['Uruguay',0.862,48,78.1,17.5,10.5,28650],['Panamá',0.839,59,79.6,13.3,10.8,34385],['Costa Rica',0.833,62,80.8,16.3,8.8,23417],['China',0.797,78,78.0,15.5,8.0,22029],['México',0.789,81,75.1,14.5,9.3,21813],['América Latina y el Caribe',0.783,'',75.6,14.8,9.1,18048],['Mundo',0.756,'',73.4,13.0,8.8,20327],['Guatemala',0.662,137,72.6,10.7,5.8,12459]]
+								idh: [['Suiza',0.970,2,84.0,16.7,13.9,81949,'sí'],['Suecia',0.959,5,83.3,19.0,12.7,66102,'no'],['Estados Unidos',0.938,17,79.3,15.9,13.9,73650,'sí'],['Chile',0.878,45,81.2,16.9,11.3,28047,'sí'],['Uruguay',0.862,48,78.1,17.5,10.5,28650,'no'],['Panamá',0.839,59,79.6,13.3,10.8,34385,'no'],['Costa Rica',0.833,62,80.8,16.3,8.8,23417,'sí'],['China',0.797,78,78.0,15.5,8.0,22029,'sí'],['México',0.789,81,75.1,14.5,9.3,21813,'no'],['América Latina y el Caribe',0.783,'',75.6,14.8,9.1,18048,'no'],['Mundo',0.756,'',73.4,13.0,8.8,20327,'sí'],['Guatemala',0.662,137,72.6,10.7,5.8,12459,'sí']]
 							};
 
 							function num(v) { if (v === null || v === undefined || v === '') return null; var n = (typeof v === 'number') ? v : parseFloat(String(v).replace(',', '.')); return isNaN(n) ? null : n; }
@@ -322,7 +341,7 @@
 									paises: filas(wb, 'Paises').map(function (f) { return [String(f[0]).trim(), num(f[1]), num(f[2]), num(f[3])]; }),
 									cr: filas(wb, 'CR_PIB').map(function (f) { return [num(f[0]), num(f[1]), num(f[2])]; }),
 									ranking: filas(wb, 'Ranking').map(function (f) { return [String(f[0]).trim(), num(f[1]), num(f[2])]; }),
-									idh: filas(wb, 'IDH').map(function (f) { return [String(f[0]).trim(), num(f[1]), (f[2] === undefined ? '' : f[2]), num(f[3]), num(f[4]), num(f[5]), num(f[6])]; })
+									idh: filas(wb, 'IDH').map(function (f) { return [String(f[0]).trim(), num(f[1]), (f[2] === undefined ? '' : f[2]), num(f[3]), num(f[4]), num(f[5]), num(f[6]), String(f[7] === undefined ? 'sí' : f[7]).trim().toLowerCase()]; })
 								};
 							}
 							function buscar(arr, nombre) { for (var i = 0; i < arr.length; i++) if (arr[i][0] === nombre) return arr[i]; return null; }
@@ -338,6 +357,7 @@
 								var c0 = cr[0], c1 = cr[cr.length - 1];
 								var rec = cr.filter(function (f) { return f[2] < 0; }).map(function (f) { return f[0]; });
 								var palabras = ['ningún', 'un', 'dos', 'tres', 'cuatro', 'cinco'];
+								var gr = cr.slice(1), suma = gr.reduce(function (m, f) { return m + f[2]; }, 0), prodT = gr.reduce(function (m, f) { return m * (1 + f[2] / 100); }, 1);
 								var prom = (Math.pow(cr.reduce(function (m, f, i) { return i === 0 ? 1 : m * (1 + f[2] / 100); }, 1), 1 / (cr.length - 1)) - 1) * 100;
 								var v = {
 									anio_bm: g.anio_bm, fecha_bm: g.fecha_bm, pib_usa: miles(p('Estados Unidos', 1)), pib_chn: miles(p('China', 1)), pib_cri: miles(p('Costa Rica', 1)),
@@ -347,7 +367,7 @@
 									rk_ini: ini, rk_fin: fin,
 									r70_chn_tasa: pct(tasa('China')), r70_chn: r70('China'), r70_cri_tasa: pct(tasa('Costa Rica')), r70_cri: r70('Costa Rica'), r70_mex_tasa: pct(tasa('México')), r70_mex: r70('México'),
 									tasa_wld: pct(tasa('Mundo')), tasa_lcn: pct(tasa('América Latina y el Caribe')),
-									crec_prom: pct(prom), n_recesiones: palabras[rec.length] || rec.length, anios_recesion: rec.length > 1 ? rec.slice(0, -1).join(', ') + ' y ' + rec[rec.length - 1] : rec.join(''),
+									crec_prom: pct(prom), pc_anio_ini: gr.length ? gr[0][0] : '', pc_suma: pct(suma, 0), pc_prod: pct((prodT - 1) * 100, 0), pc_veces: prodT.toFixed(1), n_recesiones: palabras[rec.length] || rec.length, anios_recesion: rec.length > 1 ? rec.slice(0, -1).join(', ') + ' y ' + rec[rec.length - 1] : rec.join(''),
 									informe_idh: g.informe_idh, anio_idh: g.anio_idh, idh_cr: num(g.idh_cr) !== null ? num(g.idh_cr).toFixed(3) : '', posicion_cr: g.posicion_cr, total_paises: g.total_paises, posicion_cr_alc: g.posicion_cr_alc,
 									esc_cri: ih('Costa Rica', 5), esc_usa: ih('Estados Unidos', 5), ev_cri: ih('Costa Rica', 3), ev_usa: ih('Estados Unidos', 3)
 								};
@@ -356,12 +376,9 @@
 								});
 								// Tabla del ejercicio: últimos 6 años
 								document.querySelector('#tablaEjercicio tbody').innerHTML = cr.slice(-6).map(function (f) { return '<tr><td>' + f[0] + '</td><td>US$' + miles(f[1]) + '</td></tr>'; }).join('');
-								// Tabla IDH
-								document.querySelector('#tablaIDH tbody').innerHTML = D.idh.map(function (f) {
-									var cr_ = f[0] === 'Costa Rica' ? ' style="font-weight: bold;"' : '';
-									return '<tr' + cr_ + '><td>' + f[0] + '</td><td>' + (f[1] !== null ? f[1].toFixed(3) : '–') + '</td><td>' + (f[2] === '' ? '–' : f[2]) + '</td><td>' + miles(f[3], 1) + '</td><td>' + miles(f[4], 1) + '</td><td>' + miles(f[5], 1) + '</td><td>US$' + miles(f[6]) + '</td></tr>';
-								}).join('');
+								
 								graficos(D, g, cr, rk, ini, fin);
+								graficosIDH(D);
 							}
 
 							var NAVY = 'rgba(31, 52, 92, 0.75)', TURQ = 'rgba(0, 67, 80, 0.75)', TURQ2 = 'rgba(64, 160, 170, 0.55)', GRIS = 'rgba(120, 130, 140, 0.45)', ROJO = 'rgba(139, 0, 0, 0.6)';
@@ -424,6 +441,34 @@
 										chart.getDatasetMeta(0).data.forEach(function (bar, i) { if (ds.data[i] < 0) ctx.fillText(chart.data.labels[i] + ': ' + ds.data[i].toFixed(1) + '%', bar.x, bar.y + 14); });
 										ctx.restore();
 									} }]
+								});
+							}
+
+							function graficosIDH(D) {
+								var sel = D.idh.filter(function (f) { return f[7] !== 'no'; }).sort(function (a, b) { return b[1] - a[1]; });
+								var col = function (arr) { return arr.map(function (f) { return f[0] === 'Costa Rica' ? TURQ : (f[0] === 'Mundo' || f[0] === 'América Latina y el Caribe' ? GRIS : NAVY); }); };
+								var nombre = function (f) { return f[0] === 'América Latina y el Caribe' ? 'Am. Latina y Caribe' : f[0]; };
+								new Chart(document.getElementById('idhChart').getContext('2d'), {
+									type: 'bar',
+									data: { labels: sel.map(nombre), datasets: [{ data: sel.map(function (f) { return f[1]; }), backgroundColor: col(sel), borderWidth: 0, barPercentage: 0.7 }] },
+									options: { indexAxis: 'y', maintainAspectRatio: false, layout: { padding: { right: 40 } },
+										plugins: { title: titulo('Índice de Desarrollo Humano, ' + D.general.anio_idh), legend: { display: false }, tooltip: { callbacks: { label: function (it) { var f = sel[it.dataIndex]; return 'IDH ' + it.raw.toFixed(3) + (f[2] !== '' ? ' (posición ' + f[2] + ')' : ''); } } } },
+										scales: { x: { min: 0.5, max: 1 }, y: { ticks: { autoSkip: false, font: { size: 12 } } } } },
+									plugins: [etiquetas('lblIdh', function (x) { return x.toFixed(3); }, true)]
+								});
+								[['idhSalud', 3, 'Salud: esperanza de vida (años)', 40, function (x) { return x.toFixed(1); }],
+								 ['idhEduc', 5, 'Educación: años promedio de escolaridad', 0, function (x) { return x.toFixed(1); }],
+								 ['idhIngreso', 6, 'Ingreso per cápita (miles de US$ PPP)', 0, function (x) { return Math.round(x); }]].forEach(function (c) {
+									var ord = sel.slice().sort(function (a, b) { return b[c[1]] - a[c[1]]; });
+									var datos = ord.map(function (f) { return c[1] === 6 ? f[6] / 1000 : f[c[1]]; });
+									new Chart(document.getElementById(c[0]).getContext('2d'), {
+										type: 'bar',
+										data: { labels: ord.map(nombre), datasets: [{ data: datos, backgroundColor: col(ord), borderWidth: 0, barPercentage: 0.7 }] },
+										options: { indexAxis: 'y', maintainAspectRatio: false, layout: { padding: { right: 30 } },
+											plugins: { title: { display: true, text: c[2], font: { size: 13, weight: 'bold' } }, legend: { display: false }, tooltip: { callbacks: { label: function (it) { return c[4](it.raw); } } } },
+											scales: { x: { min: c[3], ticks: { font: { size: 10 } } }, y: { ticks: { autoSkip: false, font: { size: 11 } } } } },
+										plugins: [etiquetas('lbl' + c[0], c[4], true)]
+									});
 								});
 							}
 

@@ -1675,3 +1675,5 @@ input[type="text"] {
 #colorlib-work .nodo-p { fill: rgba(139, 58, 58, 0.08); stroke: rgba(139, 58, 58, 0.5); stroke-width: 1.2; }
 #colorlib-work .flecha-v { fill: none; stroke: #004350; stroke-width: 1.6; }
 #colorlib-work .flecha-p { fill: none; stroke: #8B3A3A; stroke-width: 1.6; }
+#colorlib-work .idh-paneles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 10px; }
+@media (max-width: 768px) { #colorlib-work .idh-paneles { grid-template-columns: 1fr; } }
