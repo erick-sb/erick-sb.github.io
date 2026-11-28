@@ -38,7 +38,7 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
-	<link rel="stylesheet" href="css/style.css?v=10">
+	<link rel="stylesheet" href="css/style.css?v=13">
 
 
 	<!-- Modernizr JS -->
@@ -224,6 +224,29 @@
 										</div>
 									</div>
 
+									<details class="desplegable">
+										<summary><span class="desp-tag">Para pensar</span> Un error muy común con los porcentajes (casi todo el mundo cae)</summary>
+										<div class="desp-contenido">
+											<p><strong>Un precio baja 40% y después sube 60%. ¿Cuál fue el cambio total?</strong></p>
+											<div class="quiz" id="quizPct">
+												<button type="button" data-ok="0">A. Aumentó 10%</button>
+												<button type="button" data-ok="0">B. Aumentó 20%</button>
+												<button type="button" data-ok="1">C. Disminuyó 4%</button>
+												<button type="button" data-ok="0">D. Ninguna de las anteriores</button>
+											</div>
+											<p class="quiz-resp" id="quizResp"></p>
+											<div id="quizExpl" style="display: none;">
+												<p>La respuesta más común es "aumentó 20%", porque se hace la cuenta −40 + 60 = +20. Pero está mal. Si el precio era ₡10 000, al bajar 40% queda en ₡6 000, y el aumento de 60% se calcula sobre esos ₡6 000: sube ₡3 600 y termina en ₡9 600. ¡Bajó un 4%!</p>
+												<p>Cada porcentaje se aplica sobre una base distinta: la que dejó el cambio anterior. Por eso los cambios porcentuales sucesivos <strong>no se suman, se multiplican</strong>:</p>
+												<p style="text-align: center;"><strong>cambio total = (1 + r<sub>1</sub>) × (1 + r<sub>2</sub>) × … × (1 + r<sub>n</sub>) − 1</strong></p>
+												<p>En el ejemplo: (1 − 0,40) × (1 + 0,60) − 1 = 0,96 − 1 = −4%. Por la misma razón, si a alguien le rebajan el salario un 20% y luego se lo suben un 20%, no queda igual: pierde un 4%. Y un descuento del 20% más un 25% adicional en caja no es un 45% de descuento, sino un 40%.</p>
+												<p>Con la inflación pasa exactamente lo mismo. Si sumamos la inflación de cada año entre <span data-dato="pct_a1">2006</span> y <span data-dato="pct_b">2025</span>, da <span data-dato="pct_suma">78%</span>. Pero los precios en realidad subieron <strong><span data-dato="pct_prod">112%</span></strong>, que es lo que muestra la calculadora de arriba entre diciembre de <span data-dato="pct_a">2005</span> y diciembre de <span data-dato="pct_b">2025</span>. Cada año los precios suben sobre lo que ya habían subido. Lo mismo ocurre con el crecimiento económico, como veremos en la 5B.</p>
+												<p>Una confusión parecida es la de los <strong>puntos porcentuales</strong>. Si la tasa de desempleo pasa de <span data-dato="td_prev">5.7%</span> a <span data-dato="td">6.5%</span>, aumentó <span data-dato="pp_dif">0.8</span> <em>puntos porcentuales</em>, pero en términos relativos aumentó un <span data-dato="pp_rel">14%</span>. Las dos cosas son ciertas; lo que no se vale es mezclarlas.</p>
+												<p><em>Para practicar:</em> un producto de ₡10 000 sube 10% en enero, otro 10% en febrero y baja 20% en marzo. ¿Cuánto cuesta al final? Y si la inflación es de 5% anual durante 10 años, ¿los precios suben 50%, más o menos?</p>
+											</div>
+										</div>
+									</details>
+
 									<h2>El empleo y el desempleo</h2>
 									<p>La <strong>fuerza de trabajo</strong> está formada por las personas en edad de trabajar (15 años o más en Costa Rica) que trabajan o que quieren trabajar. Incluye a los <strong>ocupados</strong>, que trabajan de forma remunerada a tiempo completo o parcial, y a los <strong>desempleados</strong>, que no tienen trabajo pero lo están buscando activamente. Quien no trabaja ni busca trabajo, como un estudiante a tiempo completo o una persona jubilada, está <strong>fuera de la fuerza de trabajo</strong>.</p>
 									<p>Con esas categorías se calculan tres tasas:</p>
@@ -338,6 +361,7 @@
 								var emp = D.empleo.slice().sort(function (a, b) { return a[0] - b[0]; });
 								var inf = D.inflacion.slice().sort(function (a, b) { return a[0] - b[0]; });
 								var tdMax = emp.reduce(function (m, f) { return f[1] > m[1] ? f : m; }, emp[0]);
+								var pctA = 2005, pctRango = inf.filter(function (f) { return f[0] > pctA; }), pctSuma = pctRango.reduce(function (m, f) { return m + f[1]; }, 0), pctProd = pctRango.reduce(function (m, f) { return m * (1 + f[1] / 100); }, 1);
 								var dpv = function (i) { return D.pobreza[i] ? pct(D.pobreza[i][1]) : '–'; };
 								var v = {
 									anio_regimen: g.anio_crecimiento_regimen, crec_total: pct(g.crec_total), crec_definitivo: pct(g.crec_definitivo), crec_especial: pct(g.crec_especial),
@@ -348,6 +372,8 @@
 									sub: pct(det[3] && det[3][1]), inf_lab: pct(det[4] && det[4][1]), ocupados: miles(det[5] && det[5][1]), desempleados: miles(det[6] && det[6][1]),
 									td_h: pct(det[8] && det[8][1]), td_m: pct(det[9] && det[9][1]), tpl_h: pct(det[10] && det[10][1]), tpl_m: pct(det[11] && det[11][1]),
 									td_max: pct(tdMax[1]), td_max_anio: tdMax[0],
+									pct_a: pctA, pct_a1: pctA + 1, pct_b: inf[inf.length - 1][0], pct_suma: pct(pctSuma, 0), pct_prod: pct((pctProd - 1) * 100, 0),
+									pp_dif: (det[2] ? (det[2][1] - det[2][0]).toFixed(1) : '–'), pp_rel: (det[2] ? pct((det[2][1] / det[2][0] - 1) * 100, 0) : '–'),
 									anio_dp: D.anio_dp, dp_nopobres: dpv(1), dp_lp: dpv(2)
 								};
 								document.querySelectorAll('[data-dato]').forEach(function (el) {
@@ -450,6 +476,17 @@
 								[sd, sh, m].forEach(function (el) { el.addEventListener('input', calc); el.addEventListener('change', calc); });
 								calc();
 							}
+
+							document.querySelectorAll('#quizPct button').forEach(function (bt) {
+								bt.addEventListener('click', function () {
+									document.querySelectorAll('#quizPct button').forEach(function (x) { x.classList.remove('elegida', 'correcta', 'incorrecta'); });
+									var ok = bt.getAttribute('data-ok') === '1';
+									bt.classList.add(ok ? 'correcta' : 'incorrecta');
+									if (!ok) document.querySelector('#quizPct button[data-ok="1"]').classList.add('correcta');
+									document.getElementById('quizResp').textContent = ok ? '¡Correcto! Usted es de las pocas personas que no cae en la trampa. Vea por qué:' : 'No. La respuesta correcta es C: disminuyó 4%. Vea por qué:';
+									document.getElementById('quizExpl').style.display = 'block';
+								});
+							});
 
 							function respaldo(motivo) {
 								var aviso = document.getElementById('avisoDatos');

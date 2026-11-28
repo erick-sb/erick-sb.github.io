@@ -38,7 +38,7 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
-	<link rel="stylesheet" href="css/style.css?v=12">
+	<link rel="stylesheet" href="css/style.css?v=13">
 
 
 	<!-- Modernizr JS -->
@@ -155,26 +155,11 @@
 										</div>
 									</div>
 
-									<h3>Cuidado: los porcentajes no se suman, se multiplican</h3>
-									<p>Suponga que a una persona le rebajan el salario un 20% y al año siguiente se lo suben un 20%. ¿Quedó igual? La mayoría de la gente diría que sí, pero no: si ganaba ₡500 000, con la rebaja pasa a ₡400 000, y el aumento del 20% se calcula sobre esos ₡400 000, así que termina con ₡480 000. Perdió un 4%. Lo mismo pasa con un descuento del 20% más un 25% adicional en caja: no es un 45% de descuento, sino un 40%.</p>
-									<p>La razón es que cada porcentaje se aplica sobre una base distinta: la que dejó el cambio anterior. Por eso los cambios porcentuales sucesivos no se suman, sino que se multiplican:</p>
-									<p style="text-align: center;"><strong>cambio total = (1 + r<sub>1</sub>) × (1 + r<sub>2</sub>) × … × (1 + r<sub>n</sub>) − 1</strong></p>
-									<p>En la rebaja y el aumento de salario: (1 − 0,20) × (1 + 0,20) − 1 = 0,96 − 1 = −4%. Y con el descuento: (1 − 0,20) × (1 − 0,25) − 1 = 0,60 − 1 = −40%.</p>
-									<p>Con el crecimiento económico pasa lo mismo, y la diferencia puede ser enorme. Si sumamos las tasas de crecimiento del PIB real de Costa Rica de cada año entre <span data-dato="pc_anio_ini">1991</span> y <span data-dato="crpc_anio_fin">2025</span>, da <span data-dato="pc_suma">149%</span>. Pero el crecimiento acumulado real, multiplicando, fue de <strong><span data-dato="pc_prod">328%</span></strong>: la producción se multiplicó por <span data-dato="pc_veces">4.3</span>. Cada año se crece sobre lo que ya se había crecido; por eso, además, una caída del 50% necesita después un aumento del 100% para volver al punto de partida.</p>
-									<p>Una confusión parecida es la de los <strong>puntos porcentuales</strong>. Si la tasa de desempleo pasa de 5,7% a 6,5%, aumentó 0,8 <em>puntos porcentuales</em>, pero en términos relativos aumentó un 14%, porque 0,8 es el 14% de 5,7. Ambas cosas son ciertas; lo que no se vale es mezclarlas.</p>
-
-									<div class="exercise-section">
-										<div class="exercise-tag">Ejercicio</div>
-										<div class="exercise-content">
-											<p>Un producto que costaba ₡10 000 sube 10% en enero, sube otro 10% en febrero y baja 20% en marzo. ¿Cuánto cuesta al final? ¿Es lo mismo que si hubiera bajado 20% primero y luego subido dos veces 10%? Si la inflación de un país es de 5% anual durante 10 años, ¿los precios suben 50%, más o menos?</p>
-										</div>
-									</div>
-
 									<h3>El índice de crecimiento</h3>
 									<p>Otra forma de medir el crecimiento es con un índice: se toma un año base, se le asigna el valor 100 y se calcula <strong>índice del año t = PIB del año t / PIB del año base × 100</strong>. Si el PIB real per cápita de Costa Rica en <span data-dato="crpc_anio_ini">1990</span> vale 100, en <span data-dato="crpc_anio_fin">2025</span> vale <strong><span data-dato="indice_cr">259</span></strong>: la producción por habitante se multiplicó por <span data-dato="veces_cr">2.6</span>. En una escala más larga, el PIB real per cápita de Estados Unidos en 2010 era unas 7,6 veces el de 1900.</p>
 
 									<h3>La regla del 70</h3>
-									<p>¿Cuántos años tarda en duplicarse el PIB per cápita? Si crece 1% al año, uno podría pensar que tarda 100 años, pero no: el crecimiento es acumulativo, porque cada año se crece sobre lo que ya se había crecido. Una regla práctica para estimarlo es: <strong>años para duplicarse = 70 / tasa de crecimiento anual</strong>. A 1% anual, el PIB se duplica en unos 70 años.</p>
+									<p>¿Cuántos años tarda en duplicarse el PIB per cápita? Si crece 1% al año, uno podría pensar que tarda 100 años, pero no: el crecimiento es acumulativo, porque cada año se crece sobre lo que ya se había crecido (como vimos en la 5A, los porcentajes no se suman: se multiplican). Una regla práctica para estimarlo es: <strong>años para duplicarse = 70 / tasa de crecimiento anual</strong>. A 1% anual, el PIB se duplica en unos 70 años.</p>
 									<p>Si se mantuvieran las tasas promedio de <span data-dato="rk_ini">2000</span>-<span data-dato="rk_fin">2025</span>, el PIB per cápita de China (<span data-dato="r70_chn_tasa">7.5%</span>) se duplicaría en unos <span data-dato="r70_chn">9</span> años, el de Costa Rica (<span data-dato="r70_cri_tasa">2.9%</span>) en unos <span data-dato="r70_cri">24</span> y el de México (<span data-dato="r70_mex_tasa">0.3%</span>) en unos <span data-dato="r70_mex">257</span>.</p>
 
 									<h2>¿Cómo se logra el crecimiento?</h2>
@@ -263,13 +248,25 @@
 									<p>El crecimiento económico es un medio, no un fin. El concepto de <strong>desarrollo humano</strong> del Programa de las Naciones Unidas para el Desarrollo (PNUD) va más allá: es la ampliación de las oportunidades de las personas para tener una vida larga y saludable, adquirir conocimientos y disfrutar de un nivel de vida digno.</p>
 									<p>El <strong>Índice de Desarrollo Humano (IDH)</strong> resume esas tres dimensiones: la salud, medida por la esperanza de vida al nacer; la educación, medida por los años promedio de escolaridad de los adultos de 25 años o más y los años esperados de escolaridad de los niños; y el nivel de vida, medido por el ingreso per cápita. Los tres índices se combinan en uno solo, que va de 0 a 1.</p>
 									<p>Según el <span data-dato="informe_idh">Informe sobre Desarrollo Humano 2025</span>, con datos de <span data-dato="anio_idh">2023</span>, Costa Rica tiene un IDH de <strong><span data-dato="idh_cr">0.833</span></strong> y ocupa la posición <span data-dato="posicion_cr">62</span> de <span data-dato="total_paises">193</span> países, la <span data-dato="posicion_cr_alc">7</span>.ª de América Latina y el Caribe, dentro de la categoría de desarrollo humano muy alto.</p>
-									<div style="flex: 1; margin: 10px;">
-										<canvas id="idhChart" style="width: 100%; height: 280px;"></canvas>
-									</div>
-									<div class="idh-paneles">
-										<div><canvas id="idhSalud" style="width: 100%; height: 250px;"></canvas></div>
-										<div><canvas id="idhEduc" style="width: 100%; height: 250px;"></canvas></div>
-										<div><canvas id="idhIngreso" style="width: 100%; height: 250px;"></canvas></div>
+									<div class="idh-tarjetas">
+										<div class="idh-tarjeta">
+											<div class="idh-dim">Salud</div>
+											<div class="idh-num"><span data-dato="ev_cri">80.8</span> años</div>
+											<div class="idh-sub">esperanza de vida al nacer</div>
+											<div class="idh-ref">Mundo: <span data-dato="ev_wld">73.4</span> años</div>
+										</div>
+										<div class="idh-tarjeta">
+											<div class="idh-dim">Educación</div>
+											<div class="idh-num"><span data-dato="esc_cri">8.8</span> años</div>
+											<div class="idh-sub">de escolaridad promedio (adultos)</div>
+											<div class="idh-ref">Mundo: <span data-dato="esc_wld">8.8</span> años</div>
+										</div>
+										<div class="idh-tarjeta">
+											<div class="idh-dim">Ingreso</div>
+											<div class="idh-num">US$<span data-dato="ing_cri">23 417</span></div>
+											<div class="idh-sub">per cápita (PPP)</div>
+											<div class="idh-ref">Mundo: US$<span data-dato="ing_wld">20 327</span></div>
+										</div>
 									</div>
 									<p>Al separar las tres dimensiones aparece algo interesante: Costa Rica tiene una esperanza de vida (<span data-dato="ev_cri">80.8</span> años) mayor que la de Estados Unidos (<span data-dato="ev_usa">79.3</span>) con un ingreso tres veces menor. Pero su gran rezago está en la escolaridad promedio de los adultos, donde apenas alcanza el promedio mundial. Ahí se ve el vínculo entre desarrollo humano y crecimiento: sin capital humano es difícil sostener una economía de alta productividad.</p>
 
@@ -369,7 +366,7 @@
 									tasa_wld: pct(tasa('Mundo')), tasa_lcn: pct(tasa('América Latina y el Caribe')),
 									crec_prom: pct(prom), pc_anio_ini: gr.length ? gr[0][0] : '', pc_suma: pct(suma, 0), pc_prod: pct((prodT - 1) * 100, 0), pc_veces: prodT.toFixed(1), n_recesiones: palabras[rec.length] || rec.length, anios_recesion: rec.length > 1 ? rec.slice(0, -1).join(', ') + ' y ' + rec[rec.length - 1] : rec.join(''),
 									informe_idh: g.informe_idh, anio_idh: g.anio_idh, idh_cr: num(g.idh_cr) !== null ? num(g.idh_cr).toFixed(3) : '', posicion_cr: g.posicion_cr, total_paises: g.total_paises, posicion_cr_alc: g.posicion_cr_alc,
-									esc_cri: ih('Costa Rica', 5), esc_usa: ih('Estados Unidos', 5), ev_cri: ih('Costa Rica', 3), ev_usa: ih('Estados Unidos', 3)
+									esc_cri: ih('Costa Rica', 5), esc_wld: ih('Mundo', 5), ev_wld: ih('Mundo', 3), ing_cri: miles(ih('Costa Rica', 6)), ing_wld: miles(ih('Mundo', 6)), esc_usa: ih('Estados Unidos', 5), ev_cri: ih('Costa Rica', 3), ev_usa: ih('Estados Unidos', 3)
 								};
 								document.querySelectorAll('[data-dato]').forEach(function (el) {
 									var k = el.getAttribute('data-dato'); if (v[k] !== undefined && v[k] !== null && v[k] !== '') el.textContent = v[k];
@@ -378,7 +375,6 @@
 								document.querySelector('#tablaEjercicio tbody').innerHTML = cr.slice(-6).map(function (f) { return '<tr><td>' + f[0] + '</td><td>US$' + miles(f[1]) + '</td></tr>'; }).join('');
 								
 								graficos(D, g, cr, rk, ini, fin);
-								graficosIDH(D);
 							}
 
 							var NAVY = 'rgba(31, 52, 92, 0.75)', TURQ = 'rgba(0, 67, 80, 0.75)', TURQ2 = 'rgba(64, 160, 170, 0.55)', GRIS = 'rgba(120, 130, 140, 0.45)', ROJO = 'rgba(139, 0, 0, 0.6)';
@@ -441,34 +437,6 @@
 										chart.getDatasetMeta(0).data.forEach(function (bar, i) { if (ds.data[i] < 0) ctx.fillText(chart.data.labels[i] + ': ' + ds.data[i].toFixed(1) + '%', bar.x, bar.y + 14); });
 										ctx.restore();
 									} }]
-								});
-							}
-
-							function graficosIDH(D) {
-								var sel = D.idh.filter(function (f) { return f[7] !== 'no'; }).sort(function (a, b) { return b[1] - a[1]; });
-								var col = function (arr) { return arr.map(function (f) { return f[0] === 'Costa Rica' ? TURQ : (f[0] === 'Mundo' || f[0] === 'América Latina y el Caribe' ? GRIS : NAVY); }); };
-								var nombre = function (f) { return f[0] === 'América Latina y el Caribe' ? 'Am. Latina y Caribe' : f[0]; };
-								new Chart(document.getElementById('idhChart').getContext('2d'), {
-									type: 'bar',
-									data: { labels: sel.map(nombre), datasets: [{ data: sel.map(function (f) { return f[1]; }), backgroundColor: col(sel), borderWidth: 0, barPercentage: 0.7 }] },
-									options: { indexAxis: 'y', maintainAspectRatio: false, layout: { padding: { right: 40 } },
-										plugins: { title: titulo('Índice de Desarrollo Humano, ' + D.general.anio_idh), legend: { display: false }, tooltip: { callbacks: { label: function (it) { var f = sel[it.dataIndex]; return 'IDH ' + it.raw.toFixed(3) + (f[2] !== '' ? ' (posición ' + f[2] + ')' : ''); } } } },
-										scales: { x: { min: 0.5, max: 1 }, y: { ticks: { autoSkip: false, font: { size: 12 } } } } },
-									plugins: [etiquetas('lblIdh', function (x) { return x.toFixed(3); }, true)]
-								});
-								[['idhSalud', 3, 'Salud: esperanza de vida (años)', 40, function (x) { return x.toFixed(1); }],
-								 ['idhEduc', 5, 'Educación: años promedio de escolaridad', 0, function (x) { return x.toFixed(1); }],
-								 ['idhIngreso', 6, 'Ingreso per cápita (miles de US$ PPP)', 0, function (x) { return Math.round(x); }]].forEach(function (c) {
-									var ord = sel.slice().sort(function (a, b) { return b[c[1]] - a[c[1]]; });
-									var datos = ord.map(function (f) { return c[1] === 6 ? f[6] / 1000 : f[c[1]]; });
-									new Chart(document.getElementById(c[0]).getContext('2d'), {
-										type: 'bar',
-										data: { labels: ord.map(nombre), datasets: [{ data: datos, backgroundColor: col(ord), borderWidth: 0, barPercentage: 0.7 }] },
-										options: { indexAxis: 'y', maintainAspectRatio: false, layout: { padding: { right: 30 } },
-											plugins: { title: { display: true, text: c[2], font: { size: 13, weight: 'bold' } }, legend: { display: false }, tooltip: { callbacks: { label: function (it) { return c[4](it.raw); } } } },
-											scales: { x: { min: c[3], ticks: { font: { size: 10 } } }, y: { ticks: { autoSkip: false, font: { size: 11 } } } } },
-										plugins: [etiquetas('lbl' + c[0], c[4], true)]
-									});
 								});
 							}
 
