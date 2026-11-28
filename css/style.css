@@ -1667,3 +1667,11 @@ input[type="text"] {
 #colorlib-work .tabla-sobria th:first-child, #colorlib-work .tabla-sobria td:first-child { text-align: left; }
 #colorlib-work .calc-presets button span { font-size: inherit; color: inherit; margin: 0; }
 #colorlib-work .calc-select { width: 100%; padding: 6px 8px; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 4px; font-size: 14px; background: #fff; height: 34px; }
+#colorlib-work .ciclos-wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin: 20px 0; }
+#colorlib-work .ciclo-svg { width: 100%; max-width: 330px; height: auto; }
+#colorlib-work .ciclo-tit { font: bold 15px Arial, sans-serif; fill: #23394a; }
+#colorlib-work .ciclo-txt { font: 13px Arial, sans-serif; fill: #23394a; }
+#colorlib-work .nodo-v { fill: rgba(0, 67, 80, 0.10); stroke: rgba(0, 67, 80, 0.55); stroke-width: 1.2; }
+#colorlib-work .nodo-p { fill: rgba(139, 58, 58, 0.08); stroke: rgba(139, 58, 58, 0.5); stroke-width: 1.2; }
+#colorlib-work .flecha-v { fill: none; stroke: #004350; stroke-width: 1.6; }
+#colorlib-work .flecha-p { fill: none; stroke: #8B3A3A; stroke-width: 1.6; }

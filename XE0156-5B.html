@@ -1,0 +1,478 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>XE0156-5B</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/style.css?v=11">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+
+	</head>
+	<body>
+
+	<nav id="colorlib-main-nav" role="navigation">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+		<div class="js-fullheight colorlib-table">
+			<div class="colorlib-table-cell js-fullheight">
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li><a href="index.html">Página principal</a></li>
+							<li><a href="XE0156-1A.html">1A-El problema económico y el intercambio</a></li>
+							<li><a href="XE0156-1B.html">1B-La oferta, la demanda y el equilibrio del mercado</a></li>
+							<li><a href="XE0156-2A.html">2A-La competencia perfecta, los impuestos sobre bienes y el salario mínimo</a></li>
+							<li><a href="XE0156-2B.html">2B-El poder de mercado: monopolio, oligopolio y competencia monopolística</a></li>
+							<li><a href="XE0156-3A.html">3A-Las externalidades: costos y beneficios que no se reflejan en los precios</a></li>
+							<li><a href="XE0156-3B.html">3B-Los bienes públicos y los recursos comunes</a></li>
+							<li><a href="XE0156-4A.html">4A-La pobreza y la desigualdad</a></li>
+							<li><a href="XE0156-4B.html">4B-El Estado de bienestar</a></li>
+							<li><a href="XE0156-5A.html">5A-La Macroeconomía y la medición agregada: producción, precios y [des]empleo</a></li>
+							<li><a href="XE0156-5B.html">5B-El crecimiento económico y sus fuentes, el ciclo económico y el desarrollo humano</a></li>
+							<li><a href="XE0156-6A.html">6A-El ahorro, la inversión, el sistema financiero y el modelo de oferta y demanda agregadas</a></li>
+							<li><a href="XE0156-6B.html">6B-El dinero, la política monetaria y las tasas de interés</a></li>
+							<li><a href="XE0156-6C.html">6C-La política fiscal y la deuda</a></li>
+							<li><a href="XE0156-7A.html">7A-El comercio internacional y las medidas de protección</a></li>
+							<li><a href="XE0156-7B.html">7B-Los flujos de capital y los tipos de cambio</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+
+	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="index.html"><span>EESB</span></a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="colorlib-work">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">XE0156</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<h2>Crecimiento y ciclos</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">Crecimiento y ciclos</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+							<div class="col-md-12">
+								<div class="desc">
+									<div class="data-warning" id="avisoDatos" style="display: none;"></div>
+
+									<h2>¿Qué entendemos por crecimiento?</h2>
+									<p>El <strong>crecimiento económico</strong> es el aumento de la producción de un año a otro, y lo medimos con el crecimiento del Producto Interno Bruto. Como vimos en la 5A, para saber si la producción realmente aumentó usamos el <strong>PIB real</strong>, que no se infla con el aumento de los precios. Y para saber si ese aumento significa que la economía es más productiva, es decir, que genera más por habitante, usamos el <strong>PIB real per cápita</strong>.</p>
+									<p>Hay cuatro formas de expresar el PIB, y cada una responde una pregunta distinta:</p>
+									<p>1. <strong>PIB nominal:</strong> el valor de la producción a los precios de cada año. Sirve para saber el tamaño de la economía en dinero.</p>
+									<p>2. <strong>PIB real:</strong> la producción de cada año valorada a los precios de un año base. Sirve para saber cuánto creció de verdad la producción, descontando la inflación.</p>
+									<p>3. <strong>PIB per cápita:</strong> el PIB dividido entre la población. Sirve para saber cuánto se produce, o se gana, en promedio por habitante.</p>
+									<p>4. <strong>PIB en paridad de poder de compra (PPP):</strong> el PIB corregido por la diferencia de precios entre países. Con US$100 se compran más cosas en Costa Rica que en Suiza, así que comparar los PIB en dólares corrientes exagera las diferencias de bienestar. La PPP corrige eso y sirve para comparaciones internacionales.</p>
+
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="pibChart" style="width: 100%; height: 300px;"></canvas>
+									</div>
+									<p>El tamaño de las economías es muy desigual: en <span data-dato="anio_bm">2025</span>, el PIB de Estados Unidos fue de unos US$<span data-dato="pib_usa">30 770</span> mil millones, el de China de US$<span data-dato="pib_chn">19 498</span> mil millones y el de Costa Rica de US$<span data-dato="pib_cri">103</span> mil millones. Pero el tamaño no dice nada sobre el nivel de vida: el PIB de Guatemala es mayor que el de Costa Rica porque tiene muchos más habitantes, aunque cada uno produzca, en promedio, mucho menos.</p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="pibpcChart" style="width: 100%; height: 320px;"></canvas>
+									</div>
+									<p>Por habitante, el orden cambia por completo: Suiza supera a Estados Unidos, y China queda por debajo de Costa Rica. También se ve el efecto de la PPP: en dólares corrientes, el PIB per cápita de Costa Rica fue de US$<span data-dato="pc_cri">19 970</span>, pero corregido por el costo de vida equivale a US$<span data-dato="ppp_cri">28 443</span>. En los países más baratos la PPP sube el valor; en los más caros, como Suiza, lo baja.</p>
+
+									<h3>La tasa de crecimiento</h3>
+									<p>En economía, el crecimiento se mide normalmente como porcentaje: la <strong>tasa de crecimiento anual</strong>. Para el año t respecto al año anterior:</p>
+									<p style="text-align: center;"><strong>tasa de crecimiento = (PIB<sub>t</sub> − PIB<sub>t−1</sub>) / PIB<sub>t−1</sub> × 100</strong></p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="crpcChart" style="width: 100%; height: 300px;"></canvas>
+									</div>
+									<p>En Costa Rica, el PIB real per cápita pasó de US$<span data-dato="crpc_ini">6 049</span> en <span data-dato="crpc_anio_ini">1990</span> a US$<span data-dato="crpc_fin">15 669</span> en <span data-dato="crpc_anio_fin">2025</span>, medido en dólares de 2015. Las únicas caídas importantes en todo el periodo fueron las de 2009, por la crisis financiera internacional, y 2020, por la pandemia.</p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>Con estos datos del PIB real per cápita de Costa Rica (US$ de 2015), calcule la tasa de crecimiento de cada año:</p>
+											<table class="tabla-sobria" id="tablaEjercicio">
+												<thead><tr><th>Año</th><th>PIB real per cápita</th></tr></thead>
+												<tbody></tbody>
+											</table>
+											<p>¿En qué año cayó la producción por habitante? ¿Cuál fue el año de mayor crecimiento y por qué cree que fue tan alto?</p>
+										</div>
+									</div>
+
+									<h3>El índice de crecimiento</h3>
+									<p>Otra forma de medir el crecimiento es con un índice: se toma un año base, se le asigna el valor 100 y se calcula <strong>índice del año t = PIB del año t / PIB del año base × 100</strong>. Si el PIB real per cápita de Costa Rica en <span data-dato="crpc_anio_ini">1990</span> vale 100, en <span data-dato="crpc_anio_fin">2025</span> vale <strong><span data-dato="indice_cr">259</span></strong>: la producción por habitante se multiplicó por <span data-dato="veces_cr">2.6</span>. En una escala más larga, el PIB real per cápita de Estados Unidos en 2010 era unas 7,6 veces el de 1900.</p>
+
+									<h3>La regla del 70</h3>
+									<p>¿Cuántos años tarda en duplicarse el PIB per cápita? Si crece 1% al año, uno podría pensar que tarda 100 años, pero no: el crecimiento es acumulativo, porque cada año se crece sobre lo que ya se había crecido. Una regla práctica para estimarlo es: <strong>años para duplicarse = 70 / tasa de crecimiento anual</strong>. A 1% anual, el PIB se duplica en unos 70 años.</p>
+									<p>Si se mantuvieran las tasas promedio de <span data-dato="rk_ini">2000</span>-<span data-dato="rk_fin">2025</span>, el PIB per cápita de China (<span data-dato="r70_chn_tasa">7.5%</span>) se duplicaría en unos <span data-dato="r70_chn">9</span> años, el de Costa Rica (<span data-dato="r70_cri_tasa">2.9%</span>) en unos <span data-dato="r70_cri">24</span> y el de México (<span data-dato="r70_mex_tasa">0.3%</span>) en unos <span data-dato="r70_mex">257</span>.</p>
+
+									<h2>¿Cómo se logra el crecimiento?</h2>
+									<p>El crecimiento del PIB depende de dos cosas: de la <strong>cantidad de factores productivos</strong> con que cuenta una economía y de la <strong>productividad</strong> con que se usan. El crecimiento del PIB per cápita depende sobre todo del aumento en la productividad del trabajo, que puede venir de tres fuentes:</p>
+									<p>1. <strong>Capital físico:</strong> los recursos productivos producidos por el ser humano, como maquinaria, equipo y edificios.</p>
+									<p>2. <strong>Capital humano:</strong> la calificación y las habilidades que resultan de la educación y la experiencia.</p>
+									<p>3. <strong>Progreso tecnológico:</strong> el avance del conocimiento aplicado a la producción, que hace que los mismos recursos rindan más.</p>
+									<p>Cuando se habla de progreso tecnológico se piensa en grandes revoluciones: la agricultura, la máquina de vapor y el ferrocarril, la electricidad, la informática y, quizás ahora, la inteligencia artificial. Pero también hay cambios más modestos que elevan la productividad: los supermercados, la línea de montaje de Ford o las plataformas de internet.</p>
+									<p>La <strong>productividad total de los factores</strong> es la parte del crecimiento que no se explica por el aumento del capital físico y del trabajo. Cuando la economía logra producir más que proporcionalmente a lo que aumentaron el capital y el trabajo, hay un aumento en la productividad total de los factores, que es otra forma de referirse al efecto del cambio tecnológico.</p>
+									<p>El Premio Nobel de Economía de 2025 se otorgó precisamente por explicar el crecimiento impulsado por la innovación. Joel Mokyr, historiador económico, estudió por qué el crecimiento sostenido apareció apenas en los últimos dos siglos, y encontró que hizo falta algo más que inventos: entender científicamente por qué funcionan y tener una sociedad abierta a los cambios. Philippe Aghion y Peter Howitt formalizaron la idea de la <strong>destrucción creativa</strong>: cuando entra al mercado un producto nuevo y mejor, las empresas que vendían el viejo pierden. Así, la innovación genera crecimiento, pero también conflicto, porque hay ganadores y perdedores.</p>
+
+									<h3>Los recursos naturales: ¿producen valor?</h3>
+									<p>El trabajo y el capital usan los recursos naturales para producir. Todos los recursos naturales aportan a la producción en términos físicos: el aire se usa tanto como la tierra. Pero el aire no tiene dueño y nadie cobra por usarlo, mientras que la tierra sí. La diferencia no es cuánto aportan, sino si tienen dueño y si hay que pagar para usarlos. Ese derecho a cobrar una <strong>renta</strong> es lo que explica el valor de la producción asociado a los recursos naturales; por eso, cuando sube su precio, sube su participación en el PIB, no porque haya aumentado la productividad, sino porque se paga más a sus dueños.</p>
+									<p>Tener recursos naturales no garantiza ser rico. La <strong>enfermedad holandesa</strong> ocurre cuando el auge de las exportaciones de un recurso, como pasó con el gas natural en los Países Bajos, aprecia el tipo de cambio y encarece las exportaciones de todos los demás sectores, que pierden competitividad frente a las importaciones. Y la <strong>maldición de los recursos naturales</strong> describe países donde ese sector es tan rentable que frena el desarrollo del resto de la economía, como Venezuela o Nigeria.</p>
+
+									<h3>Entonces, ¿por qué crecen distinto los países?</h3>
+									<p>Si la productividad depende de aumentar el capital físico, mejorar el capital humano, avanzar en tecnología y aprovechar los recursos naturales, ¿qué permite a unos países hacerlo mejor que otros? Una parte clave de la respuesta es el <strong>ahorro</strong>, porque es lo que financia la inversión. Un país que ahorra más puede invertir más. Y si el ahorro interno no alcanza, puede recurrir al ahorro externo: endeudarse o atraer inversión extranjera.</p>
+									<p>Esto genera dinámicas que se refuerzan a sí mismas. Un país con salarios altos tiene incentivos para introducir tecnologías que eleven la productividad y permitan pagar esos salarios sin reducir las ganancias; esas tecnologías requieren personas calificadas, lo que empuja a invertir en educación. Un país con salarios bajos, en cambio, tiene incentivos para usar tecnologías simples, intensivas en mano de obra barata, que no requieren calificación, por lo que tampoco hay presión para invertir en educación.</p>
+
+									<div class="ciclos-wrap">
+										<svg viewBox="0 0 320 300" class="ciclo-svg" role="img" aria-label="Círculo virtuoso">
+											<defs><marker id="fv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#004350"/></marker></defs>
+											<text x="160" y="22" text-anchor="middle" class="ciclo-tit">Círculo virtuoso</text>
+											<rect x="100" y="38" width="120" height="42" rx="8" class="nodo-v"/><text x="160" y="64" text-anchor="middle" class="ciclo-txt">Salarios altos</text>
+											<rect x="200" y="132" width="114" height="46" rx="8" class="nodo-v"/><text x="257" y="151" text-anchor="middle" class="ciclo-txt">Más inversión y</text><text x="257" y="168" text-anchor="middle" class="ciclo-txt">tecnología</text>
+											<rect x="100" y="230" width="120" height="42" rx="8" class="nodo-v"/><text x="160" y="256" text-anchor="middle" class="ciclo-txt">Alta productividad</text>
+											<rect x="6" y="132" width="114" height="46" rx="8" class="nodo-v"/><text x="63" y="151" text-anchor="middle" class="ciclo-txt">Más inversión</text><text x="63" y="168" text-anchor="middle" class="ciclo-txt">en educación</text>
+											<path d="M222,66 Q262,82 260,128" class="flecha-v" marker-end="url(#fv)"/>
+											<path d="M258,182 Q256,232 224,248" class="flecha-v" marker-end="url(#fv)"/>
+											<path d="M98,248 Q62,232 62,182" class="flecha-v" marker-end="url(#fv)"/>
+											<path d="M62,128 Q60,84 98,64" class="flecha-v" marker-end="url(#fv)"/>
+										</svg>
+										<svg viewBox="0 0 320 300" class="ciclo-svg" role="img" aria-label="Círculo vicioso">
+											<defs><marker id="fp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8B3A3A"/></marker></defs>
+											<text x="160" y="22" text-anchor="middle" class="ciclo-tit">Círculo vicioso</text>
+											<rect x="100" y="38" width="120" height="42" rx="8" class="nodo-p"/><text x="160" y="64" text-anchor="middle" class="ciclo-txt">Salarios bajos</text>
+											<rect x="200" y="132" width="114" height="46" rx="8" class="nodo-p"/><text x="257" y="151" text-anchor="middle" class="ciclo-txt">Tecnologías</text><text x="257" y="168" text-anchor="middle" class="ciclo-txt">simples</text>
+											<rect x="100" y="230" width="120" height="42" rx="8" class="nodo-p"/><text x="160" y="256" text-anchor="middle" class="ciclo-txt">Baja productividad</text>
+											<rect x="6" y="132" width="114" height="46" rx="8" class="nodo-p"/><text x="63" y="151" text-anchor="middle" class="ciclo-txt">Poca inversión</text><text x="63" y="168" text-anchor="middle" class="ciclo-txt">en educación</text>
+											<path d="M222,66 Q262,82 260,128" class="flecha-p" marker-end="url(#fp)"/>
+											<path d="M258,182 Q256,232 224,248" class="flecha-p" marker-end="url(#fp)"/>
+											<path d="M98,248 Q62,232 62,182" class="flecha-p" marker-end="url(#fp)"/>
+											<path d="M62,128 Q60,84 98,64" class="flecha-p" marker-end="url(#fp)"/>
+										</svg>
+									</div>
+									<p>En el círculo virtuoso, los salarios altos promueven la innovación, que eleva la productividad, y la productividad creciente hace viables salarios crecientes. En el círculo vicioso, los salarios bajos frenan la innovación y mantienen baja la productividad, que a su vez sigue requiriendo salarios bajos. El riesgo para un país es quedar atrapado en ese <strong>equilibrio de bajo nivel</strong>: mano de obra poco calificada y mal pagada, con inversiones de poca sofisticación.</p>
+
+									<h3>El papel del sector público</h3>
+									<p>Hay inversiones públicas indispensables para que el ahorro y la inversión privada den frutos, porque generan bienes públicos o corrigen externalidades que el mercado no resolvería por sí solo:</p>
+									<p>1. <strong>Educación:</strong> de nada sirve atraer inversiones con más capital y nuevas tecnologías si no hay personas calificadas para esos trabajos. En Costa Rica, por ejemplo, la escolaridad promedio de los adultos es de <span data-dato="esc_cri">8.8</span> años, muy por debajo de los <span data-dato="esc_usa">13.9</span> de Estados Unidos o Suiza.</p>
+									<p>2. <strong>Infraestructura:</strong> caminos y carreteras, puertos y aeropuertos, saneamiento y manejo de residuos, agua y electricidad.</p>
+									<p>3. <strong>Sistema financiero:</strong> sin un buen arreglo institucional no se genera el ahorro necesario, el ahorro no se transforma en inversión y no existen instrumentos de crédito para asumir riesgos.</p>
+									<p>4. <strong>Investigación y desarrollo:</strong> el cambio tecnológico depende de la ciencia básica, de transformar los descubrimientos en tecnologías aplicables y de llevarlas a la producción. El conocimiento tiene una particularidad: una vez producido, usarlo no cuesta nada y es difícil impedir que otros lo usen. Pero si todo conocimiento nuevo se pudiera usar gratis, ¿quién invertiría en producirlo? Por eso se combinan la inversión pública en investigación y los derechos de propiedad intelectual, como las patentes.</p>
+									<p>5. <strong>Institucionalidad:</strong> los mercados no existen en el vacío. Requieren derechos de propiedad, pero también un Estado de derecho, mecanismos confiables para resolver conflictos y límites y contrapesos al ejercicio del poder. El Nobel de Economía de 2024, otorgado a Daron Acemoglu, Simon Johnson y James Robinson, reconoció sus estudios sobre cómo las instituciones explican buena parte de las diferencias de prosperidad entre países.</p>
+
+									<div class="principles-section">
+										<div class="principles-tag">Principio No. 14: Consumo, ahorro e inversión</div>
+										<div class="principles-content">
+											<p>El crecimiento y la productividad dependen de cómo se resuelva, a través del ahorro, la decisión entre consumo e inversión: de si se puede aumentar el capital físico, mejorar el capital humano, lograr avances tecnológicos y obtener rentas de los recursos naturales. El ahorro y la inversión son factores críticos, igual que una institucionalidad adecuada.</p>
+										</div>
+									</div>
+									<p> </p>
+
+									<h3>Los países crecen a ritmos muy distintos</h3>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="rankingChart" style="width: 100%; height: 470px;"></canvas>
+									</div>
+									<p>Por todos esos factores, las diferencias son enormes. Entre <span data-dato="rk_ini">2000</span> y <span data-dato="rk_fin">2025</span>, el PIB per cápita de China creció en promedio <span data-dato="r70_chn_tasa">7.5%</span> al año, el de Costa Rica <span data-dato="r70_cri_tasa">2.9%</span>, por encima del promedio mundial (<span data-dato="tasa_wld">1.7%</span>) y del de América Latina (<span data-dato="tasa_lcn">1.2%</span>), mientras que el de México apenas <span data-dato="r70_mex_tasa">0.3%</span> y el de Zimbabue fue negativo.</p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>En 1960, el PIB per cápita de Corea del Sur era menor que el de Costa Rica. Hoy es más del doble. Usando las fuentes del crecimiento de esta lección, proponga tres explicaciones posibles. ¿Cuál de los dos círculos describe mejor la situación de Costa Rica? ¿Puede un país estar en ambos a la vez, en sectores distintos?</p>
+										</div>
+									</div>
+
+									<h2>Estabilidad y ciclos económicos</h2>
+									<p>La estabilidad y el crecimiento son dos de los objetivos más importantes de la política macroeconómica. La economía nunca crece a un ritmo constante: a veces crece poco, se estanca o decrece, lo que provoca desempleo y empobrecimiento; y a veces la inestabilidad es tan grande que dificulta la toma de decisiones de hogares y empresas.</p>
+									<p>El <strong>ciclo económico</strong> es la alternancia de corto plazo entre crisis y repuntes de la economía. Las <strong>recesiones</strong> son periodos en que baja la producción y aumenta el desempleo; las <strong>expansiones</strong> son periodos en que la producción y el empleo crecen; y una <strong>depresión</strong> es una recesión profunda y prolongada.</p>
+									<div style="flex: 1; margin: 10px;">
+										<canvas id="ciclosChart" style="width: 100%; height: 320px;"></canvas>
+									</div>
+									<p>En Costa Rica, el PIB real creció en promedio <span data-dato="crec_prom">4.2%</span> al año entre <span data-dato="crpc_anio_ini">1990</span> y <span data-dato="crpc_anio_fin">2025</span>, pero con altibajos. Solo hubo <span data-dato="n_recesiones">dos</span> años de caída de la producción: <span data-dato="anios_recesion">2009 y 2020</span>. Y hubo fases de desaceleración, como la de 2018-2019, en las que, sin llegar a caer, la economía creció poco y el desempleo aumentó.</p>
+
+									<h2>Crecimiento y desarrollo humano</h2>
+									<p>El crecimiento económico es un medio, no un fin. El concepto de <strong>desarrollo humano</strong> del Programa de las Naciones Unidas para el Desarrollo (PNUD) va más allá: es la ampliación de las oportunidades de las personas para tener una vida larga y saludable, adquirir conocimientos y disfrutar de un nivel de vida digno.</p>
+									<p>El <strong>Índice de Desarrollo Humano (IDH)</strong> resume esas tres dimensiones: la salud, medida por la esperanza de vida al nacer; la educación, medida por los años promedio de escolaridad de los adultos de 25 años o más y los años esperados de escolaridad de los niños; y el nivel de vida, medido por el ingreso per cápita. Los tres índices se combinan en uno solo, que va de 0 a 1.</p>
+									<p>Según el <span data-dato="informe_idh">Informe sobre Desarrollo Humano 2025</span>, con datos de <span data-dato="anio_idh">2023</span>, Costa Rica tiene un IDH de <strong><span data-dato="idh_cr">0.833</span></strong> y ocupa la posición <span data-dato="posicion_cr">62</span> de <span data-dato="total_paises">193</span> países, la <span data-dato="posicion_cr_alc">7</span>.ª de América Latina y el Caribe, dentro de la categoría de desarrollo humano muy alto.</p>
+									<table class="tabla-sobria" id="tablaIDH" style="width: 100%;">
+										<thead><tr><th>País</th><th>IDH</th><th>Posición</th><th>Esperanza de vida</th><th>Años esperados de escolaridad</th><th>Años promedio de escolaridad</th><th>Ingreso per cápita (PPP)</th></tr></thead>
+										<tbody></tbody>
+									</table>
+									<p>La comparación muestra algo interesante: Costa Rica tiene una esperanza de vida (<span data-dato="ev_cri">80.8</span> años) mayor que la de Estados Unidos (<span data-dato="ev_usa">79.3</span>) con un ingreso tres veces menor. Pero su gran rezago está en la escolaridad promedio de los adultos, donde apenas alcanza el promedio mundial. Ahí se ve el vínculo entre desarrollo humano y crecimiento: sin capital humano es difícil sostener una economía de alta productividad.</p>
+
+									<h3>Razones para el optimismo y para la preocupación</h3>
+									<p>En los últimos 50 años, en parte como reacción a estudios como el del Club de Roma sobre los límites del crecimiento, se desarrollaron políticas que buscaron proteger el medio ambiente y avanzar hacia un desarrollo sostenible: la eliminación del plomo en los combustibles, la prohibición de los clorofluorocarbonos que dañaban la capa de ozono, las políticas de energía limpia y la reforestación para fijar carbono.</p>
+									<p>Pero también hay razones serias de preocupación. El uso de energía fósil está provocando un efecto invernadero que eleva la temperatura del planeta, con daños crecientes y quizás irreversibles. El <strong>Acuerdo de París</strong> (2015) busca limitar el aumento de la temperatura global a menos de 2 °C, e intentar 1,5 °C, con compromisos nacionales que se revisan cada cinco años y con apoyo financiero de los países desarrollados a los países en desarrollo. En la COP29 (Bakú, 2024) se acordó elevar ese financiamiento de US$100 mil millones a US$300 mil millones anuales para 2035. Sin embargo, la salida de Estados Unidos del acuerdo se hizo efectiva en enero de 2026, y la COP30 (Belém, 2025) terminó comprometiéndose a triplicar el financiamiento para la adaptación, pero sin una hoja de ruta para abandonar los combustibles fósiles.</p>
+
+									<div class="exercise-section">
+										<div class="exercise-tag">Ejercicio</div>
+										<div class="exercise-content">
+											<p>¿Puede un país tener un PIB per cápita alto y un desarrollo humano bajo? ¿Y al revés? Busque un ejemplo en el cuadro del IDH. Luego discuta: si crecer más implica usar más energía, ¿cómo se puede conciliar el crecimiento con la sostenibilidad ambiental?</p>
+										</div>
+									</div>
+
+						<div class="text-center" style="margin-top: 40px;">
+							<a href="docs/5B-Crecimiento y ciclos.pdf" target="_blank" class="btn btn-primary btn-lg">
+								<i class="icon-file-pdf"></i> Ver presentación antigua (PDF)
+							</a>
+						</div>
+
+						<div class="references-section" style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
+							<div class="row">
+								<div class="col-md-8">
+									<h3>Bibliografía</h3>
+									<ul class="references-list" style="list-style-type: none; padding-left: 0;">
+										<li style="margin-bottom: 10px;">
+											<span style="font-weight: bold;">PNUD (1995).</span>
+											<span>Informe sobre Desarrollo Humano 1995. Capítulo 1, pp. 15-17.</span>
+										</li>
+										<li style="margin-bottom: 10px;">
+											<span style="font-weight: bold;">PNUD.</span>
+											<span><span data-dato="informe_idh">Informe sobre Desarrollo Humano 2025</span>.</span>
+										</li>
+									</ul>
+									<p style="font-size: 13px;">Datos: PIB, PIB per cápita y crecimiento: Banco Mundial, Indicadores del Desarrollo Mundial (consulta de <span data-dato="fecha_bm">noviembre de 2026</span>). IDH: PNUD. Los datos de esta página se actualizan desde el archivo <a href="datos/5B-datos.xlsx">5B-datos.xlsx</a>.</p>
+								</div>
+
+								<div class="col-md-4 text-right" style="align-self: flex-end;">
+									<a href="XE0156-6A.html" class="btn btn-outline-secondary btn-lg" style="margin-top: 20px;">
+										Siguiente tema →
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<script>
+						(function () {
+							var RESPALDO = {
+								general: { anio_bm: 2025, fecha_bm: 'noviembre de 2026', anio_inicio_ranking: 2000, anio_fin_ranking: 2025, informe_idh: 'Informe sobre Desarrollo Humano 2025', anio_idh: 2023, idh_cr: 0.833, posicion_cr: 62, total_paises: 193, posicion_cr_alc: 7 },
+								paises: [['Estados Unidos',30770,90027,76931],['China',19498,13862,25067],['Suiza',1044,114769,85732],['Suecia',669,63133,63362],['Guatemala',123,6598,12987],['Costa Rica',103,19970,28443]],
+								cr: [[1990,6049,3.55],[1991,6030,2.27],[1992,6420,9.20],[1993,6706,7.10],[1994,6839,4.52],[1995,6954,4.15],[1996,6885,1.35],[1997,7100,5.48],[1998,7440,7.09],[1999,7589,4.15],[2000,7727,3.80],[2001,7854,3.49],[2002,7990,3.42],[2003,8207,4.32],[2004,8446,4.42],[2005,8655,3.98],[2006,9160,7.33],[2007,9780,8.22],[2008,10105,4.74],[2009,9884,-0.87],[2010,10285,5.36],[2011,10612,4.40],[2012,11002,4.88],[2013,11151,2.49],[2014,11423,3.54],[2015,11715,3.65],[2016,12084,4.20],[2017,12469,4.16],[2018,12709,2.85],[2019,12944,2.71],[2020,12322,-4.14],[2021,13267,8.22],[2022,13932,5.46],[2023,14532,4.79],[2024,15053,4.08],[2025,15669,4.56]],
+								ranking: [['Zimbabue',1677.3,1503.1],['México',9582.0,10256.7],['Arabia Saudita',22247.9,25066.0],['Japón',31779.4,38619.3],['Suiza',74933.3,93327.6],['Argentina',10631.7,13287.1],['Suecia',41561.8,55014.4],['América Latina y el Caribe',6742.0,9017.5],['Estados Unidos',48616.3,67945.6],['Guatemala',3165.9,4687.9],['Mundo',7879.6,12130.7],['El Salvador',2964.9,4734.9],['Chile',8465.4,14904.6],['Tailandia',3514.7,6782.8],['Costa Rica',7726.5,15669.0],['Corea del Sur',17763.1,37469.7],['India',756.7,2523.4],['China',2237.3,13793.2]],
+								idh: [['Suiza',0.970,2,84.0,16.7,13.9,81949],['Suecia',0.959,5,83.3,19.0,12.7,66102],['Estados Unidos',0.938,17,79.3,15.9,13.9,73650],['Chile',0.878,45,81.2,16.9,11.3,28047],['Uruguay',0.862,48,78.1,17.5,10.5,28650],['Panamá',0.839,59,79.6,13.3,10.8,34385],['Costa Rica',0.833,62,80.8,16.3,8.8,23417],['China',0.797,78,78.0,15.5,8.0,22029],['México',0.789,81,75.1,14.5,9.3,21813],['América Latina y el Caribe',0.783,'',75.6,14.8,9.1,18048],['Mundo',0.756,'',73.4,13.0,8.8,20327],['Guatemala',0.662,137,72.6,10.7,5.8,12459]]
+							};
+
+							function num(v) { if (v === null || v === undefined || v === '') return null; var n = (typeof v === 'number') ? v : parseFloat(String(v).replace(',', '.')); return isNaN(n) ? null : n; }
+							function miles(v, d) { var n = num(v); if (n === null) return '–'; var s = n.toFixed(d || 0).split('.'); s[0] = s[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' '); return s.join('.'); }
+							function pct(v, d) { var n = num(v); return n === null ? '–' : n.toFixed(d === undefined ? 1 : d) + '%'; }
+							function filas(wb, nombre) {
+								var ws = wb.Sheets[nombre]; if (!ws) return [];
+								var todas = XLSX.utils.sheet_to_json(ws, { header: 1, blankrows: true }), out = [];
+								for (var i = 1; i < todas.length; i++) { var f = todas[i]; if (!f || f[0] === undefined || f[0] === null || String(f[0]).trim() === '') break; out.push(f); }
+								return out;
+							}
+							function desdeExcel(wb) {
+								var g = {}; filas(wb, 'General').forEach(function (f) { g[String(f[0]).trim()] = (f[1] === undefined ? '' : f[1]); });
+								return {
+									general: g,
+									paises: filas(wb, 'Paises').map(function (f) { return [String(f[0]).trim(), num(f[1]), num(f[2]), num(f[3])]; }),
+									cr: filas(wb, 'CR_PIB').map(function (f) { return [num(f[0]), num(f[1]), num(f[2])]; }),
+									ranking: filas(wb, 'Ranking').map(function (f) { return [String(f[0]).trim(), num(f[1]), num(f[2])]; }),
+									idh: filas(wb, 'IDH').map(function (f) { return [String(f[0]).trim(), num(f[1]), (f[2] === undefined ? '' : f[2]), num(f[3]), num(f[4]), num(f[5]), num(f[6])]; })
+								};
+							}
+							function buscar(arr, nombre) { for (var i = 0; i < arr.length; i++) if (arr[i][0] === nombre) return arr[i]; return null; }
+
+							function aplicar(D) {
+								var g = D.general, cr = D.cr.slice().sort(function (a, b) { return a[0] - b[0]; });
+								var ini = num(g.anio_inicio_ranking), fin = num(g.anio_fin_ranking), nA = fin - ini;
+								var rk = D.ranking.map(function (f) { return [f[0], (Math.pow(f[2] / f[1], 1 / nA) - 1) * 100]; }).sort(function (a, b) { return a[1] - b[1]; });
+								var tasa = function (n) { var f = buscar(rk, n); return f ? f[1] : null; };
+								var r70 = function (n) { var t = tasa(n); return t && t > 0 ? Math.round(70 / t) : '–'; };
+								var p = function (n, i) { var f = buscar(D.paises, n); return f ? f[i] : null; };
+								var ih = function (n, i) { var f = buscar(D.idh, n); return f ? f[i] : null; };
+								var c0 = cr[0], c1 = cr[cr.length - 1];
+								var rec = cr.filter(function (f) { return f[2] < 0; }).map(function (f) { return f[0]; });
+								var palabras = ['ningún', 'un', 'dos', 'tres', 'cuatro', 'cinco'];
+								var prom = (Math.pow(cr.reduce(function (m, f, i) { return i === 0 ? 1 : m * (1 + f[2] / 100); }, 1), 1 / (cr.length - 1)) - 1) * 100;
+								var v = {
+									anio_bm: g.anio_bm, fecha_bm: g.fecha_bm, pib_usa: miles(p('Estados Unidos', 1)), pib_chn: miles(p('China', 1)), pib_cri: miles(p('Costa Rica', 1)),
+									pc_cri: miles(p('Costa Rica', 2)), ppp_cri: miles(p('Costa Rica', 3)),
+									crpc_ini: miles(c0[1]), crpc_anio_ini: c0[0], crpc_fin: miles(c1[1]), crpc_anio_fin: c1[0],
+									indice_cr: Math.round(c1[1] / c0[1] * 100), veces_cr: (c1[1] / c0[1]).toFixed(1),
+									rk_ini: ini, rk_fin: fin,
+									r70_chn_tasa: pct(tasa('China')), r70_chn: r70('China'), r70_cri_tasa: pct(tasa('Costa Rica')), r70_cri: r70('Costa Rica'), r70_mex_tasa: pct(tasa('México')), r70_mex: r70('México'),
+									tasa_wld: pct(tasa('Mundo')), tasa_lcn: pct(tasa('América Latina y el Caribe')),
+									crec_prom: pct(prom), n_recesiones: palabras[rec.length] || rec.length, anios_recesion: rec.length > 1 ? rec.slice(0, -1).join(', ') + ' y ' + rec[rec.length - 1] : rec.join(''),
+									informe_idh: g.informe_idh, anio_idh: g.anio_idh, idh_cr: num(g.idh_cr) !== null ? num(g.idh_cr).toFixed(3) : '', posicion_cr: g.posicion_cr, total_paises: g.total_paises, posicion_cr_alc: g.posicion_cr_alc,
+									esc_cri: ih('Costa Rica', 5), esc_usa: ih('Estados Unidos', 5), ev_cri: ih('Costa Rica', 3), ev_usa: ih('Estados Unidos', 3)
+								};
+								document.querySelectorAll('[data-dato]').forEach(function (el) {
+									var k = el.getAttribute('data-dato'); if (v[k] !== undefined && v[k] !== null && v[k] !== '') el.textContent = v[k];
+								});
+								// Tabla del ejercicio: últimos 6 años
+								document.querySelector('#tablaEjercicio tbody').innerHTML = cr.slice(-6).map(function (f) { return '<tr><td>' + f[0] + '</td><td>US$' + miles(f[1]) + '</td></tr>'; }).join('');
+								// Tabla IDH
+								document.querySelector('#tablaIDH tbody').innerHTML = D.idh.map(function (f) {
+									var cr_ = f[0] === 'Costa Rica' ? ' style="font-weight: bold;"' : '';
+									return '<tr' + cr_ + '><td>' + f[0] + '</td><td>' + (f[1] !== null ? f[1].toFixed(3) : '–') + '</td><td>' + (f[2] === '' ? '–' : f[2]) + '</td><td>' + miles(f[3], 1) + '</td><td>' + miles(f[4], 1) + '</td><td>' + miles(f[5], 1) + '</td><td>US$' + miles(f[6]) + '</td></tr>';
+								}).join('');
+								graficos(D, g, cr, rk, ini, fin);
+							}
+
+							var NAVY = 'rgba(31, 52, 92, 0.75)', TURQ = 'rgba(0, 67, 80, 0.75)', TURQ2 = 'rgba(64, 160, 170, 0.55)', GRIS = 'rgba(120, 130, 140, 0.45)', ROJO = 'rgba(139, 0, 0, 0.6)';
+							function etiquetas(id, fmt, horizontal) {
+								return { id: id, afterDatasetsDraw: function (chart) {
+									var ctx = chart.ctx; ctx.save(); ctx.font = 'bold 11px Arial'; ctx.fillStyle = '#23394a';
+									chart.data.datasets.forEach(function (ds, di) {
+										if (ds.type === 'line' || ds.sinEtiqueta) return;
+										chart.getDatasetMeta(di).data.forEach(function (bar, i) {
+											var val = ds.data[i]; if (val === null) return;
+											if (horizontal) { ctx.textAlign = val >= 0 ? 'left' : 'right'; ctx.textBaseline = 'middle'; ctx.fillText(fmt(val), bar.x + (val >= 0 ? 5 : -5), bar.y); }
+											else { ctx.textAlign = 'center'; ctx.fillText(fmt(val), bar.x, val >= 0 ? bar.y - 6 : bar.y + 14); }
+										});
+									});
+									ctx.restore();
+								} };
+							}
+							function titulo(t) { return { display: true, text: t, font: { size: 16, weight: 'bold' } }; }
+
+							function graficos(D, g, cr, rk, ini, fin) {
+								var ps = D.paises;
+								new Chart(document.getElementById('pibChart').getContext('2d'), {
+									type: 'bar',
+									data: { labels: ps.map(function (f) { return f[0]; }), datasets: [{ data: ps.map(function (f) { return f[1]; }), backgroundColor: ps.map(function (f) { return f[0] === 'Costa Rica' ? TURQ : NAVY; }), borderWidth: 0, barPercentage: 0.6 }] },
+									options: { maintainAspectRatio: false, plugins: { title: titulo('PIB ' + g.anio_bm + ': miles de millones de US$ corrientes'), legend: { display: false }, tooltip: { callbacks: { label: function (it) { return 'US$' + miles(it.raw) + ' mil millones'; } } } },
+										scales: { y: { beginAtZero: true, ticks: { callback: function (x) { return miles(x); } } } } },
+									plugins: [etiquetas('lblPib', function (x) { return miles(x); })]
+								});
+								new Chart(document.getElementById('pibpcChart').getContext('2d'), {
+									type: 'bar',
+									data: { labels: ps.map(function (f) { return f[0]; }), datasets: [
+										{ label: 'US$ corrientes', data: ps.map(function (f) { return f[2] / 1000; }), backgroundColor: NAVY, borderWidth: 0 },
+										{ label: 'PPP (US$ internacionales de 2021)', data: ps.map(function (f) { return f[3] / 1000; }), backgroundColor: TURQ2, borderWidth: 0 }
+									] },
+									options: { maintainAspectRatio: false, plugins: { title: titulo('PIB per cápita ' + g.anio_bm + ': miles de US$'), legend: { position: 'bottom', labels: { boxWidth: 12, boxHeight: 12, font: { size: 12 } } }, tooltip: { callbacks: { label: function (it) { return it.dataset.label + ': US$' + miles(it.raw * 1000); } } } },
+										scales: { y: { beginAtZero: true } } },
+									plugins: [etiquetas('lblPc', function (x) { return Math.round(x); })]
+								});
+								new Chart(document.getElementById('crpcChart').getContext('2d'), {
+									type: 'line',
+									data: { labels: cr.map(function (f) { return f[0]; }), datasets: [{ label: 'PIB real per cápita', data: cr.map(function (f) { return f[1]; }), borderColor: '#004350', backgroundColor: 'rgba(0, 67, 80, 0.08)', fill: true, pointRadius: 2, tension: 0 }] },
+									options: { maintainAspectRatio: false, plugins: { title: titulo('Costa Rica: PIB real per cápita, ' + cr[0][0] + '-' + cr[cr.length - 1][0] + ' (US$ de 2015)'), legend: { display: false }, tooltip: { callbacks: { label: function (it) { return 'US$' + miles(it.raw); } } } },
+										scales: { y: { beginAtZero: true, ticks: { callback: function (x) { return miles(x); } } }, x: { ticks: { maxRotation: 0, autoSkip: true, maxTicksLimit: 12 } } } }
+								});
+								new Chart(document.getElementById('rankingChart').getContext('2d'), {
+									type: 'bar',
+									data: { labels: rk.map(function (f) { return f[0]; }), datasets: [{ data: rk.map(function (f) { return f[1]; }), backgroundColor: rk.map(function (f) { return f[0] === 'Costa Rica' ? TURQ : (f[0] === 'Mundo' || f[0] === 'América Latina y el Caribe' ? GRIS : (f[1] < 0 ? ROJO : NAVY)); }), borderWidth: 0, barPercentage: 0.75 }] },
+									options: { indexAxis: 'y', maintainAspectRatio: false, layout: { padding: { right: 40 } },
+										plugins: { title: titulo('Crecimiento promedio anual del PIB real per cápita, ' + ini + '-' + fin), legend: { display: false }, tooltip: { callbacks: { label: function (it) { return pct(it.raw, 2); } } } },
+										scales: { x: { ticks: { callback: function (x) { return x + '%'; } } }, y: { ticks: { autoSkip: false, font: { size: 12 } } } } },
+									plugins: [etiquetas('lblRk', function (x) { return pct(x, 2); }, true)]
+								});
+								new Chart(document.getElementById('ciclosChart').getContext('2d'), {
+									type: 'bar',
+									data: { labels: cr.map(function (f) { return f[0]; }), datasets: [{ data: cr.map(function (f) { return f[2]; }), backgroundColor: cr.map(function (f) { return f[2] < 0 ? ROJO : TURQ2; }), borderWidth: 0, barPercentage: 0.8, sinEtiqueta: true }] },
+									options: { maintainAspectRatio: false, plugins: { title: titulo('Costa Rica: crecimiento del PIB real, ' + cr[0][0] + '-' + cr[cr.length - 1][0]), legend: { display: false }, tooltip: { callbacks: { label: function (it) { return pct(it.raw, 1); } } } },
+										scales: { y: { ticks: { callback: function (x) { return x + '%'; } } }, x: { ticks: { maxRotation: 0, autoSkip: true, maxTicksLimit: 12 } } } },
+									plugins: [{ id: 'lblNeg', afterDatasetsDraw: function (chart) {
+										var ctx = chart.ctx, ds = chart.data.datasets[0]; ctx.save(); ctx.font = 'bold 11px Arial'; ctx.fillStyle = '#8B0000'; ctx.textAlign = 'center';
+										chart.getDatasetMeta(0).data.forEach(function (bar, i) { if (ds.data[i] < 0) ctx.fillText(chart.data.labels[i] + ': ' + ds.data[i].toFixed(1) + '%', bar.x, bar.y + 14); });
+										ctx.restore();
+									} }]
+								});
+							}
+
+							function respaldo(motivo) {
+								var aviso = document.getElementById('avisoDatos');
+								aviso.textContent = 'No se pudo leer el archivo de datos actualizado; se muestran los datos de respaldo.';
+								aviso.style.display = 'block';
+								if (window.console) console.warn('5B: usando datos de respaldo', motivo);
+								aplicar(RESPALDO);
+							}
+							if (typeof XLSX === 'undefined' || !window.fetch) { respaldo('sin XLSX/fetch'); return; }
+							fetch('datos/5B-datos.xlsx?t=' + Date.now(), { cache: 'no-store' })
+								.then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.arrayBuffer(); })
+								.then(function (buf) {
+									var D = desdeExcel(XLSX.read(buf, { type: 'array' }));
+									if (!D.paises.length || !D.cr.length || !D.ranking.length || !D.idh.length) throw new Error('Excel incompleto');
+									aplicar(D);
+								})
+								.catch(respaldo);
+						})();
+						</script>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
